@@ -12,3 +12,9 @@ Published pages:
 - https://xintechllc.com/sms-terms.html
 - https://xintechllc.com/privacy.html
 - https://xintechllc.com/compliance.html
+
+Run this after publishing changes to verify the public Twilio evidence pages:
+
+```sh
+scripts/check-compliance-pages.sh
+```
