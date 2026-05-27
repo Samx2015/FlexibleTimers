@@ -6,6 +6,9 @@ messaging compliance evidence.
 Published pages:
 
 - https://xintechllc.com/
+- https://xintechllc.com/support.html
+- https://xintechllc.com/terms.html
 - https://xintechllc.com/sms-opt-in.html
 - https://xintechllc.com/sms-terms.html
 - https://xintechllc.com/privacy.html
+- https://xintechllc.com/compliance.html
