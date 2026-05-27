@@ -5,7 +5,7 @@ messaging compliance evidence.
 
 Published pages:
 
-- https://samx2015.github.io/FlexibleTimers/
-- https://samx2015.github.io/FlexibleTimers/sms-opt-in.html
-- https://samx2015.github.io/FlexibleTimers/sms-terms.html
-- https://samx2015.github.io/FlexibleTimers/privacy.html
+- https://xintechllc.com/
+- https://xintechllc.com/sms-opt-in.html
+- https://xintechllc.com/sms-terms.html
+- https://xintechllc.com/privacy.html
