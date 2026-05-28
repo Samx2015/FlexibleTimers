@@ -43,9 +43,23 @@ page_has() {
   rg -q "$pattern" "$file"
 }
 
+page_text_has() {
+  local path="$1"
+  local pattern="$2"
+  local file
+  file="$(fetch "$path")"
+  tr '\n' ' ' < "$file" | sed -E 's/[[:space:]]+/ /g' | rg -q "$pattern"
+}
+
 url_ok() {
   local path="$1"
   curl -fsSIL "$BASE_URL$path" >/dev/null
+}
+
+content_type_has() {
+  local path="$1"
+  local pattern="$2"
+  curl -fsSIL "$BASE_URL$path" | rg -qi "^content-type: $pattern"
 }
 
 require_command curl
@@ -63,29 +77,83 @@ check "SMS Terms page is reachable" url_ok "/sms-terms.html"
 check "SMS opt-in evidence page is reachable" url_ok "/sms-opt-in.html"
 check "Compliance page is reachable" url_ok "/compliance.html"
 check "SMS consent screenshot evidence is reachable" url_ok "/assets/sms-consent.png"
+check "SMS consent screenshot is PNG" \
+  content_type_has "/assets/sms-consent.png" "image/png"
 check "Robots file is reachable" url_ok "/robots.txt"
 check "Sitemap is reachable" url_ok "/sitemap.xml"
 
+check "Homepage describes owner-only email messaging" \
+  page_has "/" "own account email address"
 check "SMS Terms documents one-time verification use" \
   page_has "/sms-terms.html" "verification codes"
+check "SMS Terms documents own account phone scope" \
+  page_has "/sms-terms.html" "own account phone number"
 check "SMS Terms documents STOP keyword" \
   page_has "/sms-terms.html" "Reply STOP to opt out"
 check "SMS Terms documents HELP keyword" \
   page_has "/sms-terms.html" "Reply HELP for help"
+check "SMS Terms documents START or YES keyword" \
+  page_has "/sms-terms.html" "START or YES"
+check "SMS Terms documents support URL" \
+  page_has "/sms-terms.html" "xintechllc.com/support.html"
 check "SMS Terms says no marketing texts" \
   page_has "/sms-terms.html" "does not send marketing text messages"
+check "SMS Terms says consent is not required for purchase" \
+  page_has "/sms-terms.html" "Consent is not a condition of purchase"
+check "SMS Terms includes exact STOP response" \
+  page_text_has "/sms-terms.html" "You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
+check "SMS Terms includes exact HELP response" \
+  page_text_has "/sms-terms.html" "Flexible Timers sends one-time verification codes for your account phone\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
+check "SMS Terms includes exact START response" \
+  page_text_has "/sms-terms.html" "You have opted back in to Flexible Timers SMS verification messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
 check "Privacy says SMS opt-in data is not sold" \
   page_has "/privacy.html" "does not sell SMS opt-in data"
+check "Privacy says SMS opt-in data is not shared for marketing" \
+  page_text_has "/privacy.html" "does not share SMS opt-in data"
+check "Privacy links support page" \
+  page_has "/privacy.html" "xintechllc.com/support.html"
 check "Opt-in page includes consent wording" \
   page_has "/sms-opt-in.html" "I agree to receive one-time SMS verification codes"
+check "Opt-in page includes message/data rates disclosure" \
+  page_has "/sms-opt-in.html" "Standard message and data rates may apply"
+check "Opt-in page says consent is not condition of purchase" \
+  page_has "/sms-opt-in.html" "Consent is not a condition of purchase"
 check "Opt-in page includes sample production message" \
   page_has "/sms-opt-in.html" "Flexible Timers verification code"
+check "Opt-in page includes exact STOP response" \
+  page_text_has "/sms-opt-in.html" "STOP response: You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
+check "Opt-in page includes exact HELP response" \
+  page_text_has "/sms-opt-in.html" "HELP response: Flexible Timers sends one-time verification codes for your account phone\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
+check "Opt-in page includes exact START response" \
+  page_text_has "/sms-opt-in.html" "START response: You have opted back in to Flexible Timers SMS verification messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
+check "Opt-in page links support page" \
+  page_has "/sms-opt-in.html" "support.html"
 check "Compliance page links opt-in evidence" \
   page_has "/compliance.html" "SMS opt-in evidence page"
+check "Compliance page says SMS reminders are disabled" \
+  page_has "/compliance.html" "SMS reminders and"
+check "Compliance page says third-party messaging is disabled" \
+  page_has "/compliance.html" "third-party recipient messaging are not enabled"
+check "Compliance page links support page" \
+  page_has "/compliance.html" "xintechllc.com/support.html"
 check "Support page includes contact path" \
   page_has "/support.html" "github.com/Samx2015/FlexibleTimers/issues"
-check "Sitemap includes Terms and opt-in pages" \
-  page_has "/sitemap.xml" "terms.html|sms-opt-in.html"
+check "Support page documents SMS opt-out and help" \
+  page_has "/support.html" "Reply STOP to opt out"
+check "Support page documents owner-only email" \
+  page_has "/support.html" "own account email address"
+check "Sitemap includes support page" \
+  page_has "/sitemap.xml" "support.html"
+check "Sitemap includes Terms page" \
+  page_has "/sitemap.xml" "terms.html"
+check "Sitemap includes Privacy page" \
+  page_has "/sitemap.xml" "privacy.html"
+check "Sitemap includes SMS Terms page" \
+  page_has "/sitemap.xml" "sms-terms.html"
+check "Sitemap includes SMS opt-in page" \
+  page_has "/sitemap.xml" "sms-opt-in.html"
+check "Sitemap includes compliance page" \
+  page_has "/sitemap.xml" "compliance.html"
 
 if [[ "$failures" -gt 0 ]]; then
   echo
