@@ -67,7 +67,8 @@
       This page documents the Flexible Timers SMS opt-in flow for Twilio
       toll-free verification. Flexible Timers SMS is currently limited to
       one-time verification codes for a signed-in user's own account phone
-      number. Flexible Timers does not send marketing text messages.
+      number. Flexible Timers does not send marketing text messages and does
+      not provide two-way SMS chat.
     </p>
 
     <h2>Opt-In Flow</h2>
@@ -106,6 +107,10 @@
     </p>
 
     <h2>Keyword Responses</h2>
+    <p>
+      Inbound keywords are used only for compliance and account-phone messaging
+      controls. Flexible Timers does not accept general SMS conversations.
+    </p>
     <p class="quote">
       STOP response: You are opted out of Flexible Timers SMS. No more messages
       will be sent. Reply START to opt in again.

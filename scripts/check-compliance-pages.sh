@@ -98,6 +98,8 @@ check "SMS Terms documents support URL" \
   page_has "/sms-terms.html" "xintechllc.com/support.html"
 check "SMS Terms says no marketing texts" \
   page_has "/sms-terms.html" "does not send marketing text messages"
+check "SMS Terms says SMS is not two-way chat" \
+  page_has "/sms-terms.html" "not a two-way chat"
 check "SMS Terms says consent is not required for purchase" \
   page_has "/sms-terms.html" "Consent is not a condition of purchase"
 check "SMS Terms includes exact STOP response" \
@@ -120,6 +122,8 @@ check "Opt-in page says consent is not condition of purchase" \
   page_has "/sms-opt-in.html" "Consent is not a condition of purchase"
 check "Opt-in page includes sample production message" \
   page_has "/sms-opt-in.html" "Flexible Timers verification code"
+check "Opt-in page says SMS is not two-way chat" \
+  page_text_has "/sms-opt-in.html" "does not provide two-way SMS chat"
 check "Opt-in page includes exact STOP response" \
   page_text_has "/sms-opt-in.html" "STOP response: You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
 check "Opt-in page includes exact HELP response" \
@@ -134,12 +138,16 @@ check "Compliance page says SMS reminders are disabled" \
   page_has "/compliance.html" "SMS reminders and"
 check "Compliance page says third-party messaging is disabled" \
   page_has "/compliance.html" "third-party recipient messaging are not enabled"
+check "Compliance page says SMS is not two-way chat" \
+  page_has "/compliance.html" "not a two-way chat"
 check "Compliance page links support page" \
   page_has "/compliance.html" "xintechllc.com/support.html"
 check "Support page includes contact path" \
   page_has "/support.html" "github.com/Samx2015/FlexibleTimers/issues"
 check "Support page documents SMS opt-out and help" \
   page_has "/support.html" "Reply STOP to opt out"
+check "Support page says SMS is not two-way chat" \
+  page_has "/support.html" "not a two-way chat service"
 check "Support page documents owner-only email" \
   page_has "/support.html" "own account email address"
 check "Sitemap includes support page" \
