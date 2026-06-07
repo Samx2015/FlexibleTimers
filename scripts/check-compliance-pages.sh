@@ -87,7 +87,7 @@ check "Homepage describes owner-only email messaging" \
 check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
-  page_has "/sms-terms.html" "own account phone number"
+  page_text_has "/sms-terms.html" "own account phone number|own verified, opted-in account phone number"
 check "SMS Terms documents no third-party SMS" \
   page_has "/sms-terms.html" "arbitrary third-party recipients"
 check "SMS Terms documents STOP keyword" \
@@ -127,7 +127,7 @@ check "Opt-in page includes sample production message" \
 check "Opt-in page says SMS is not two-way chat" \
   page_text_has "/sms-opt-in.html" "does not provide two-way SMS chat"
 check "Opt-in page documents verified owner-only reminders" \
-  page_text_has "/sms-opt-in.html" "verified account phone number"
+  page_text_has "/sms-opt-in.html" "verified(, opted-in)? account phone number"
 check "Opt-in page includes exact STOP response" \
   page_text_has "/sms-opt-in.html" "STOP response: You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
 check "Opt-in page includes exact HELP response" \
@@ -153,7 +153,7 @@ check "Support page documents SMS opt-out and help" \
 check "Support page says SMS is not two-way chat" \
   page_has "/support.html" "not a two-way chat service"
 check "Support page documents verified owner-only SMS" \
-  page_text_has "/support.html" "own verified account phone number"
+  page_text_has "/support.html" "own verified(, opted-in)? account phone number"
 check "Support page documents owner-only email" \
   page_has "/support.html" "own account email address"
 check "Sitemap includes support page" \
