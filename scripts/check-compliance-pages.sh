@@ -117,7 +117,7 @@ check "Privacy says SMS opt-in data is not shared for marketing" \
 check "Privacy links support page" \
   page_has "/privacy.html" "xintechllc.com/support.html"
 check "Opt-in page includes consent wording" \
-  page_has "/sms-opt-in.html" "I agree to receive SMS verification codes and Flexible Timers reminder"
+  page_text_has "/sms-opt-in.html" "I agree to receive SMS verification codes and Flexible Timers reminder messages I schedule for myself at this phone number"
 check "Opt-in page includes message/data rates disclosure" \
   page_text_has "/sms-opt-in.html" "Standard message and data rates may apply"
 check "Opt-in page says consent is not condition of purchase" \
