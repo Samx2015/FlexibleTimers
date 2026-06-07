@@ -14,8 +14,8 @@ Published pages:
 - https://xintechllc.com/compliance.html
 
 Run this after publishing changes to verify the public Twilio evidence pages,
-support URL, exact keyword responses, owner-only messaging scope, no-marketing
-claims, and sitemap entries:
+support URL, exact keyword responses, verified owner-only reminder SMS scope,
+no-marketing claims, and sitemap entries:
 
 ```sh
 scripts/check-compliance-pages.sh

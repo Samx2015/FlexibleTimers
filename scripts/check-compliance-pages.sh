@@ -84,10 +84,12 @@ check "Sitemap is reachable" url_ok "/sitemap.xml"
 
 check "Homepage describes owner-only email messaging" \
   page_has "/" "own account email address"
-check "SMS Terms documents one-time verification use" \
-  page_has "/sms-terms.html" "verification codes"
+check "SMS Terms documents verification and reminder use" \
+  page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
   page_has "/sms-terms.html" "own account phone number"
+check "SMS Terms documents no third-party SMS" \
+  page_has "/sms-terms.html" "arbitrary third-party recipients"
 check "SMS Terms documents STOP keyword" \
   page_has "/sms-terms.html" "Reply STOP to opt out"
 check "SMS Terms documents HELP keyword" \
@@ -99,15 +101,15 @@ check "SMS Terms documents support URL" \
 check "SMS Terms says no marketing texts" \
   page_has "/sms-terms.html" "does not send marketing text messages"
 check "SMS Terms says SMS is not two-way chat" \
-  page_has "/sms-terms.html" "not a two-way chat"
+  page_text_has "/sms-terms.html" "not a two-way chat"
 check "SMS Terms says consent is not required for purchase" \
   page_has "/sms-terms.html" "Consent is not a condition of purchase"
 check "SMS Terms includes exact STOP response" \
   page_text_has "/sms-terms.html" "You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
 check "SMS Terms includes exact HELP response" \
-  page_text_has "/sms-terms.html" "Flexible Timers sends one-time verification codes for your account phone\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
+  page_text_has "/sms-terms.html" "Flexible Timers sends account verification codes and reminder SMS you schedule for yourself\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
 check "SMS Terms includes exact START response" \
-  page_text_has "/sms-terms.html" "You have opted back in to Flexible Timers SMS verification messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
+  page_text_has "/sms-terms.html" "You have opted back in to Flexible Timers SMS messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
 check "Privacy says SMS opt-in data is not sold" \
   page_has "/privacy.html" "does not sell SMS opt-in data"
 check "Privacy says SMS opt-in data is not shared for marketing" \
@@ -115,29 +117,31 @@ check "Privacy says SMS opt-in data is not shared for marketing" \
 check "Privacy links support page" \
   page_has "/privacy.html" "xintechllc.com/support.html"
 check "Opt-in page includes consent wording" \
-  page_has "/sms-opt-in.html" "I agree to receive one-time SMS verification codes"
+  page_has "/sms-opt-in.html" "I agree to receive SMS verification codes and Flexible Timers reminder"
 check "Opt-in page includes message/data rates disclosure" \
-  page_has "/sms-opt-in.html" "Standard message and data rates may apply"
+  page_text_has "/sms-opt-in.html" "Standard message and data rates may apply"
 check "Opt-in page says consent is not condition of purchase" \
-  page_has "/sms-opt-in.html" "Consent is not a condition of purchase"
+  page_text_has "/sms-opt-in.html" "Consent is not a condition of purchase"
 check "Opt-in page includes sample production message" \
-  page_has "/sms-opt-in.html" "Flexible Timers verification code"
+  page_has "/sms-opt-in.html" "Flexible Timers reminder"
 check "Opt-in page says SMS is not two-way chat" \
   page_text_has "/sms-opt-in.html" "does not provide two-way SMS chat"
+check "Opt-in page documents verified owner-only reminders" \
+  page_text_has "/sms-opt-in.html" "verified account phone number"
 check "Opt-in page includes exact STOP response" \
   page_text_has "/sms-opt-in.html" "STOP response: You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
 check "Opt-in page includes exact HELP response" \
-  page_text_has "/sms-opt-in.html" "HELP response: Flexible Timers sends one-time verification codes for your account phone\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
+  page_text_has "/sms-opt-in.html" "HELP response: Flexible Timers sends account verification codes and reminder SMS you schedule for yourself\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
 check "Opt-in page includes exact START response" \
-  page_text_has "/sms-opt-in.html" "START response: You have opted back in to Flexible Timers SMS verification messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
+  page_text_has "/sms-opt-in.html" "START response: You have opted back in to Flexible Timers SMS messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
 check "Opt-in page links support page" \
   page_has "/sms-opt-in.html" "support.html"
 check "Compliance page links opt-in evidence" \
   page_has "/compliance.html" "SMS opt-in evidence page"
-check "Compliance page says SMS reminders are disabled" \
-  page_has "/compliance.html" "SMS reminders and"
+check "Compliance page documents verified owner-only reminders" \
+  page_has "/compliance.html" "user-created timer/reminder SMS"
 check "Compliance page says third-party messaging is disabled" \
-  page_has "/compliance.html" "third-party recipient messaging are not enabled"
+  page_text_has "/compliance.html" "Third-party recipient messaging is not enabled"
 check "Compliance page says SMS is not two-way chat" \
   page_has "/compliance.html" "not a two-way chat"
 check "Compliance page links support page" \
@@ -148,6 +152,8 @@ check "Support page documents SMS opt-out and help" \
   page_has "/support.html" "Reply STOP to opt out"
 check "Support page says SMS is not two-way chat" \
   page_has "/support.html" "not a two-way chat service"
+check "Support page documents verified owner-only SMS" \
+  page_text_has "/support.html" "own verified account phone number"
 check "Support page documents owner-only email" \
   page_has "/support.html" "own account email address"
 check "Sitemap includes support page" \
