@@ -82,8 +82,8 @@ check "SMS consent screenshot is PNG" \
 check "Robots file is reachable" url_ok "/robots.txt"
 check "Sitemap is reachable" url_ok "/sitemap.xml"
 
-check "Homepage describes owner-only email messaging" \
-  page_has "/" "own account email address"
+check "Homepage describes account email reporting" \
+  page_has "/" "account email"
 check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
@@ -126,7 +126,7 @@ check "Opt-in page includes sample production message" \
   page_has "/sms-opt-in.html" "Flexible Timers reminder"
 check "Opt-in page says SMS is not two-way chat" \
   page_text_has "/sms-opt-in.html" "does not provide two-way SMS chat"
-check "Opt-in page documents verified owner-only reminders" \
+check "Opt-in page documents verified account-phone reminders" \
   page_text_has "/sms-opt-in.html" "verified(, opted-in)? account phone number"
 check "Opt-in page includes exact STOP response" \
   page_text_has "/sms-opt-in.html" "STOP response: You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
@@ -138,7 +138,7 @@ check "Opt-in page links support page" \
   page_has "/sms-opt-in.html" "support.html"
 check "Compliance page links opt-in evidence" \
   page_has "/compliance.html" "SMS opt-in evidence page"
-check "Compliance page documents verified owner-only reminders" \
+check "Compliance page documents verified account-phone reminders" \
   page_has "/compliance.html" "user-created timer/reminder SMS"
 check "Compliance page says third-party messaging is disabled" \
   page_text_has "/compliance.html" "Third-party recipient messaging is not enabled"
@@ -152,9 +152,9 @@ check "Support page documents SMS opt-out and help" \
   page_has "/support.html" "Reply STOP to opt out"
 check "Support page says SMS is not two-way chat" \
   page_has "/support.html" "not a two-way chat service"
-check "Support page documents verified owner-only SMS" \
+check "Support page documents verified account-phone SMS" \
   page_text_has "/support.html" "own verified(, opted-in)? account phone number"
-check "Support page documents owner-only email" \
+check "Support page documents account email scope" \
   page_has "/support.html" "own account email address"
 check "Sitemap includes support page" \
   page_has "/sitemap.xml" "support.html"
