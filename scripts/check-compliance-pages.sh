@@ -92,6 +92,8 @@ check "Homepage describes services offered" \
   page_text_has "/" "Services offered.*Apple-platform productivity apps"
 check "Homepage links support contact" \
   page_text_has "/" "Support contact"
+check "Homepage includes email contact" \
+  page_text_has "/" "shuitao@hotmail\\.com"
 check "Homepage describes Flexible Timers SMS scope" \
   page_text_has "/" "Flexible Timers messaging.*own verified phone number"
 check "SMS Terms documents verification and reminder use" \
