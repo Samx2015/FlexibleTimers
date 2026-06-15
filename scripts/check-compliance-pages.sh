@@ -93,7 +93,7 @@ check "Homepage describes services offered" \
 check "Homepage links support contact" \
   page_text_has "/" "Support contact"
 check "Homepage describes Flexible Timers SMS scope" \
-  page_text_has "/" "Flexible Timers SMS.*own verified phone number"
+  page_text_has "/" "Flexible Timers messaging.*own verified phone number"
 check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
