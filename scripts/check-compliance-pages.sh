@@ -84,6 +84,16 @@ check "Sitemap is reachable" url_ok "/sitemap.xml"
 
 check "Homepage describes account email reporting" \
   page_has "/" "account email"
+check "Homepage shows legal business name" \
+  page_text_has "/" "Legal business name.*Xintech LLC"
+check "Homepage shows business location" \
+  page_text_has "/" "Sammamish, Washington, United States"
+check "Homepage describes services offered" \
+  page_text_has "/" "Services offered.*Apple-platform productivity apps"
+check "Homepage links support contact" \
+  page_text_has "/" "Support contact"
+check "Homepage describes Flexible Timers SMS scope" \
+  page_text_has "/" "Flexible Timers SMS.*own verified phone number"
 check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
