@@ -3,6 +3,23 @@
 Public static pages for Flexible Timers support, SMS terms, privacy, and
 messaging compliance evidence.
 
+## Source of truth and publishing
+
+This repository is the editable **source** of the site. The live site is served
+by GitHub Pages from `Samx2015/Samx2015.github.io` (folder `FlexibleTimers/`),
+not from this repo directly. Edit here, then publish:
+
+```sh
+scripts/publish.sh            # rsync source -> Pages repo, commit/push, verify live
+scripts/publish.sh --dry-run  # preview the file changes without writing
+```
+
+`publish.sh` mirrors the source into the Pages checkout (preserving any
+`download/` folder), makes a path-scoped commit in the Pages repo, and verifies
+the live URLs. The Pages folder defaults to
+`/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers` (override with
+`FLEXIBLETIMERS_PAGES_DIR`).
+
 Published pages:
 
 - https://xintechllc.com/
