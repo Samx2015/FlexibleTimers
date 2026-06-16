@@ -163,7 +163,7 @@ check "Compliance page says SMS is not two-way chat" \
 check "Compliance page links support page" \
   page_has "/compliance.html" "xintechllc.com/support.html"
 check "Support page includes contact path" \
-  page_has "/support.html" "github.com/Samx2015/FlexibleTimers/issues"
+  page_has "/support.html" "mailto:admin@xintechllc.com"
 check "Support page documents SMS opt-out and help" \
   page_text_has "/support.html" "Reply STOP to opt out"
 check "Support page says SMS is not two-way chat" \
