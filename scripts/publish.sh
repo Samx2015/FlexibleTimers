@@ -64,6 +64,7 @@ rsync_args=(-a --delete
   --exclude '.DS_Store'
   --exclude '.gitignore'
   --exclude '.nojekyll'
+  --exclude 'README.md'
   --exclude 'scripts/publish.sh')
 [[ -d "$SOURCE_DIR/download" ]] || rsync_args+=(--exclude 'download')
 [[ "$DRY_RUN" -eq 1 ]] && rsync_args+=(--dry-run --itemize-changes)
