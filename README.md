@@ -22,13 +22,13 @@ the live URLs. The Pages folder defaults to
 
 Published pages:
 
-- https://xintechllc.com/
-- https://xintechllc.com/support.html
-- https://xintechllc.com/terms.html
-- https://xintechllc.com/sms-opt-in.html
-- https://xintechllc.com/sms-terms.html
-- https://xintechllc.com/privacy.html
-- https://xintechllc.com/compliance.html
+- https://xintechllc.com/FlexibleTimers/
+- https://xintechllc.com/FlexibleTimers/support.html
+- https://xintechllc.com/FlexibleTimers/terms.html
+- https://xintechllc.com/FlexibleTimers/sms-opt-in.html
+- https://xintechllc.com/FlexibleTimers/sms-terms.html
+- https://xintechllc.com/FlexibleTimers/privacy.html
+- https://xintechllc.com/FlexibleTimers/compliance.html
 
 Run this after publishing changes to verify the public Twilio evidence pages,
 support URL, exact keyword responses, verified owner-only reminder SMS scope,
