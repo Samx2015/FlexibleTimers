@@ -23,7 +23,7 @@ set -euo pipefail
 # Environment overrides:
 #   XTIMERS_PAGES_DIR          Canonical Pages folder
 #                              (default: /Users/sam/GitHub/Samx2015.github.io/XTimers)
-#   FLEXIBLETIMERS_PAGES_DIR   Legacy-mirror Pages folder
+#   LEGACY_PAGES_DIR           Legacy-mirror Pages folder (alias: FLEXIBLETIMERS_PAGES_DIR)
 #                              (default: /Users/sam/GitHub/Samx2015.github.io/FlexibleTimers)
 #   PUBLIC_BASE_URL            Canonical base URL to verify
 #                              (default: https://xintechllc.com/XTimers)
@@ -33,7 +33,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 DEST_DIR_NEW="${XTIMERS_PAGES_DIR:-/Users/sam/GitHub/Samx2015.github.io/XTimers}"
-DEST_DIR_OLD="${FLEXIBLETIMERS_PAGES_DIR:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}"
+DEST_DIR_OLD="${LEGACY_PAGES_DIR:-${FLEXIBLETIMERS_PAGES_DIR:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}}"
 PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://xintechllc.com/XTimers}"
 LEGACY_BASE_URL="${LEGACY_BASE_URL:-https://xintechllc.com/FlexibleTimers}"
 
