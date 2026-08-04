@@ -46,12 +46,12 @@
 "Last updated: July 19, 2026." = "Zadnji posodobit: 19. julij 2026.";
 "Last updated: June 15, 2026." = "Zadnji posodobit: 15. junij 2026.";
 "Mac • iPhone • iPad" = "Mac • iPhone • iPad";
-"Meet legal, carrier, and operational requirements." = "Izpolnite pravne, prenosne in operativne zahteve.";
-"Menu-bar status for the active timer." = "Status menijske vrstice za aktivni časnik.";
-"Message Frequency" = "Frekvenca sporočila";
+"Meet legal, carrier, and operational requirements." = "Izpolnjevanje pravnih, operaterskih in operativnih zahtev.";
+"Menu-bar status for the active timer." = "Stanje aktivnega časovnika v menijski vrstici.";
+"Message Frequency" = "Pogostost sporočil";
 "Message frequency varies. Flexible Timers sends verification messages when\n      a user requests verification of their own account phone number. Flexible\n      Timers sends reminder SMS only when the verified account owner creates and\n      schedules that SMS reminder for themselves. Users cannot send chat replies\n      or user-authored messages to Flexible Timers by SMS." = "Frekvenca sporočil se razlikuje.Flexible Timerspošlje potrditvena sporočila, ko\n      koristnik zahteva potrditev svojega telefonskega številka. Fleksibilno\n      Timers pošlje opomnikSMSsamo ko lastnik preverjenega računa ustvari in\n      nastavi to.SMSspomnilo za sebe. Uporabniki ne morejo posredovati odgovorov ali sporočil, ki jih sami napišejo.Flexible TimersodSMS.";
-"Messaging Help" = "Pomoc pri sporočilih";
-"No Advertising Tracking, Sale, or Marketing Sharing" = "Ne, brez sledenja oglaševanja, prodaje ali trženja";
+"Messaging Help" = "Pomoč pri sporočilih";
+"No Advertising Tracking, Sale, or Marketing Sharing" = "Brez oglaševalskega sledenja, prodaje ali deljenja za trženje";
 "Opt-In" = "Prijava";
 "Opt-In Flow" = "Proces prijave";
 "Opt-Out" = "Odjava";
@@ -156,7 +156,7 @@
 "admin@xintechllc.com" = "admin@xintechllc.com";
 "html" = "HTML";
 "iPhone list and iPad grid layouts." = "Postavitev seznama v iPhonu in mreže v iPadu.";
-"page for details." = "Za podrobnosti.";
+"page for details." = "za podrobnosti.";
 "xintechllc.com/FlexibleTimers/privacy.html" = "xintechllc.com/FlexibleTimers/privacy.html";
 "xintechllc.com/FlexibleTimers/sms-opt-in.html" = "xintechllc.com/FlexibleTimers/sms-opt-in.html";
 "xintechllc.com/FlexibleTimers/support.html" = "xintechllc.com/FlexibleTimers/support.html";
