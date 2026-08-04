@@ -45,6 +45,8 @@ come from the canonical manifest in the sibling `TimerWorkspace` repository.
 Website translation drafts are deliberately separate from publication: they
 must pass the local checks and the cross-repository qualified-review ledger
 before any localized pages are eligible to deploy.
+`scripts/publish.sh` enforces that cross-repository release gate before any
+rsync, commit, or push operation.
 
 ```sh
 python3 -m pip install -r requirements-localization.txt
