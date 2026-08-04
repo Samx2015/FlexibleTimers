@@ -6,7 +6,7 @@
 "Account and Contact Information" = "Informacije o računu in kontaktih";
 "Account data is retained while needed to provide the account and its\n      requested features. Published report content is unavailable after its\n      selected expiration and is removed by service cleanup. Message and consent\n      records may be retained as needed for delivery, troubleshooting, abuse\n      prevention, and carrier or legal compliance." = "Podatki o računu se ohranjajo, dokler so potrebni za zagotavljanje računa in njegovih zažetih funkcij. Vsebina objavljenega poročila ni več dostopna po izbranem roku in jo odstrani storitev za čiščenje. Zapiski o sporočilih in privolitvah se lahko ohranjajo, kadar so potrebni za dostavo, odpravljanje težav, preprečevanje zlorab in zagotavljanje skladnosti z pravnimi predpisi ali zahtevami prevoznika.";
 "After the phone is verified and opted in, the user may schedule reminder SMS\n        only to that same verified, opted-in account phone number." = "Po potrditvi telefona in aktivaciji, lahko uporabnik nastavi opomnik SMS\n        samo na ta isto potrdjeni, aktivirani telefonski številko.";
-"Authenticate accounts and synchronize user-selected content." = "Avtenticirajte račune in sinhronizirajte vsebino, ki jo uporabnik izbere.";
+"Authenticate accounts and synchronize user-selected content." = "Preverjanje pristnosti računov in sinhronizacija vsebine, ki jo izbere uporabnik.";
 "Automatic Activity Tracking" = "Samodejno spremljanje dejavnosti";
 "Built for focused timer work on Mac." = "Narejena za usmerjeno delo z časnikom na Mac.";
 "Carrier Liability" = "Odgovornost prevoznika";
