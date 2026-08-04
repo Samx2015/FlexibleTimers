@@ -49,6 +49,8 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         rendered = navigation.menu(self.inventory, "ur", True)
         self.assertEqual(rendered.count("<a "), 45)
         self.assertNotRegex(rendered, "[\U0001F1E6-\U0001F1FF]")
+        self.assertIn('lang="ur" dir="rtl"', rendered)
+        self.assertIn('lang="en" dir="ltr"', rendered)
         self.assertIn('aria-current="page">اردو</a>', rendered)
 
     def test_support_and_legal_routes_use_the_intended_canonical_hosts(self) -> None:

@@ -70,6 +70,7 @@ def menu(
         current_attribute = ' aria-current="page"' if identifier == current else ""
         lines.append(
             f'              <a href="{href}" lang="{identifier}"'
+            f' dir="{item["direction"]}"'
             f'{current_attribute}>{item["nativeName"]}</a>'
         )
     lines.extend(["            </div>", "          </details>"])
