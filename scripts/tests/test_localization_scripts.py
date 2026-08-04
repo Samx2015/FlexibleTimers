@@ -73,6 +73,30 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             "https://xintechllc.com/XTimers/ur/support.html",
         )
 
+    def test_alternate_replacement_accepts_reordered_attributes_and_is_idempotent(self) -> None:
+        content = (
+            '<head>\n  <link rel="canonical" href="https://example.com/">\n'
+            '  <link href="https://old.example/ar" hreflang="ar" rel="alternate"/>'
+            '<link rel="alternate" hreflang="x-default" href="https://old.example/">\n'
+            '</head>'
+        )
+        first = navigation.with_alternates(
+            content,
+            self.inventory,
+            "index.html",
+            True,
+            Path("fixture.html"),
+        )
+        second = navigation.with_alternates(
+            first,
+            self.inventory,
+            "index.html",
+            True,
+            Path("fixture.html"),
+        )
+        self.assertEqual(first, second)
+        self.assertEqual(len(navigation.ALTERNATE_TAG_PATTERN.findall(first)), 46)
+
     def test_canonical_and_asset_normalization_are_deterministic(self) -> None:
         path = ROOT / "ca" / "support.html"
         self.assertEqual(
@@ -110,6 +134,27 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         self.assertEqual(values["Language"], "Langue")
         self.assertEqual(values["Support"], "Assistance")
 
+    def test_localized_drafts_keep_local_pages_and_rebase_root_references(self) -> None:
+        source = """<body>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy-choices.html?source=footer#choices">Choices</a>
+        <img src="assets/icon.png">
+        <a href="https://example.com/">External</a>
+        </body>"""
+        soup = authoring.BeautifulSoup(source, "html.parser")
+        authoring.adjust_relative_references(soup)
+        self.assertEqual(soup.find(string="Support").parent["href"], "support.html")
+        self.assertEqual(soup.find(string="Terms").parent["href"], "../terms.html")
+        self.assertEqual(
+            soup.find(string="Choices").parent["href"],
+            "../privacy-choices.html?source=footer#choices",
+        )
+        self.assertEqual(soup.find("img")["src"], "../assets/icon.png")
+        self.assertEqual(
+            soup.find(string="External").parent["href"], "https://example.com/"
+        )
+
     def test_website_checker_rejects_empty_translation_values(self) -> None:
         with self.assertRaisesRegex(RuntimeError, "1 empty values for fr"):
             checker.validate_translation_values(
@@ -119,6 +164,11 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             )
 
     def test_website_checker_rejects_wrong_script_and_repeated_output(self) -> None:
+        checker.validate_translation_values(
+            {"Built": "Built for timers"},
+            {"Built": "টাইমারের জন্য নির্মিত।"},
+            "bn",
+        )
         with self.assertRaisesRegex(RuntimeError, "unexpected devanagari script for pa"):
             checker.validate_translation_values(
                 {"Open": "Open settings"},

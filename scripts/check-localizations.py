@@ -41,6 +41,9 @@ SCRIPT_RANGES = {
     "telugu": ((0x0C00, 0x0C7F),),
     "thai": ((0x0E00, 0x0E7F),),
 }
+# U+0964/U+0965 are Unicode Common punctuation used across multiple Indic
+# scripts, even though their code points sit inside the Devanagari block.
+COMMON_SCRIPT_CODEPOINTS = {0x0964, 0x0965}
 ALLOWED_SCRIPTS = {
     "ar": {"arabic"}, "bn": {"bengali"}, "el": {"greek"},
     "gu": {"gujarati"}, "he": {"hebrew"}, "hi": {"devanagari"},
@@ -231,6 +234,8 @@ def validate_translation_values(
                     f"{identifier}: {key!r}"
                 )
             codepoint = ord(character)
+            if codepoint in COMMON_SCRIPT_CODEPOINTS:
+                continue
             family = next(
                 (
                     name

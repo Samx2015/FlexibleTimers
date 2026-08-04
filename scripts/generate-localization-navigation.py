@@ -18,10 +18,9 @@ LEGAL_BASE_URL = "https://xintechllc.com/FlexibleTimers/"
 MENU_PATTERN = re.compile(
     r'<details class="language-menu">.*?</details>', re.DOTALL
 )
-ALTERNATES_PATTERN = re.compile(
-    r'(?P<indent>^[ \t]*)<link rel="alternate"[^>]*>'
-    r'(?:\n^[ \t]*<link rel="alternate"[^>]*>)*',
-    re.MULTILINE,
+ALTERNATE_TAG_PATTERN = re.compile(
+    r'<link\b(?=[^>]*\brel=["\']alternate["\'])[^>]*>',
+    re.IGNORECASE,
 )
 CANONICAL_PATTERN = re.compile(r'<link\b(?=[^>]*\brel="canonical")[^>]*>')
 HEAD_CLOSE_PATTERN = re.compile(r'</head>', re.IGNORECASE)
@@ -110,6 +109,57 @@ def alternates(
     return "\n".join(lines)
 
 
+def with_alternates(
+    content: str,
+    localizations: list[dict],
+    file_name: str,
+    product_page: bool,
+    path: Path,
+) -> str:
+    matches = list(ALTERNATE_TAG_PATTERN.finditer(content))
+    if matches:
+        for left, right in zip(matches, matches[1:]):
+            if content[left.end() : right.start()].strip():
+                raise RuntimeError(
+                    f"Alternate links are not one contiguous block in {path}"
+                )
+        line_start = content.rfind("\n", 0, matches[0].start()) + 1
+        indentation = content[line_start : matches[0].start()]
+        if indentation.strip():
+            block_start = matches[0].start()
+            indentation = ""
+        else:
+            block_start = line_start
+        block_end = matches[-1].end()
+        leading = (
+            ""
+            if block_start == 0 or content[:block_start].endswith(("\n", "\r"))
+            else "\n"
+        )
+        trailing = "" if content[block_end:].startswith(("\n", "\r")) else "\n"
+        return (
+            content[:block_start]
+            + leading
+            + alternates(localizations, indentation, file_name, product_page)
+            + trailing
+            + content[block_end:]
+        )
+
+    canonical = CANONICAL_PATTERN.search(content)
+    if canonical is None:  # Protected by with_canonical; retain fail-closed behavior.
+        raise RuntimeError(f"Expected a canonical link in {path}")
+    line_start = content.rfind("\n", 0, canonical.start()) + 1
+    indentation = content[line_start : canonical.start()]
+    if indentation.strip():
+        indentation = ""
+    return (
+        content[: canonical.end()]
+        + "\n"
+        + alternates(localizations, indentation, file_name, product_page)
+        + content[canonical.end() :]
+    )
+
+
 def canonical_href(
     path: Path,
     current: str,
@@ -193,26 +243,13 @@ def updated_page(
         if menu_count != 1:
             raise RuntimeError(f"Expected one language menu in {path}, found {menu_count}")
 
-    match = ALTERNATES_PATTERN.search(content)
-    if match is not None:
-        content = (
-            content[: match.start()]
-            + alternates(
-                localizations, match.group("indent"), file_name, product_page
-            )
-            + content[match.end() :]
-        )
-    else:
-        canonical = CANONICAL_PATTERN.search(content)
-        if canonical is None:  # Protected by with_canonical; retain fail-closed behavior.
-            raise RuntimeError(f"Expected a canonical link in {path}")
-        content = (
-            content[: canonical.end()]
-            + "\n"
-            + alternates(localizations, "", file_name, product_page)
-            + content[canonical.end() :]
-        )
-    return content
+    return with_alternates(
+        content,
+        localizations,
+        file_name,
+        product_page,
+        path,
+    )
 
 
 def updated_sitemap(content: str, localizations: list[dict]) -> str:

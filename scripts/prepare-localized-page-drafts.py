@@ -386,12 +386,20 @@ def replace_copy(soup: BeautifulSoup, translations: dict[str, str]) -> None:
                 tag["content"] = translations[value]
 
 
-def adjust_relative_assets(soup: BeautifulSoup) -> None:
+def adjust_relative_references(soup: BeautifulSoup) -> None:
     for tag in soup.find_all(True):
         for attribute in ("href", "src"):
             value = tag.get(attribute)
-            if isinstance(value, str) and value.startswith("assets/"):
-                tag[attribute] = "../" + value
+            if not isinstance(value, str) or not value:
+                continue
+            if value.startswith(("/", "#", "?", "../", "./", "//")):
+                continue
+            if re.match(r"^[A-Za-z][A-Za-z0-9+.-]*:", value):
+                continue
+            relative_path = value.split("#", 1)[0].split("?", 1)[0]
+            if relative_path in SOURCE_PAGES:
+                continue
+            tag[attribute] = "../" + value
 
 
 def set_canonical(soup: BeautifulSoup, locale: str, file_name: str) -> None:
@@ -499,7 +507,7 @@ def localized_document(
         html["dir"] = "rtl"
     else:
         html.attrs.pop("dir", None)
-    adjust_relative_assets(soup)
+    adjust_relative_references(soup)
     set_canonical(soup, locale, file_name)
     set_alternates(soup, inventory, file_name)
     add_translation_note(soup, translations[TRANSLATION_NOTE], file_name)
