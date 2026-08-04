@@ -29,6 +29,8 @@ set -euo pipefail
 #                              (default: https://xintechllc.com/XTimers)
 #   LEGACY_BASE_URL            Legacy base URL to verify
 #                              (default: https://xintechllc.com/FlexibleTimers)
+#   XTIMERS_WORKSPACE_ROOT     TimerWorkspace checkout containing the localization release gate
+#                              (default: sibling TimerWorkspace repository)
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
@@ -36,6 +38,7 @@ DEST_DIR_NEW="${XTIMERS_PAGES_DIR:-/Users/sam/GitHub/Samx2015.github.io/XTimers}
 DEST_DIR_OLD="${LEGACY_PAGES_DIR:-${FLEXIBLETIMERS_PAGES_DIR:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}}"
 PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://xintechllc.com/XTimers}"
 LEGACY_BASE_URL="${LEGACY_BASE_URL:-https://xintechllc.com/FlexibleTimers}"
+XTIMERS_WORKSPACE_ROOT="${XTIMERS_WORKSPACE_ROOT:-$SOURCE_DIR/../TimerWorkspace}"
 
 DRY_RUN=0
 VERIFY=1
@@ -58,6 +61,12 @@ log()  { printf '\n==> %s\n' "$*"; }
 
 command -v rsync >/dev/null 2>&1 || fail "rsync is required"
 command -v git   >/dev/null 2>&1 || fail "git is required"
+
+LOCALIZATION_RELEASE_GATE="$XTIMERS_WORKSPACE_ROOT/scripts/check-all-localizations.sh"
+[[ -x "$LOCALIZATION_RELEASE_GATE" ]] \
+  || fail "localization release gate missing: $LOCALIZATION_RELEASE_GATE"
+log "Checking localization release eligibility"
+"$LOCALIZATION_RELEASE_GATE" --release
 
 # Safety guards: never sync from/to an empty path or a filesystem root.
 [[ -n "$SOURCE_DIR" && -n "$DEST_DIR_NEW" && -n "$DEST_DIR_OLD" ]] || fail "empty source or destination path"

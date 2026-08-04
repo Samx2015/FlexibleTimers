@@ -155,6 +155,11 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             "--exclude '*.pyc'",
         ]:
             self.assertIn(exclusion, publisher)
+        self.assertIn('"$LOCALIZATION_RELEASE_GATE" --release', publisher)
+        self.assertLess(
+            publisher.index('"$LOCALIZATION_RELEASE_GATE" --release'),
+            publisher.index('publish_to "$DEST_DIR_NEW"'),
+        )
 
 
 if __name__ == "__main__":
