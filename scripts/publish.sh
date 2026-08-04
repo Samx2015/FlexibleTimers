@@ -80,7 +80,11 @@ publish_to() {
     --exclude '.DS_Store'
     --exclude '.gitignore'
     --exclude '.nojekyll'
+    --exclude '__pycache__'
+    --exclude '*.pyc'
+    --exclude 'generated'
     --exclude 'README.md'
+    --exclude 'requirements-localization.txt'
     --exclude 'scripts/publish.sh')
   [[ -d "$SOURCE_DIR/download" ]] || rsync_args+=(--exclude 'download')
   [[ "$DRY_RUN" -eq 1 ]] && rsync_args+=(--dry-run --itemize-changes)
