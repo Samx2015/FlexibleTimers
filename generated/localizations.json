@@ -1,0 +1,321 @@
+{
+  "localizations" : [
+    {
+      "direction" : "rtl",
+      "identifier" : "ar",
+      "lifecycle" : "existing",
+      "nativeName" : "العربية",
+      "route" : "ar/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "bn",
+      "lifecycle" : "new-2026",
+      "nativeName" : "বাংলা",
+      "route" : "bn/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ca",
+      "lifecycle" : "existing",
+      "nativeName" : "Català",
+      "route" : "ca/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "cs",
+      "lifecycle" : "existing",
+      "nativeName" : "Čeština",
+      "route" : "cs/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "da",
+      "lifecycle" : "existing",
+      "nativeName" : "Dansk",
+      "route" : "da/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "de",
+      "lifecycle" : "existing",
+      "nativeName" : "Deutsch",
+      "route" : "de/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "el",
+      "lifecycle" : "existing",
+      "nativeName" : "Ελληνικά",
+      "route" : "el/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "en",
+      "lifecycle" : "existing",
+      "nativeName" : "English",
+      "route" : "flexible-timers.html"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "es",
+      "lifecycle" : "existing",
+      "nativeName" : "Español",
+      "route" : "es/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "fi",
+      "lifecycle" : "existing",
+      "nativeName" : "Suomi",
+      "route" : "fi/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "fr",
+      "lifecycle" : "existing",
+      "nativeName" : "Français",
+      "route" : "fr/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "gu",
+      "lifecycle" : "new-2026",
+      "nativeName" : "ગુજરાતી",
+      "route" : "gu/"
+    },
+    {
+      "direction" : "rtl",
+      "identifier" : "he",
+      "lifecycle" : "existing",
+      "nativeName" : "עברית",
+      "route" : "he/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "hi",
+      "lifecycle" : "existing",
+      "nativeName" : "हिन्दी",
+      "route" : "hi/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "hr",
+      "lifecycle" : "existing",
+      "nativeName" : "Hrvatski",
+      "route" : "hr/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "hu",
+      "lifecycle" : "existing",
+      "nativeName" : "Magyar",
+      "route" : "hu/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "id",
+      "lifecycle" : "existing",
+      "nativeName" : "Bahasa Indonesia",
+      "route" : "id/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "it",
+      "lifecycle" : "existing",
+      "nativeName" : "Italiano",
+      "route" : "it/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ja",
+      "lifecycle" : "existing",
+      "nativeName" : "日本語",
+      "route" : "ja/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "kn",
+      "lifecycle" : "new-2026",
+      "nativeName" : "ಕನ್ನಡ",
+      "route" : "kn/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ko",
+      "lifecycle" : "existing",
+      "nativeName" : "한국어",
+      "route" : "ko/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ml",
+      "lifecycle" : "new-2026",
+      "nativeName" : "മലയാളം",
+      "route" : "ml/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "mr",
+      "lifecycle" : "new-2026",
+      "nativeName" : "मराठी",
+      "route" : "mr/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ms",
+      "lifecycle" : "existing",
+      "nativeName" : "Bahasa Melayu",
+      "route" : "ms/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "nb",
+      "lifecycle" : "existing",
+      "nativeName" : "Norsk Bokmål",
+      "route" : "nb/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "nl",
+      "lifecycle" : "existing",
+      "nativeName" : "Nederlands",
+      "route" : "nl/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "or",
+      "lifecycle" : "new-2026",
+      "nativeName" : "ଓଡ଼ିଆ",
+      "route" : "or/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "pa",
+      "lifecycle" : "new-2026",
+      "nativeName" : "ਪੰਜਾਬੀ",
+      "route" : "pa/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "pl",
+      "lifecycle" : "existing",
+      "nativeName" : "Polski",
+      "route" : "pl/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "pt-BR",
+      "lifecycle" : "existing",
+      "nativeName" : "Português (Brasil)",
+      "route" : "pt-BR/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "pt-PT",
+      "lifecycle" : "existing",
+      "nativeName" : "Português (Portugal)",
+      "route" : "pt-PT/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ro",
+      "lifecycle" : "existing",
+      "nativeName" : "Română",
+      "route" : "ro/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ru",
+      "lifecycle" : "existing",
+      "nativeName" : "Русский",
+      "route" : "ru/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "sk",
+      "lifecycle" : "existing",
+      "nativeName" : "Slovenčina",
+      "route" : "sk/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "sl",
+      "lifecycle" : "new-2026",
+      "nativeName" : "Slovenščina",
+      "route" : "sl/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "sv",
+      "lifecycle" : "existing",
+      "nativeName" : "Svenska",
+      "route" : "sv/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "ta",
+      "lifecycle" : "new-2026",
+      "nativeName" : "தமிழ்",
+      "route" : "ta/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "te",
+      "lifecycle" : "new-2026",
+      "nativeName" : "తెలుగు",
+      "route" : "te/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "th",
+      "lifecycle" : "existing",
+      "nativeName" : "ไทย",
+      "route" : "th/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "tr",
+      "lifecycle" : "existing",
+      "nativeName" : "Türkçe",
+      "route" : "tr/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "uk",
+      "lifecycle" : "existing",
+      "nativeName" : "Українська",
+      "route" : "uk/"
+    },
+    {
+      "direction" : "rtl",
+      "identifier" : "ur",
+      "lifecycle" : "new-2026",
+      "nativeName" : "اردو",
+      "route" : "ur/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "vi",
+      "lifecycle" : "existing",
+      "nativeName" : "Tiếng Việt",
+      "route" : "vi/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "zh-Hans",
+      "lifecycle" : "existing",
+      "nativeName" : "简体中文",
+      "route" : "zh-Hans/"
+    },
+    {
+      "direction" : "ltr",
+      "identifier" : "zh-Hant",
+      "lifecycle" : "existing",
+      "nativeName" : "繁體中文",
+      "route" : "zh-Hant/"
+    }
+  ],
+  "manifestSchemaVersion" : 1,
+  "schemaVersion" : 1
+}

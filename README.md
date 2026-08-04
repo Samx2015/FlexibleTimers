@@ -37,3 +37,26 @@ no-marketing claims, and sitemap entries:
 ```sh
 scripts/check-compliance-pages.sh
 ```
+
+## Localization authoring
+
+The generated website inventory and translation packages under `generated/`
+come from the canonical manifest in the sibling `TimerWorkspace` repository.
+Website translation drafts are deliberately separate from publication: they
+must pass the local checks and the cross-repository qualified-review ledger
+before any localized pages are eligible to deploy.
+
+```sh
+python3 -m pip install -r requirements-localization.txt
+python3 scripts/prepare-localized-page-drafts.py --extract
+python3 scripts/prepare-localized-page-drafts.py --import-existing
+python3 scripts/prepare-localized-page-drafts.py --generate
+python3 scripts/generate-localization-navigation.py
+scripts/check-localizations.sh
+```
+
+The `--import-existing` command is a one-time migration aid: it recovers
+checked-in translations against the historical English page revisions they
+were authored from, preserving them while the shared draft tool fills only
+current-source gaps. None of these commands publishes or modifies the GitHub
+Pages repository.
