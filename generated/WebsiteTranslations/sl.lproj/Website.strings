@@ -58,7 +58,7 @@
 "Personal reminders" = "Osebni opomniki";
 "Privacy" = "Zasebnost";
 "Privacy Choices" = "Izbira možnosti zasebnosti";
-"Privacy Policy" = "Politika zasebnosti";
+"Privacy Policy" = "Pravilnik o zasebnosti";
 "Protect accounts, enforce service limits, and prevent abuse." = "Zaščita računov, uveljavljanje omejitev storitve in preprečevanje zlorab.";
 "Provide customer support and investigate reported problems." = "Zagotavljanje podpore uporabnikom in preiskovanje prijavljenih težav.";
 "Reminders can notify your account email or verified phone." = "Opomniki lahko obvestijo e-poštni naslov računa ali preverjeni telefon.";
@@ -96,7 +96,7 @@
 "Sync, archives, reports, and custom sounds." = "Sinhronizacija, arhivi, poročila in zvoki po meri.";
 "Sync, reports, and reminders." = "Sinhronizacija, poročila in opomniki.";
 "Task sets" = "Nabori opravil";
-"Task sets, archives, settings, and sounds follow your account." = "Nabori opravil, arhivi, nastavitve in zvoki sledijo vašemu računu.";
+"Task sets, archives, settings, and sounds follow your account." = "Nabori opravil, arhivi, nastavitve in zvoki se sinhronizirajo z vašim računom.";
 "Terms" = "Pogoji";
 "The SMS consent checkbox is not pre-selected." = "Potrditveno polje za soglasje za SMS ni vnaprej izbrano.";
 "The opt-in screen shows the phone number field, an unchecked affirmative\n      checkbox, consent language naming Flexible Timers by Xintech LLC, SMS\n      Terms link, Privacy Policy link, STOP/HELP wording, message frequency\n      disclosure, message/data rates disclosure, and the owner-phone-only SMS\n      scope." = "Zaslon za prijavo prikazuje polje za telefonsko številko, neoznačeno pritrdilno potrditveno polje, besedilo soglasja z navedbo Flexible Timers družbe Xintech LLC, povezavo do Pogojev za SMS, povezavo do Pravilnika o zasebnosti, besedilo STOP/HELP, razkritje pogostosti sporočil, razkritje cen sporočil/prenosa podatkov in omejitev SMS-a samo na telefon lastnika računa.";
