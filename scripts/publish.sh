@@ -31,6 +31,8 @@ set -euo pipefail
 #                              (default: https://xintechllc.com/FlexibleTimers)
 #   XTIMERS_WORKSPACE_ROOT     TimerWorkspace checkout containing the localization release gate
 #                              (default: sibling TimerWorkspace repository)
+#   XTIMERS_PUBLISH_AGENT_MODEL
+#                              Optional agent model recorded in an automated publish commit
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
@@ -115,7 +117,17 @@ if [[ -z "$(git -C "$IO_REPO" status --porcelain -- "$DEST_DIR_NEW" "$DEST_DIR_O
 else
   log "Committing and pushing Pages repo"
   git -C "$IO_REPO" add -- "$DEST_DIR_NEW" "$DEST_DIR_OLD"
-  git -C "$IO_REPO" commit -q -m "Publish XTimers website (canonical + legacy mirror)"
+  commit_args=(
+    -m "Publish XTimers website (canonical + legacy mirror)"
+    -m "Deploy the current website source to both public paths after the localization release gate passes."
+  )
+  if [[ -n "${XTIMERS_PUBLISH_AGENT_MODEL:-}" ]]; then
+    machine_name="$(scutil --get ComputerName)"
+    commit_args+=(
+      -m "Agent-Model: ${XTIMERS_PUBLISH_AGENT_MODEL}"$'\n'"Machine: ${machine_name}"
+    )
+  fi
+  git -C "$IO_REPO" commit -q "${commit_args[@]}"
   git -C "$IO_REPO" push -q
   log "Pushed."
 fi
@@ -142,6 +154,8 @@ verify_url_contains() {
 log "Verifying live site"
 verify_url_contains "$PUBLIC_BASE_URL/" "XTimers"
 verify_url_contains "$PUBLIC_BASE_URL/support.html" "mailto:admin@xintechllc.com"
+verify_url_contains "$PUBLIC_BASE_URL/auth/complete.html" "xtimers-auth://auth/callback"
+verify_url_contains "$PUBLIC_BASE_URL/auth/complete-pro.html" "xtimers-pro-auth://auth/callback"
 verify_url_contains "$LEGACY_BASE_URL/" "XTimers"
 verify_url_contains "$LEGACY_BASE_URL/sms-opt-in.html" "Flexible Timers"
 log "XTimers website published: $PUBLIC_BASE_URL/ (legacy mirror: $LEGACY_BASE_URL/)"

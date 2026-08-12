@@ -29,6 +29,17 @@ Published pages:
 - https://xintechllc.com/FlexibleTimers/sms-terms.html
 - https://xintechllc.com/FlexibleTimers/privacy.html
 - https://xintechllc.com/FlexibleTimers/compliance.html
+- https://xintechllc.com/XTimers/auth/complete.html (standard-app OAuth return)
+- https://xintechllc.com/XTimers/auth/complete-pro.html (Pro OAuth return)
+
+The OAuth completion pages deliberately load no analytics or third-party
+resources. They accept only a Supabase OAuth response and one of the two
+hard-coded XTimers callback schemes, remove the one-time response from browser
+history, and then return control to the matching app. Verify their routing with:
+
+```sh
+node scripts/test-auth-complete.js
+```
 
 Run this after publishing changes to verify the public Twilio evidence pages,
 support URL, exact keyword responses, verified owner-only reminder SMS scope,
