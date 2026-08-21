@@ -54,17 +54,35 @@
     // Keep the one-time OAuth response out of browser history and screenshots.
     root.history.replaceState(null, root.document.title, root.location.pathname);
     openApp.href = returnURL;
-    openApp.hidden = false;
+
+    // No automatic redirect, by design. Auto-firing summons the browser's
+    // own "Open <app>?" confirmation while this page is also showing its
+    // button — two prompts for one action, and the page cannot detect the
+    // browser's dialog to stay quiet around it (a visibility-based delay
+    // misfires: the tab stays visible while the customer reads the dialog).
+    // One visible action at a time instead: the customer clicks the single
+    // button here, the browser confirms once, and after "always allow" the
+    // whole handoff is that one click. A gesture-driven navigation is also
+    // the one form browsers never swallow.
+    var help = root.document.getElementById("auth-help");
+    var retry = root.document.getElementById("retry-open");
 
     function returnToApp(event) {
       if (event) event.preventDefault();
-      title.textContent = "Continue in " + appName;
-      message.textContent = "The browser step is complete. " + appName + " is finishing your sign-in. You can close this tab after the app opens.";
+      // Post-click the page's job is over: say DONE, retire the primary
+      // button entirely (a big call-to-action makes "done" read as "open
+      // the app"), and keep recovery as the help line's quiet text link —
+      // the stripped one-time response means a reload could not retry.
+      title.textContent = "Done — you can close this tab";
+      message.textContent = appName + " is finishing your sign-in in the app.";
+      openApp.hidden = true;
+      if (help) help.hidden = false;
       root.location.assign(returnURL);
     }
 
     openApp.addEventListener("click", returnToApp);
-    root.setTimeout(returnToApp, 250);
+    if (retry) retry.addEventListener("click", returnToApp);
+    openApp.hidden = false;
   }
 
   if (root.document.readyState === "loading") {

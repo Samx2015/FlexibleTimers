@@ -5,30 +5,30 @@ messaging compliance evidence.
 
 ## Source of truth and publishing
 
-This repository is the editable **source** of the site. The live site is served
-by GitHub Pages from `Samx2015/Samx2015.github.io` (folder `FlexibleTimers/`),
-not from this repo directly. Edit here, then publish:
+This repository is the editable **source** of the site. GitHub Pages serves two
+generated mirrors from `Samx2015/Samx2015.github.io`: the canonical `XTimers/`
+tree and the compatibility `FlexibleTimers/` tree. Neither generated tree is
+an edit target. Edit here, then publish both mirrors together:
 
 ```sh
 scripts/publish.sh            # rsync source -> Pages repo, commit/push, verify live
 scripts/publish.sh --dry-run  # preview the file changes without writing
 ```
 
-`publish.sh` mirrors the source into the Pages checkout (preserving any
-`download/` folder), makes a path-scoped commit in the Pages repo, and verifies
-the live URLs. The Pages folder defaults to
+`publish.sh` first validates a temporary, non-publishing rendering of both
+mirrors, then mirrors the source into the Pages checkout (preserving any
+`download/` folder), makes one path-scoped commit in the Pages repo, and
+verifies both live trees. The folders default to
+`/Users/sam/GitHub/Samx2015.github.io/XTimers` and
 `/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers` (override with
-`FLEXIBLETIMERS_PAGES_DIR`).
+`XTIMERS_PAGES_DIR` and `LEGACY_PAGES_DIR`).
 
 Published pages:
 
-- https://xintechllc.com/FlexibleTimers/
-- https://xintechllc.com/FlexibleTimers/support.html
-- https://xintechllc.com/FlexibleTimers/terms.html
-- https://xintechllc.com/FlexibleTimers/sms-opt-in.html
-- https://xintechllc.com/FlexibleTimers/sms-terms.html
-- https://xintechllc.com/FlexibleTimers/privacy.html
-- https://xintechllc.com/FlexibleTimers/compliance.html
+- https://xintechllc.com/XTimers/ (canonical tree, including support, terms,
+  privacy, compliance, and localized routes)
+- https://xintechllc.com/FlexibleTimers/ (compatibility mirror of the same
+  source; historical SMS and store URLs remain valid)
 - https://xintechllc.com/XTimers/auth/complete.html (standard-app OAuth return)
 - https://xintechllc.com/XTimers/auth/complete-pro.html (Pro OAuth return)
 
@@ -41,9 +41,12 @@ history, and then return control to the matching app. Verify their routing with:
 node scripts/test-auth-complete.js
 ```
 
-Run this after publishing changes to verify the public Twilio evidence pages,
+Run this after publishing changes to verify both deploy trees, the reconciled
+privacy and click-driven callback semantics, public Twilio evidence pages,
 support URL, exact keyword responses, verified owner-only reminder SMS scope,
-no-marketing claims, and sitemap entries:
+no-marketing claims, and sitemap entries. `publish.sh --dry-run` performs the
+same source/deploy semantic checks against temporary mirrors without changing
+either Pages tree:
 
 ```sh
 scripts/check-compliance-pages.sh

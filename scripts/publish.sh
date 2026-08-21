@@ -41,6 +41,8 @@ DEST_DIR_OLD="${LEGACY_PAGES_DIR:-${FLEXIBLETIMERS_PAGES_DIR:-/Users/sam/GitHub/
 PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://xintechllc.com/XTimers}"
 LEGACY_BASE_URL="${LEGACY_BASE_URL:-https://xintechllc.com/FlexibleTimers}"
 XTIMERS_WORKSPACE_ROOT="${XTIMERS_WORKSPACE_ROOT:-$SOURCE_DIR/../TimerWorkspace}"
+CALLBACK_CHECK="$SOURCE_DIR/scripts/test-auth-complete.js"
+COMPLIANCE_CHECK="$SOURCE_DIR/scripts/check-compliance-pages.sh"
 
 DRY_RUN=0
 VERIFY=1
@@ -63,6 +65,14 @@ log()  { printf '\n==> %s\n' "$*"; }
 
 command -v rsync >/dev/null 2>&1 || fail "rsync is required"
 command -v git   >/dev/null 2>&1 || fail "git is required"
+command -v node  >/dev/null 2>&1 || fail "node is required"
+command -v mktemp >/dev/null 2>&1 || fail "mktemp is required"
+
+[[ -f "$CALLBACK_CHECK" ]] || fail "callback test missing: $CALLBACK_CHECK"
+[[ -x "$COMPLIANCE_CHECK" ]] || fail "compliance check missing: $COMPLIANCE_CHECK"
+
+log "Checking callback routing and click-only handoff"
+node "$CALLBACK_CHECK"
 
 LOCALIZATION_RELEASE_GATE="$XTIMERS_WORKSPACE_ROOT/scripts/check-all-localizations.sh"
 [[ -x "$LOCALIZATION_RELEASE_GATE" ]] \
@@ -75,7 +85,11 @@ log "Checking localization release eligibility"
 [[ "$SOURCE_DIR" != "/" && "$DEST_DIR_NEW" != "/" && "$DEST_DIR_OLD" != "/" ]] || fail "refusing to sync filesystem root"
 [[ -d "$SOURCE_DIR" ]] || fail "source missing: $SOURCE_DIR"
 [[ -d "$DEST_DIR_OLD" ]] || fail "legacy destination missing: $DEST_DIR_OLD (create the Pages folder first)"
-mkdir -p "$DEST_DIR_NEW"
+if [[ ! -d "$DEST_DIR_NEW" ]]; then
+  [[ "$DRY_RUN" -eq 0 ]] \
+    || fail "canonical destination missing in dry-run mode: $DEST_DIR_NEW"
+  mkdir -p "$DEST_DIR_NEW"
+fi
 [[ -f "$SOURCE_DIR/index.html" ]] || fail "source does not look like the website: $SOURCE_DIR"
 
 IO_REPO="$(git -C "$DEST_DIR_OLD" rev-parse --show-toplevel 2>/dev/null)" \
@@ -84,24 +98,52 @@ IO_REPO="$(git -C "$DEST_DIR_OLD" rev-parse --show-toplevel 2>/dev/null)" \
 # rsync: full mirror, minus VCS/junk and this deploy tool (keeps local paths off
 # the live site). Preserve an existing download/ folder when the source has none,
 # so hosted release assets are never wiped (matches HelperSuite safe_website_rsync).
+RSYNC_ARGS=(-a --delete
+  --exclude '.git'
+  --exclude '.DS_Store'
+  --exclude '.gitignore'
+  --exclude '.nojekyll'
+  --exclude '__pycache__'
+  --exclude '*.pyc'
+  --exclude 'generated'
+  --exclude 'README.md'
+  --exclude 'requirements-localization.txt'
+  --exclude 'scripts/publish.sh')
+[[ -d "$SOURCE_DIR/download" ]] || RSYNC_ARGS+=(--exclude 'download')
+
+STAGE_DIR=""
+cleanup_stage() {
+  if [[ -n "$STAGE_DIR" && -d "$STAGE_DIR" ]]; then
+    rm -rf -- "$STAGE_DIR"
+  fi
+}
+trap cleanup_stage EXIT
+
+validate_staged_mirrors() {
+  STAGE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/xtimers-publish-stage.XXXXXX")"
+  local canonical_stage="$STAGE_DIR/XTimers"
+  local legacy_stage="$STAGE_DIR/FlexibleTimers"
+  mkdir -p "$canonical_stage" "$legacy_stage"
+  rsync "${RSYNC_ARGS[@]}" "$SOURCE_DIR"/ "$canonical_stage"/
+  rsync "${RSYNC_ARGS[@]}" "$SOURCE_DIR"/ "$legacy_stage"/
+  log "Checking staged canonical and legacy mirrors"
+  CHECK_LIVE=0 \
+    CANONICAL_PAGES_ROOT="$canonical_stage" \
+    LEGACY_PAGES_ROOT="$legacy_stage" \
+    "$COMPLIANCE_CHECK" --no-live
+  cleanup_stage
+  STAGE_DIR=""
+}
+
 publish_to() {
   local dest="$1"
-  local rsync_args=(-a --delete
-    --exclude '.git'
-    --exclude '.DS_Store'
-    --exclude '.gitignore'
-    --exclude '.nojekyll'
-    --exclude '__pycache__'
-    --exclude '*.pyc'
-    --exclude 'generated'
-    --exclude 'README.md'
-    --exclude 'requirements-localization.txt'
-    --exclude 'scripts/publish.sh')
-  [[ -d "$SOURCE_DIR/download" ]] || rsync_args+=(--exclude 'download')
+  local rsync_args=("${RSYNC_ARGS[@]}")
   [[ "$DRY_RUN" -eq 1 ]] && rsync_args+=(--dry-run --itemize-changes)
   log "Syncing XTimers website -> $dest"
   rsync "${rsync_args[@]}" "$SOURCE_DIR"/ "$dest"/
 }
+
+validate_staged_mirrors
 
 publish_to "$DEST_DIR_NEW"
 publish_to "$DEST_DIR_OLD"
@@ -111,6 +153,12 @@ if [[ "$DRY_RUN" -eq 1 ]]; then
   exit 0
 fi
 
+log "Checking reconciled deploy trees before commit"
+CHECK_LIVE=0 \
+  CANONICAL_PAGES_ROOT="$DEST_DIR_NEW" \
+  LEGACY_PAGES_ROOT="$DEST_DIR_OLD" \
+  "$COMPLIANCE_CHECK" --no-live
+
 # Path-scoped commit so unrelated changes in the Pages repo are left alone.
 if [[ -z "$(git -C "$IO_REPO" status --porcelain -- "$DEST_DIR_NEW" "$DEST_DIR_OLD")" ]]; then
   log "No website changes to publish."
@@ -118,7 +166,7 @@ else
   log "Committing and pushing Pages repo"
   git -C "$IO_REPO" add -- "$DEST_DIR_NEW" "$DEST_DIR_OLD"
   commit_args=(
-    -m "Publish XTimers website (canonical + legacy mirror)"
+    -m "[skip ci] Publish XTimers website (canonical + legacy mirror)"
     -m "Deploy the current website source to both public paths after the localization release gate passes."
   )
   if [[ -n "${XTIMERS_PUBLISH_AGENT_MODEL:-}" ]]; then
@@ -158,4 +206,14 @@ verify_url_contains "$PUBLIC_BASE_URL/auth/complete.html" "xtimers-auth://auth/c
 verify_url_contains "$PUBLIC_BASE_URL/auth/complete-pro.html" "xtimers-pro-auth://auth/callback"
 verify_url_contains "$LEGACY_BASE_URL/" "XTimers"
 verify_url_contains "$LEGACY_BASE_URL/sms-opt-in.html" "Flexible Timers"
+log "Checking canonical live compliance and callback semantics"
+LIVE_BASE_URL="$PUBLIC_BASE_URL" \
+  CANONICAL_PAGES_ROOT="$DEST_DIR_NEW" \
+  LEGACY_PAGES_ROOT="$DEST_DIR_OLD" \
+  "$COMPLIANCE_CHECK"
+log "Checking legacy live compliance and callback semantics"
+LIVE_BASE_URL="$LEGACY_BASE_URL" \
+  CANONICAL_PAGES_ROOT="$DEST_DIR_NEW" \
+  LEGACY_PAGES_ROOT="$DEST_DIR_OLD" \
+  "$COMPLIANCE_CHECK"
 log "XTimers website published: $PUBLIC_BASE_URL/ (legacy mirror: $LEGACY_BASE_URL/)"

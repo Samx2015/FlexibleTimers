@@ -133,6 +133,10 @@
 <p>
       Zalogowani użytkownicy mogą synchronizować nazwy minutników i odliczań, zestawy zadań, stan minutników, historię sesji, ustawienia aplikacji, zarchiwizowane migawki, przypomnienia i powiązane metadane. Jeśli użytkownik wysyła raport e-mailem lub go publikuje, XTimers przetwarza treść i tytuł raportu, informacje o odbiorcy oraz metadane dostarczenia lub wygaśnięcia łącza potrzebne do udostępnienia tej funkcji. Łącza do opublikowanych raportów można skonfigurować tak, aby wygasały po 1, 7, 30, 90 lub 365 dniach.
     </p>
+<p>
+      Treści minutników synchronizowane z urządzeniami użytkownika są przechowywane w lokalnym obszarze danych aplikacji i chronione przez zabezpieczenia samego urządzenia (takie jak FileVault i hasło logowania), a nie przez szyfrowanie na poziomie aplikacji. Dane logowania oraz klucze chronionej synchronizacji są przechowywane w systemowym Keychain.
+    </p>
+
 <h2>Informacje e-mail i SMS</h2>
 <p>
       XTimers wysyła obecnie raporty e-mail, wiadomości weryfikacyjne i przypomnienia utworzone przez użytkownika wyłącznie na adres e-mail jego zalogowanego konta. SMS-y są wysyłane tylko na własny, zweryfikowany numer telefonu konta z aktywną zgodą. XTimers może przetwarzać treść wiadomości, stan dostarczenia, zaplanowany czas i metadane odpowiedzi dostawcy, aby dostarczać te wiadomości i rozwiązywać związane z nimi problemy.

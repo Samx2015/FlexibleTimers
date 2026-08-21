@@ -3,7 +3,22 @@ set -euo pipefail
 
 BASE_URL="${BASE_URL:-https://xintechllc.com/FlexibleTimers}"
 PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://xintechllc.com/XTimers}"
-PAGES_ROOT="${PAGES_ROOT:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}"
+LIVE_BASE_URL="${LIVE_BASE_URL:-$BASE_URL}"
+CANONICAL_PAGES_ROOT="${CANONICAL_PAGES_ROOT:-/Users/sam/GitHub/Samx2015.github.io/XTimers}"
+LEGACY_PAGES_ROOT="${LEGACY_PAGES_ROOT:-${PAGES_ROOT:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}}"
+CHECK_LIVE=1
+
+while [[ "$#" -gt 0 ]]; do
+  case "$1" in
+    --no-live) CHECK_LIVE=0 ;;
+    -h|--help)
+      printf 'usage: %s [--no-live]\n' "$0"
+      exit 0
+      ;;
+    *) printf 'error: unknown option: %s\n' "$1" >&2; exit 2 ;;
+  esac
+  shift
+done
 
 require_command() {
   if ! command -v "$1" >/dev/null 2>&1; then
@@ -40,7 +55,7 @@ fetch() {
   if [[ "$path" == "/" ]]; then
     output="$TMP_DIR/index"
   fi
-  curl -fsSL "$BASE_URL$path" -o "$output"
+  curl -fsSL "$LIVE_BASE_URL$path" -o "$output"
   printf '%s' "$output"
 }
 
@@ -60,6 +75,10 @@ page_text_has() {
   tr '\n' ' ' < "$file" | sed -E 's/[[:space:]]+/ /g' | grep -Eq "$pattern"
 }
 
+page_text_lacks() {
+  ! page_text_has "$@"
+}
+
 local_text_has() {
   local relative_path="$1"
   local pattern="$2"
@@ -68,18 +87,18 @@ local_text_has() {
 
 url_ok() {
   local path="$1"
-  curl -fsSIL "$BASE_URL$path" >/dev/null
+  curl -fsSIL "$LIVE_BASE_URL$path" >/dev/null
 }
 
 content_type_has() {
   local path="$1"
   local pattern="$2"
-  curl -fsSIL "$BASE_URL$path" | grep -Eqi "^content-type: $pattern"
+  curl -fsSIL "$LIVE_BASE_URL$path" | grep -Eqi "^content-type: $pattern"
 }
 
 pages_deploy_tree_matches_source() {
-  local pages_root
-  pages_root="$(cd "$PAGES_ROOT" && pwd)"
+  local pages_root="$1"
+  pages_root="$(cd "$pages_root" && pwd)"
   local diff_args=(-qr
     -x .git
     -x .DS_Store
@@ -96,6 +115,37 @@ pages_deploy_tree_matches_source() {
   fi
 
   diff "${diff_args[@]}" "$LOCAL_ROOT" "$pages_root"
+}
+
+tree_text_has() {
+  local root="$1"
+  local relative_path="$2"
+  local pattern="$3"
+  tr '\n' ' ' < "$root/$relative_path" \
+    | sed -E 's/[[:space:]]+/ /g' \
+    | grep -Eq "$pattern"
+}
+
+tree_text_lacks() {
+  ! tree_text_has "$@"
+}
+
+reconciled_privacy_and_callback_semantics() {
+  local root="$1"
+  tree_text_has "$root" privacy.html "Personal Calendar Overlay" \
+    && tree_text_has "$root" privacy.html "local data area.*system Keychain" \
+    && tree_text_has "$root" auth/complete.html \
+      'data-callback-url="xtimers-auth://auth/callback".*id="auth-help".*id="retry-open"' \
+    && tree_text_has "$root" auth/complete-pro.html \
+      'data-callback-url="xtimers-pro-auth://auth/callback".*id="auth-help".*id="retry-open"' \
+    && tree_text_has "$root" assets/flexible-timers/auth-complete.js \
+      'openApp\.addEventListener\("click", returnToApp\)' \
+    && tree_text_has "$root" assets/flexible-timers/auth-complete.js \
+      'retry\.addEventListener\("click", returnToApp\)' \
+    && tree_text_lacks "$root" assets/flexible-timers/auth-complete.js \
+      'setTimeout\(returnToApp' \
+    && tree_text_has "$root" assets/flexible-timers/auth-complete.css \
+      '\.help\[hidden\]'
 }
 
 localized_flexible_timers_pages_exist() {
@@ -199,22 +249,35 @@ require_command sort
 require_command tr
 
 echo "Checking XTimers (legacy Flexible Timers) public SMS compliance pages"
-echo "Base URL: $BASE_URL"
+echo "Live base URL: $LIVE_BASE_URL"
 echo "Local root: $LOCAL_ROOT"
-echo "Pages root: $PAGES_ROOT"
+echo "Canonical Pages root: $CANONICAL_PAGES_ROOT"
+echo "Legacy Pages root: $LEGACY_PAGES_ROOT"
 echo
 
-if [[ -d "$PAGES_ROOT" ]]; then
-  PAGES_ROOT="$(cd "$PAGES_ROOT" && pwd)"
-  if [[ "$PAGES_ROOT" != "$LOCAL_ROOT" ]]; then
-    check "Pages deploy subtree matches source" \
-      pages_deploy_tree_matches_source
+check "Editable source has reconciled privacy and callback semantics" \
+  reconciled_privacy_and_callback_semantics "$LOCAL_ROOT"
+
+for deploy_name in Canonical Legacy; do
+  if [[ "$deploy_name" == "Canonical" ]]; then
+    deploy_root="$CANONICAL_PAGES_ROOT"
   else
-    echo "SKIP Pages deploy subtree matches source (local root is Pages root)"
+    deploy_root="$LEGACY_PAGES_ROOT"
   fi
-else
-  echo "SKIP Pages deploy subtree matches source (Pages root not found)"
-fi
+  if [[ -d "$deploy_root" ]]; then
+    deploy_root="$(cd "$deploy_root" && pwd)"
+    if [[ "$deploy_root" != "$LOCAL_ROOT" ]]; then
+      check "$deploy_name Pages deploy subtree matches source" \
+        pages_deploy_tree_matches_source "$deploy_root"
+      check "$deploy_name Pages has reconciled privacy and callback semantics" \
+        reconciled_privacy_and_callback_semantics "$deploy_root"
+    else
+      echo "SKIP $deploy_name Pages checks (local root is Pages root)"
+    fi
+  else
+    echo "SKIP $deploy_name Pages checks (deploy root not found)"
+  fi
+done
 
 check "Localized legacy-brand compliance pages exist" \
   localized_flexible_timers_pages_exist
@@ -224,6 +287,17 @@ check "Localized Flexible Timers pages carry canonical URLs" \
   localized_flexible_timers_pages_have_canonicals
 check "Localized Flexible Timers pages keep footer link parity" \
   localized_flexible_timers_pages_have_footer_links
+
+if [[ "$CHECK_LIVE" -eq 0 ]]; then
+  if [[ "$failures" -gt 0 ]]; then
+    echo
+    echo "$failures check(s) failed." >&2
+    exit 1
+  fi
+  echo
+  echo "All source and deploy-tree compliance checks passed."
+  exit 0
+fi
 
 check "Homepage is reachable" url_ok "/"
 check "Support page is reachable" url_ok "/support.html"
@@ -238,6 +312,12 @@ check "SMS consent screenshot is PNG" \
   content_type_has "/assets/sms-consent.png" "image/png"
 check "Robots file is reachable" url_ok "/robots.txt"
 check "Sitemap is reachable" url_ok "/sitemap.xml"
+check "Standard OAuth completion page is reachable" \
+  url_ok "/auth/complete.html"
+check "Pro OAuth completion page is reachable" \
+  url_ok "/auth/complete-pro.html"
+check "OAuth completion script is reachable" \
+  url_ok "/assets/flexible-timers/auth-complete.js"
 
 check "Homepage describes account email reporting" \
   page_has "/" "account email"
@@ -289,6 +369,22 @@ check "Privacy links exact Twilio support URL" \
   page_has "/privacy.html" "href=\"https://xintechllc.com/XTimers/support.html\">xintechllc.com/XTimers/support.html</a>"
 check "Privacy links privacy choices" \
   page_has "/privacy.html" "href=\"privacy-choices.html\""
+check "Privacy includes Personal Calendar disclosure" \
+  page_text_has "/privacy.html" "Personal Calendar Overlay"
+check "Privacy includes local storage and Keychain disclosure" \
+  page_text_has "/privacy.html" "local data area.*system Keychain"
+check "Standard OAuth completion is click-driven" \
+  page_text_has "/auth/complete.html" \
+    'data-callback-url="xtimers-auth://auth/callback".*id="auth-help".*id="retry-open"'
+check "Pro OAuth completion is click-driven" \
+  page_text_has "/auth/complete-pro.html" \
+    'data-callback-url="xtimers-pro-auth://auth/callback".*id="auth-help".*id="retry-open"'
+check "OAuth completion script has no automatic handoff" \
+  page_text_has "/assets/flexible-timers/auth-complete.js" \
+    'openApp\.addEventListener\("click", returnToApp\)'
+check "OAuth completion script omits timed handoff" \
+  page_text_lacks "/assets/flexible-timers/auth-complete.js" \
+    'setTimeout\(returnToApp'
 check "Privacy choices documents in-app account deletion" \
   page_text_has "/privacy-choices.html" "Delete Account"
 check "Opt-in page includes consent wording" \
