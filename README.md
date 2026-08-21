@@ -32,17 +32,27 @@ Published pages:
 - https://xintechllc.com/XTimers/auth/complete.html (standard-app OAuth return)
 - https://xintechllc.com/XTimers/auth/complete-pro.html (Pro OAuth return)
 
+Xin Account uses the existing policy set rather than a separate portal. The
+canonical app-configured links are:
+
+- https://xintechllc.com/FlexibleTimers/privacy.html
+- https://xintechllc.com/FlexibleTimers/terms.html
+- https://xintechllc.com/XTimers/support.html
+
 The OAuth completion pages deliberately load no analytics or third-party
-resources. They accept only a Supabase OAuth response and one of the two
-hard-coded XTimers callback schemes, remove the one-time response from browser
-history, and then return control to the matching app. Verify their routing with:
+resources. They accept only the current identity-provider response fields and
+one of the two hard-coded XTimers callback schemes, remove the one-time response
+from browser history, and then return control to the matching consumer app.
+Their public presentation names Xin Account while the callback format remains
+compatible with the retained provider integration during migration. Verify
+their routing with:
 
 ```sh
 node scripts/test-auth-complete.js
 ```
 
 Run this after publishing changes to verify both deploy trees, the reconciled
-privacy and click-driven callback semantics, public Twilio evidence pages,
+privacy and click-driven callback semantics, public messaging evidence pages,
 support URL, exact keyword responses, verified owner-only reminder SMS scope,
 no-marketing claims, and sitemap entries. `publish.sh --dry-run` performs the
 same source/deploy semantic checks against temporary mirrors without changing

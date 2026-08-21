@@ -30,14 +30,14 @@ function runCompletionPage(options) {
   var historyCalls = [];
   var timeoutCalls = [];
   var elements = {
-    "auth-title": makeElement({ textContent: "Continue in " + options.appName }),
+    "auth-title": makeElement({ textContent: "Return to " + options.appName }),
     "auth-message": makeElement(),
     "open-app": makeElement({ hidden: true }),
     "auth-help": makeElement({ hidden: true }),
     "retry-open": makeElement()
   };
   var document = {
-    title: "Continue in " + options.appName,
+    title: "Return to " + options.appName + " after Xin Account sign-in",
     readyState: "complete",
     body: {
       classList: {
@@ -166,16 +166,20 @@ assert.strictEqual(
   assert.strictEqual(openApp.href, consumer.returnURL);
   assert.strictEqual(openApp.hidden, false);
   assert.deepStrictEqual(page.historyCalls, [
-    [null, "Continue in " + consumer.appName, consumer.pathname]
+    [
+      null,
+      "Return to " + consumer.appName + " after Xin Account sign-in",
+      consumer.pathname
+    ]
   ]);
   assert.deepStrictEqual(page.timeoutCalls, []);
   assert.deepStrictEqual(page.assignments, []);
 
   click(openApp);
   assert.strictEqual(page.elements["auth-title"].textContent,
-    "Done — you can close this tab");
+    "Signed in with your Xin Account");
   assert.strictEqual(page.elements["auth-message"].textContent,
-    consumer.appName + " is finishing your sign-in in the app.");
+    consumer.appName + " is finishing your Xin Account sign-in in the app.");
   assert.strictEqual(openApp.hidden, true);
   assert.strictEqual(help.hidden, false);
   assert.deepStrictEqual(page.assignments, [consumer.returnURL]);
@@ -194,9 +198,9 @@ var invalidPage = runCompletionPage({
 });
 assert.deepStrictEqual(invalidPage.classNames, ["invalid"]);
 assert.strictEqual(invalidPage.elements["auth-title"].textContent,
-  "This sign-in link is incomplete");
+  "This Xin Account sign-in link is incomplete");
 assert.strictEqual(invalidPage.elements["auth-message"].textContent,
-  "Return to XTimers and start sign-in again.");
+  "Return to XTimers and start Xin Account sign-in again.");
 assert.strictEqual(invalidPage.elements["open-app"].hidden, true);
 assert.strictEqual(invalidPage.elements["open-app"].listeners.click, undefined);
 assert.deepStrictEqual(invalidPage.historyCalls, []);
@@ -223,9 +227,17 @@ assert.deepStrictEqual(invalidPage.assignments, []);
     "data-callback-url=\"" + consumer.callbackURL
       + "\" data-app-name=\"" + consumer.appName + "\""
   ) !== -1);
-  assert.ok(html.indexOf(">Continue in " + consumer.appName + "</h1>") !== -1);
+  assert.ok(html.indexOf(">Return to " + consumer.appName + "</h1>") !== -1);
   assert.ok(html.indexOf(
-    "Select <strong>Open " + consumer.appName + "</strong> to finish signing in."
+    "Your Xin Account sign-in is ready. Select <strong>Open "
+      + consumer.appName + "</strong> to return to " + consumer.appName + "."
+  ) !== -1);
+  assert.ok(html.indexOf(
+    "Xin Account secure sign-in for " + consumer.appName
+  ) !== -1);
+  assert.ok(html.indexOf(
+    "Your Xin Account sign-in response is sent only to the "
+      + consumer.appName + " app on this Mac."
   ) !== -1);
   assert.ok(html.indexOf(">Open " + consumer.appName + "</a>") !== -1);
   assert.ok(html.indexOf(

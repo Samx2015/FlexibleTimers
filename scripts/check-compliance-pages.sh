@@ -134,10 +134,23 @@ reconciled_privacy_and_callback_semantics() {
   local root="$1"
   tree_text_has "$root" privacy.html "Personal Calendar Overlay" \
     && tree_text_has "$root" privacy.html "local data area.*system Keychain" \
+    && tree_text_has "$root" privacy.html \
+      'id="xin-account".*shared identity layer.*Delete XTimers Data.*Delete Xin Account' \
+    && tree_text_has "$root" privacy.html "Last updated: August 21, 2026" \
+    && tree_text_has "$root" privacy-choices.html \
+      "Sign Out of XTimers.*Remove XTimers From a Device.*Delete XTimers Data.*Delete Xin Account" \
+    && tree_text_has "$root" privacy-choices.html \
+      "fresh security code sent to the Xin Account email" \
+    && tree_text_has "$root" terms.html \
+      'id="xin-account".*XTimers Product and Messaging Use.*Effective: August 21, 2026' \
+    && tree_text_has "$root" support.html \
+      'id="xin-account".*XTimers Product and Data Support.*XTimers Messaging Help' \
+    && tree_text_has "$root" index.html \
+      "Xin Account sign-in\. XTimers data stays separate" \
     && tree_text_has "$root" auth/complete.html \
-      'data-callback-url="xtimers-auth://auth/callback".*id="auth-help".*id="retry-open"' \
+      'data-callback-url="xtimers-auth://auth/callback".*Xin Account secure sign-in for XTimers.*id="auth-help".*id="retry-open"' \
     && tree_text_has "$root" auth/complete-pro.html \
-      'data-callback-url="xtimers-pro-auth://auth/callback".*id="auth-help".*id="retry-open"' \
+      'data-callback-url="xtimers-pro-auth://auth/callback".*Xin Account secure sign-in for XTimers Pro.*id="auth-help".*id="retry-open"' \
     && tree_text_has "$root" assets/flexible-timers/auth-complete.js \
       'openApp\.addEventListener\("click", returnToApp\)' \
     && tree_text_has "$root" assets/flexible-timers/auth-complete.js \
@@ -146,6 +159,24 @@ reconciled_privacy_and_callback_semantics() {
       'setTimeout\(returnToApp' \
     && tree_text_has "$root" assets/flexible-timers/auth-complete.css \
       '\.help\[hidden\]'
+}
+
+public_xin_surfaces_are_provider_neutral() {
+  local relative_path
+  for relative_path in \
+    README.md \
+    privacy.html \
+    privacy-choices.html \
+    terms.html \
+    support.html \
+    auth/complete.html \
+    auth/complete-pro.html
+  do
+    if grep -Eqi 'Supabase|Azure|Twilio' "$LOCAL_ROOT/$relative_path"; then
+      echo "Implementation-provider name found in $relative_path" >&2
+      return 1
+    fi
+  done
 }
 
 localized_flexible_timers_pages_exist() {
@@ -239,6 +270,29 @@ localized_flexible_timers_pages_have_footer_links() {
   return "$failed"
 }
 
+localized_xin_account_sections_exist() {
+  local locale_dir
+  local failed=0
+  while IFS= read -r locale_dir; do
+    local locale
+    locale="$(basename "$locale_dir")"
+    if ! local_text_has "$locale/privacy.html" 'id="xin-account"'; then
+      echo "Missing Xin Account privacy section: $locale/privacy.html" >&2
+      failed=1
+    fi
+    if ! local_text_has "$locale/support.html" 'id="xin-account"'; then
+      echo "Missing Xin Account support section: $locale/support.html" >&2
+      failed=1
+    fi
+    if ! local_text_has "$locale/index.html" 'href="privacy.html#xin-account"'; then
+      echo "Missing Xin Account policy link: $locale/index.html" >&2
+      failed=1
+    fi
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name auth ! -name generated ! -name scripts | sort)
+
+  return "$failed"
+}
+
 require_command basename
 require_command curl
 require_command diff
@@ -257,6 +311,8 @@ echo
 
 check "Editable source has reconciled privacy and callback semantics" \
   reconciled_privacy_and_callback_semantics "$LOCAL_ROOT"
+check "Public Xin Account surfaces use provider-neutral wording" \
+  public_xin_surfaces_are_provider_neutral
 
 for deploy_name in Canonical Legacy; do
   if [[ "$deploy_name" == "Canonical" ]]; then
@@ -287,6 +343,8 @@ check "Localized Flexible Timers pages carry canonical URLs" \
   localized_flexible_timers_pages_have_canonicals
 check "Localized Flexible Timers pages keep footer link parity" \
   localized_flexible_timers_pages_have_footer_links
+check "Localized pages include Xin Account policy sections" \
+  localized_xin_account_sections_exist
 
 if [[ "$CHECK_LIVE" -eq 0 ]]; then
   if [[ "$failures" -gt 0 ]]; then
@@ -319,8 +377,8 @@ check "Pro OAuth completion page is reachable" \
 check "OAuth completion script is reachable" \
   url_ok "/assets/flexible-timers/auth-complete.js"
 
-check "Homepage describes account email reporting" \
-  page_has "/" "account email"
+check "Homepage distinguishes Xin sign-in from XTimers product data" \
+  page_text_has "/" "Xin Account sign-in\. XTimers data stays separate"
 check "Homepage names operator (footer)" \
   page_has "/" "Xintech LLC"
 check "Homepage describes Apple platforms" \
@@ -331,8 +389,8 @@ check "Homepage links privacy page" \
   page_has "/" "href=\"privacy.html\""
 check "Homepage links SMS Terms page" \
   page_has "/" "href=\"sms-terms.html\""
-check "Homepage describes personal reminders" \
-  page_text_has "/" "Personal reminders.*verified phone"
+check "Homepage links the Xin account-layer explanation" \
+  page_has "/" 'href="privacy.html#xin-account"'
 check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
@@ -373,20 +431,39 @@ check "Privacy includes Personal Calendar disclosure" \
   page_text_has "/privacy.html" "Personal Calendar Overlay"
 check "Privacy includes local storage and Keychain disclosure" \
   page_text_has "/privacy.html" "local data area.*system Keychain"
+check "Privacy separates Xin identity from XTimers product data" \
+  page_text_has "/privacy.html" \
+    "shared identity layer.*XTimers Product and Contact Information"
+check "Privacy documents both deletion scopes" \
+  page_text_has "/privacy.html" \
+    "Delete XTimers Data.*Delete Xin Account"
+check "Privacy carries the authorized N6b date" \
+  page_has "/privacy.html" "Last updated: August 21, 2026"
 check "Standard OAuth completion is click-driven" \
   page_text_has "/auth/complete.html" \
-    'data-callback-url="xtimers-auth://auth/callback".*id="auth-help".*id="retry-open"'
+    'data-callback-url="xtimers-auth://auth/callback".*Xin Account secure sign-in for XTimers.*id="auth-help".*id="retry-open"'
 check "Pro OAuth completion is click-driven" \
   page_text_has "/auth/complete-pro.html" \
-    'data-callback-url="xtimers-pro-auth://auth/callback".*id="auth-help".*id="retry-open"'
+    'data-callback-url="xtimers-pro-auth://auth/callback".*Xin Account secure sign-in for XTimers Pro.*id="auth-help".*id="retry-open"'
 check "OAuth completion script has no automatic handoff" \
   page_text_has "/assets/flexible-timers/auth-complete.js" \
     'openApp\.addEventListener\("click", returnToApp\)'
 check "OAuth completion script omits timed handoff" \
   page_text_lacks "/assets/flexible-timers/auth-complete.js" \
     'setTimeout\(returnToApp'
-check "Privacy choices documents in-app account deletion" \
-  page_text_has "/privacy-choices.html" "Delete Account"
+check "Privacy choices documents four distinct account actions" \
+  page_text_has "/privacy-choices.html" \
+    "Sign Out of XTimers.*Remove XTimers From a Device.*Delete XTimers Data.*Delete Xin Account"
+check "Privacy choices documents fresh-code confirmation" \
+  page_text_has "/privacy-choices.html" \
+    "fresh security code sent to the Xin Account email"
+check "Terms separate identity from product obligations" \
+  page_text_has "/terms.html" \
+    "Xin Account Identity and Security.*XTimers Product and Messaging Use"
+check "Terms describe every supported Apple platform" \
+  page_text_has "/terms.html" "Mac, iPhone, and iPad"
+check "Terms carry the authorized N6b date" \
+  page_has "/terms.html" "Effective: August 21, 2026"
 check "Opt-in page includes consent wording" \
   page_text_has "/sms-opt-in.html" "I agree to receive SMS verification codes and reminder messages I schedule for myself from Flexible Timers by Xintech LLC at this phone number"
 check "Opt-in page says checkbox is not pre-selected" \
@@ -430,7 +507,10 @@ check "Support page says SMS is not two-way chat" \
 check "Support page documents verified account-phone SMS" \
   page_text_has "/support.html" "own verified(, opted-in)? account phone number"
 check "Support page documents account email scope" \
-  page_has "/support.html" "own account email address"
+  page_has "/support.html" "own Xin Account email address"
+check "Support separates identity, product, and messaging help" \
+  page_text_has "/support.html" \
+    "Xin Account Identity and Recovery.*XTimers Product and Data Support.*XTimers Messaging Help"
 check "Sitemap includes support page" \
   page_has "/sitemap.xml" "support.html"
 check "Sitemap includes Terms page" \
