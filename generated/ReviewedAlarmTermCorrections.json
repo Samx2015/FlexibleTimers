@@ -1,0 +1,94 @@
+{
+  "bn": {
+    "Pending Apply": "প্রয়োগের অপেক্ষায়",
+    "Pending Cancellation": "বাতিলের অপেক্ষায়",
+    "Unavailable": "অনুপলভ্য",
+    "Failed": "ব্যর্থ",
+    "Sync Pending": "সিঙ্কের অপেক্ষায়"
+  },
+  "gu": {
+    "Rings On": "જે ઉપકરણો પર આ એલાર્મ વાગશે",
+    "Pending Apply": "લાગુ કરવાનું બાકી",
+    "Pending Cancellation": "રદ કરવાનું બાકી",
+    "Needs Permission": "પરવાનગી જરૂરી",
+    "Sync Pending": "સિંક કરવાનું બાકી"
+  },
+  "he": {
+    "Needs Permission": "נדרשת הרשאה"
+  },
+  "hr": {
+    "Pending Apply": "Primjena na čekanju",
+    "Pending Cancellation": "Otkazivanje na čekanju",
+    "Needs Permission": "Potrebno dopuštenje"
+  },
+  "hu": {
+    "Pending Apply": "Alkalmazásra vár",
+    "Pending Cancellation": "Lemondásra vár",
+    "Sync Pending": "Szinkronizálásra vár"
+  },
+  "it": {
+    "Rings On": "Dispositivi su cui suona questo allarme",
+    "Pending Apply": "Applicazione in sospeso",
+    "Pending Cancellation": "Annullamento in sospeso",
+    "Needs Permission": "Autorizzazione necessaria",
+    "Failed": "Operazione non riuscita"
+  },
+  "ms": {
+    "Pending Apply": "Menunggu Penerapan",
+    "Unavailable": "Tidak Tersedia",
+    "Failed": "Gagal",
+    "Sync Pending": "Menunggu Penyegerakan"
+  },
+  "nb": {
+    "Pending Apply": "Venter på å bli tatt i bruk",
+    "Sync Pending": "Venter på synkronisering"
+  },
+  "nl": {
+    "Pending Apply": "In afwachting van toepassing",
+    "Needs Permission": "Toestemming vereist"
+  },
+  "pl": {
+    "Sync Pending": "Oczekuje na synchronizację"
+  },
+  "pt-BR": {
+    "Pending Apply": "Aplicação Pendente"
+  },
+  "ru": {
+    "Sync Pending": "Ожидает синхронизации"
+  },
+  "sl": {
+    "Pending Apply": "Čaka na uveljavitev",
+    "Needs Permission": "Potrebno je dovoljenje",
+    "Sync Pending": "Čaka na sinhronizacijo"
+  },
+  "sv": {
+    "Rings On": "Enheter där det här alarmet ringer",
+    "Pending Apply": "Väntar på tillämpning",
+    "Pending Cancellation": "Väntar på annullering",
+    "Needs Permission": "Behöver behörighet",
+    "Unavailable": "Inte tillgänglig",
+    "Sync Pending": "Väntar på synkronisering"
+  },
+  "th": {
+    "Pending Apply": "รอการนำไปใช้",
+    "Pending Cancellation": "รอการยกเลิก",
+    "Needs Permission": "ต้องได้รับอนุญาต",
+    "Sync Pending": "รอการซิงค์"
+  },
+  "tr": {
+    "Pending Apply": "Uygulanmayı Bekliyor",
+    "Needs Permission": "İzin Gerekli",
+    "Unavailable": "Kullanılamıyor",
+    "Sync Pending": "Senkronizasyon Bekleniyor"
+  },
+  "uk": {
+    "Rings On": "Пристрої, на яких лунає цей будильник",
+    "Sync Pending": "Очікує синхронізації"
+  },
+  "vi": {
+    "Rings On": "Thiết bị mà báo thức này sẽ reo",
+    "Needs Permission": "Cần cấp quyền",
+    "Unavailable": "Không khả dụng",
+    "Failed": "Thất bại"
+  }
+}

@@ -1,7 +1,7 @@
 # Flexible Timers
 
-Public static pages for Flexible Timers support, SMS terms, privacy, and
-messaging compliance evidence.
+Public static pages for XTimers support, terms, privacy, privacy choices,
+browser-extension privacy, SMS terms, and messaging compliance evidence.
 
 ## Source of truth and publishing
 
@@ -53,13 +53,15 @@ node scripts/test-auth-complete.js
 
 Run this after publishing changes to verify both deploy trees, the reconciled
 privacy and click-driven callback semantics, public messaging evidence pages,
-support URL, exact keyword responses, verified owner-only reminder SMS scope,
-no-marketing claims, and sitemap entries. `publish.sh --dry-run` performs the
-same source/deploy semantic checks against temporary mirrors without changing
-either Pages tree:
+support URL, consent-before-verification and verified owner-reminder SMS scope,
+truthful keyword instructions, no-marketing claims, and sitemap entries.
+Use `--source-only` while authoring; `publish.sh --dry-run` performs the
+source/deploy semantic checks against one immutable temporary snapshot without
+changing either Pages tree:
 
 ```sh
 scripts/check-compliance-pages.sh
+scripts/check-compliance-pages.sh --source-only
 ```
 
 ## Localization authoring
@@ -76,13 +78,32 @@ rsync, commit, or push operation.
 python3 -m pip install -r requirements-localization.txt
 python3 scripts/prepare-localized-page-drafts.py --extract
 python3 scripts/prepare-localized-page-drafts.py --import-existing
+python3 scripts/prepare-localized-page-drafts.py --prune-obsolete-translations
+python3 scripts/prepare-localized-page-drafts.py \
+  --import-alarm-terms-from ../FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources
+python3 scripts/prepare-localized-page-drafts.py --apply-reviewed-corrections
 python3 scripts/prepare-localized-page-drafts.py --generate
 python3 scripts/generate-localization-navigation.py
-scripts/check-localizations.sh
+scripts/check-localizations.sh \
+  --alarm-term-source ../FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources \
+  --alarm-term-source ../FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources
 ```
 
-The `--import-existing` command is a one-time migration aid: it recovers
-checked-in translations against the historical English page revisions they
-were authored from, preserving them while the shared draft tool fills only
-current-source gaps. None of these commands publishes or modifies the GitHub
-Pages repository.
+The `--import-existing` command is a one-time migration aid: it recovers the
+five historically localized pages against the English revisions they were
+authored from. Generation now produces eight pages per non-English locale,
+including Terms, Privacy Choices, and the Activity Extension Privacy Policy.
+`compliance.html` is intentionally English-only carrier/compliance evidence;
+it has one legacy-path canonical URL, is included once in the sitemap, and must
+not have locale variants.
+The alarm-term import copies only the central alarm UI glossary (`Rings On`,
+`This Device`, and scheduling states) from the completed app catalogs. The
+hash-bound reviewed correction artifacts are then replayed so independently
+reviewed full legal values and alarm-label corrections supersede machine-draft
+copy deterministically. The localization checker requires every policy
+reference to use those same localized terms and verifies each app's supported
+glossary-key intersection, avoiding a second website-specific name for an app
+control. Supplying a missing or invalid app resource root is a hard failure;
+the workspace release gate must pass both roots shown above.
+The shared draft tool fills only current-source gaps. None of these commands
+publishes or modifies the GitHub Pages repository.
