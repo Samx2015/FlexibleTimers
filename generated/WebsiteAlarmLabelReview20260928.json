@@ -1,0 +1,293 @@
+{
+  "authorship": "direct-codex-gpt",
+  "completedAt": "2026-09-28T09:16:26.752263+00:00",
+  "locales": {
+    "ar": {
+      "appCatalogEvidence": {
+        "ios": {
+          "path": "/Users/sam/GitHub/FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources/ar.lproj/Localizable.strings",
+          "sha256": "27aecaa288989dc6a3de9c04dad9e46651f4bcb88221b70a8917684237bfec27",
+          "value": "بانتظار تطبيق التغيير"
+        },
+        "mac": {
+          "path": "/Users/sam/GitHub/FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources/ar.lproj/Localizable.strings",
+          "sha256": "d10a19eb9fb04ed9a72948ae1d1b1035f1bcf7bf50f0ff98e007c7a133355eed",
+          "value": "بانتظار تطبيق التغيير"
+        }
+      },
+      "changes": [
+        {
+          "newValue": "قد يكون للمنبّه في حساب مسجّل الدخول تعريف مشترك واحد وخيار منفصل «الأجهزة التي يرن عليها المنبّه» لكل جهاز مؤهل. ولا يمكن للمنبّه المحلي فقط أن يرن إلا على التثبيت الذي أُنشئ عليه. اختيار جهاز مستهدف هو طلب، وليس دليلًا على أن الجهاز قد جدْول المنبّه أو ألغاه. وعندما يتعذر على XTimers تأكيد التنفيذ، يعرض حالات صادقة مثل «بانتظار تطبيق التغيير» و«انتظار الإلغاء» و«يحتاج إلى إذن» و«غير متاح» و«فشل» و«المزامنة معلقة» وغيرها. — يرن على; الإلغاء معلّق; المزامنة معلّقة.",
+          "oldValue": "قد يكون للمنبّه في حساب مسجّل الدخول تعريف مشترك واحد وخيار منفصل «الأجهزة التي يرن عليها المنبّه» لكل جهاز مؤهل. ولا يمكن للمنبّه المحلي فقط أن يرن إلا على التثبيت الذي أُنشئ عليه. اختيار جهاز مستهدف هو طلب، وليس دليلًا على أن الجهاز قد جدْول المنبّه أو ألغاه. وعندما يتعذر على XTimers تأكيد التنفيذ، يعرض حالات صادقة مثل «انتظار التطبيق» و«انتظار الإلغاء» و«يحتاج إلى إذن» و«غير متاح» و«فشل» و«المزامنة معلقة» وغيرها. — يرن على; التطبيق معلّق; الإلغاء معلّق; المزامنة معلّقة.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "A signed-in alarm may have one shared definition and a separate\n      “Rings On” choice for each eligible device. A local-only\n      alarm can ring only on the installation where it was created. A target\n      choice is a request, not proof that a device scheduled or canceled the\n      alarm. XTimers reports “Pending Apply,” “Pending Cancellation,” “Needs\n      Permission,” “Unavailable,” “Failed,” “Sync Pending,” and other truthful\n      states when it cannot confirm delivery."
+        },
+        {
+          "newValue": "بانتظار تطبيق التغيير",
+          "oldValue": "التطبيق معلّق",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "Pending Apply"
+        },
+        {
+          "newValue": "أثناء تسجيل الخروج، تكون المنبّهات محلية فقط ويكون «هذا الجهاز» هو الجهاز المستهدف الوحيد. ولا يؤدي تسجيل الدخول مطلقًا إلى نقل أي منبّه تلقائيًا. استخدم إجراء الترقية الصريح في التطبيق إذا أردت تحويل منبّه محلي مؤهل إلى منبّه مشترك. وللمنبّه المشترك، استخدم مفتاح «الأجهزة التي يرن عليها المنبّه» لكل جهاز لطلب المكان الذي ينبغي أن يرن عليه، وراجع ما إذا كان التطبيق يعرض «مجدول» أو «بانتظار تطبيق التغيير» أو «انتظار الإلغاء» أو «يحتاج إلى إذن» أو «غير متاح» أو «فشل» أو «المزامنة معلقة» أو حالة أخرى. أعد تسمية التثبيتات أو اجعلها متقاعدة من عناصر التحكم بالأجهزة عند توفر ذلك. ويؤدي حذف منبّه محلي فقط إلى إزالته من ذلك التثبيت وحده. — يرن على; الإلغاء معلّق; يتطلب إذنًا; المزامنة معلّقة.",
+          "oldValue": "أثناء تسجيل الخروج، تكون المنبّهات محلية فقط ويكون «هذا الجهاز» هو الجهاز المستهدف الوحيد. ولا يؤدي تسجيل الدخول مطلقًا إلى نقل أي منبّه تلقائيًا. استخدم إجراء الترقية الصريح في التطبيق إذا أردت تحويل منبّه محلي مؤهل إلى منبّه مشترك. وللمنبّه المشترك، استخدم مفتاح «الأجهزة التي يرن عليها المنبّه» لكل جهاز لطلب المكان الذي ينبغي أن يرن عليه، وراجع ما إذا كان التطبيق يعرض «مجدول» أو «انتظار التطبيق» أو «انتظار الإلغاء» أو «يحتاج إلى إذن» أو «غير متاح» أو «فشل» أو «المزامنة معلقة» أو حالة أخرى. أعد تسمية التثبيتات أو اجعلها متقاعدة من عناصر التحكم بالأجهزة عند توفر ذلك. ويؤدي حذف منبّه محلي فقط إلى إزالته من ذلك التثبيت وحده. — يرن على; التطبيق معلّق; الإلغاء معلّق; يتطلب إذنًا; المزامنة معلّقة.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "While signed out, alarms are local-only and “This Device”\n      is the only target. Signing in never moves one automatically. Use the\n      app's explicit promotion action if you want an eligible local alarm to\n      become shared. For a shared alarm, use each device's “Rings On” switch to\n      request where it should ring and review whether the app shows “Scheduled,”\n      “Pending Apply,” “Pending Cancellation,” “Needs Permission,” “Unavailable,”\n      “Failed,” “Sync Pending,” or another status.\n      Rename or retire installations from the device controls when available.\n      Deleting a local-only alarm removes it only from that installation."
+        }
+      ],
+      "newLabel": "بانتظار تطبيق التغيير",
+      "oldLabel": "التطبيق معلّق",
+      "sourceTerm": "Pending Apply"
+    },
+    "cs": {
+      "appCatalogEvidence": {
+        "ios": {
+          "path": "/Users/sam/GitHub/FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources/cs.lproj/Localizable.strings",
+          "sha256": "2bc4b49c46f0ad7a7900740ad0674277215e8c4936fe1a6c81d0a0293cb5e660",
+          "value": "Zvoní na zařízeních"
+        },
+        "mac": {
+          "path": "/Users/sam/GitHub/FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources/cs.lproj/Localizable.strings",
+          "sha256": "1eefd8e98e6d1ea0d77d380e156d5276ebe7f4071a39381f98658c75c6d9d924",
+          "value": "Zvoní na zařízeních"
+        }
+      },
+      "changes": [
+        {
+          "newValue": "Pro implementaci samostatné volby „Zvoní na zařízeních“ pro každé zařízení XTimers zpracovává identifikátory jednotlivých instalací a uživatelsky viditelná jména zařízení, schopnosti platformy a alarmu, požadované cílové volby a hlášený stav plánování zařízení. Potvrzení plánování a zrušení mohou obsahovat identifikátory alarmu a zařízení, revizi definice, požadovaný a skutečný stav, časová razítka, informace o pokusu, stav nebo důvod selhání a důkazy, že byl alarm naplánován, zastaven, odložen, spuštěn nebo zrušen. Tyto informace udržují sdílený seznam pravdivý; požadovaný cíl není považován za doručený, dokud ho cílové zařízení nepotvrdí.",
+          "oldValue": "Pro implementaci samostatné volby „Zařízení, na kterých tento alarm zazní“ pro každé zařízení XTimers zpracovává identifikátory jednotlivých instalací a uživatelsky viditelná jména zařízení, schopnosti platformy a alarmu, požadované cílové volby a hlášený stav plánování zařízení. Potvrzení plánování a zrušení mohou obsahovat identifikátory alarmu a zařízení, revizi definice, požadovaný a skutečný stav, časová razítka, informace o pokusu, stav nebo důvod selhání a důkazy, že byl alarm naplánován, zastaven, odložen, spuštěn nebo zrušen. Tyto informace udržují sdílený seznam pravdivý; požadovaný cíl není považován za doručený, dokud ho cílové zařízení nepotvrdí. — Vyzvánění zapnuto.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "To implement a separate “Rings On” choice for each device,\n      XTimers processes per-installation identifiers and user-visible device\n      names, platform and alarm capabilities, desired target choices, and the\n      device's reported scheduling state. Scheduling and cancellation receipts\n      can include the alarm and device identifiers, definition revision,\n      desired and actual state, timestamps, attempt information, status or\n      failure reason, and evidence that an alarm was scheduled, stopped,\n      snoozed, fired, or canceled. This information keeps the shared list\n      truthful; a requested target is not represented as delivered until the\n      target device confirms it."
+        },
+        {
+          "newValue": "Zvoní na zařízeních",
+          "oldValue": "Vyzvánění zapnuto",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "Rings On"
+        },
+        {
+          "newValue": "Alarm přihlášeného uživatele může mít jednu sdílenou definici a samostatnou volbu „Zvoní na zařízeních“ pro každé způsobilé zařízení. Alarm pouze pro místní použití může zvonit jen na instalaci, kde byl vytvořen. Výběr cíle je žádost, nikoli důkaz, že zařízení naplánovalo nebo zrušilo alarm. XTimers hlásí „Čeká na použití“, „Čeká na zrušení“, „Vyžaduje oprávnění“, „Není k dispozici“, „Nepodařilo se“, „Čeká na synchronizaci“ a další pravdivé stavy, pokud nelze potvrdit doručení. — Synchronizace čeká.",
+          "oldValue": "Alarm přihlášeného uživatele může mít jednu sdílenou definici a samostatnou volbu „Zařízení, na kterých tento alarm zazní“ pro každé způsobilé zařízení. Alarm pouze pro místní použití může zvonit jen na instalaci, kde byl vytvořen. Výběr cíle je žádost, nikoli důkaz, že zařízení naplánovalo nebo zrušilo alarm. XTimers hlásí „Čeká na použití“, „Čeká na zrušení“, „Vyžaduje oprávnění“, „Není k dispozici“, „Nepodařilo se“, „Čeká na synchronizaci“ a další pravdivé stavy, pokud nelze potvrdit doručení. — Vyzvánění zapnuto; Synchronizace čeká.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "A signed-in alarm may have one shared definition and a separate\n      “Rings On” choice for each eligible device. A local-only\n      alarm can ring only on the installation where it was created. A target\n      choice is a request, not proof that a device scheduled or canceled the\n      alarm. XTimers reports “Pending Apply,” “Pending Cancellation,” “Needs\n      Permission,” “Unavailable,” “Failed,” “Sync Pending,” and other truthful\n      states when it cannot confirm delivery."
+        },
+        {
+          "newValue": "Správa alarmů a nastavení „Zvoní na zařízeních“",
+          "oldValue": "Vyzvánění zapnuto",
+          "reason": "Direct GPT translation preserves both management of alarms and the exact quoted current app label for the target-device setting.",
+          "source": "Manage Alarms and Rings On"
+        },
+        {
+          "newValue": "Při odhlášení jsou alarmy pouze místní a „Toto zařízení“ je jediným cílem. Přihlášení nikdy automaticky nepřesune alarm. Použijte explicitní akci propagace v aplikaci, pokud chcete, aby se způsobilý místní alarm stal sdíleným. Pro sdílený alarm použijte přepínač „Zvoní na zařízeních“ na každém zařízení k zadání, kde by měl zvonit, a zkontrolujte, zda aplikace ukazuje „Naplánováno,“ „Čeká na použití,“ „Čeká na zrušení,“ „Vyžaduje oprávnění,“ „Není k dispozici,“ „Nepodařilo se,“ „Čeká na synchronizaci,“ nebo jiný stav.\n      Přejmenujte nebo odstraňte instalace z ovládání zařízení, pokud jsou dostupné.\n      Smazání alarmu pouze pro místní použití odstraní ho pouze z této instalace. — Synchronizace čeká.",
+          "oldValue": "Při odhlášení jsou alarmy pouze místní a „Toto zařízení“ je jediným cílem. Přihlášení nikdy automaticky nepřesune alarm. Použijte explicitní akci propagace v aplikaci, pokud chcete, aby se způsobilý místní alarm stal sdíleným. Pro sdílený alarm použijte přepínač „Zařízení, na kterých tento alarm zazní“ na každém zařízení k zadání, kde by měl zvonit, a zkontrolujte, zda aplikace ukazuje „Naplánováno,“ „Čeká na použití,“ „Čeká na zrušení,“ „Vyžaduje oprávnění,“ „Není k dispozici,“ „Nepodařilo se,“ „Čeká na synchronizaci,“ nebo jiný stav.\n      Přejmenujte nebo odstraňte instalace z ovládání zařízení, pokud jsou dostupné.\n      Smazání alarmu pouze pro místní použití odstraní ho pouze z této instalace. — Vyzvánění zapnuto; Synchronizace čeká.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "While signed out, alarms are local-only and “This Device”\n      is the only target. Signing in never moves one automatically. Use the\n      app's explicit promotion action if you want an eligible local alarm to\n      become shared. For a shared alarm, use each device's “Rings On” switch to\n      request where it should ring and review whether the app shows “Scheduled,”\n      “Pending Apply,” “Pending Cancellation,” “Needs Permission,” “Unavailable,”\n      “Failed,” “Sync Pending,” or another status.\n      Rename or retire installations from the device controls when available.\n      Deleting a local-only alarm removes it only from that installation."
+        }
+      ],
+      "newLabel": "Zvoní na zařízeních",
+      "oldLabel": "Vyzvánění zapnuto",
+      "sourceTerm": "Rings On"
+    },
+    "de": {
+      "appCatalogEvidence": {
+        "ios": {
+          "path": "/Users/sam/GitHub/FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources/de.lproj/Localizable.strings",
+          "sha256": "dea3ddc2aae28147d54e6e3f2aadb694ea0429d5dc50c3f26aa2c56a9413f452",
+          "value": "Klingelt auf"
+        },
+        "mac": {
+          "path": "/Users/sam/GitHub/FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources/de.lproj/Localizable.strings",
+          "sha256": "b68ca8f5e4a98b4178d446d4d2aa4373e92417f3a89a407e55be435b1dcca94c",
+          "value": "Klingelt auf"
+        }
+      },
+      "changes": [
+        {
+          "newValue": "Um eine separate „Klingelt auf“-Option für jedes Gerät zu implementieren, verarbeitet XTimers Installations-Identifikatoren und für den Benutzer sichtbare Gerätenamen, Plattform- und Alarmfähigkeiten, gewünschte Zieloptionen und den vom Gerät gemeldeten Planungsstatus. Terminierungs- und Stornierungsbelege können die Alarm- und Gerätekennungen, die Definitionsüberarbeitung, den gewünschten und tatsächlichen Zustand, Zeitstempel, Versuchsinformationen, Status oder Fehlergrund sowie Nachweise dafür enthalten, dass ein Alarm geplant, gestoppt, verschoben, ausgelöst oder abgebrochen wurde. Diese Informationen halten die gemeinsame Liste wahrheitsgemäß; ein angefordertes Ziel wird nicht als geliefert dargestellt, bis das Zielgerät dies bestätigt.",
+          "oldValue": "Um eine separate „Geräte, auf denen der Alarm klingelt“-Option für jedes Gerät zu implementieren, verarbeitet XTimers Installations-Identifikatoren und für den Benutzer sichtbare Gerätenamen, Plattform- und Alarmfähigkeiten, gewünschte Zieloptionen und den vom Gerät gemeldeten Planungsstatus. Terminierungs- und Stornierungsbelege können die Alarm- und Gerätekennungen, die Definitionsüberarbeitung, den gewünschten und tatsächlichen Zustand, Zeitstempel, Versuchsinformationen, Status oder Fehlergrund sowie Nachweise dafür enthalten, dass ein Alarm geplant, gestoppt, verschoben, ausgelöst oder abgebrochen wurde. Diese Informationen halten die gemeinsame Liste wahrheitsgemäß; ein angefordertes Ziel wird nicht als geliefert dargestellt, bis das Zielgerät dies bestätigt. — Klingelt auf. — Klingeln aktiviert.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "To implement a separate “Rings On” choice for each device,\n      XTimers processes per-installation identifiers and user-visible device\n      names, platform and alarm capabilities, desired target choices, and the\n      device's reported scheduling state. Scheduling and cancellation receipts\n      can include the alarm and device identifiers, definition revision,\n      desired and actual state, timestamps, attempt information, status or\n      failure reason, and evidence that an alarm was scheduled, stopped,\n      snoozed, fired, or canceled. This information keeps the shared list\n      truthful; a requested target is not represented as delivered until the\n      target device confirms it."
+        },
+        {
+          "newValue": "Klingelt auf",
+          "oldValue": "Klingeln aktiviert",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "Rings On"
+        },
+        {
+          "newValue": "Ein angemeldeter Alarm kann eine gemeinsame Definition und eine separate „Klingelt auf“-Option für jedes berechtigte Gerät haben. Ein nur lokal verfügbarer Alarm kann nur an dem Installationsort klingeln, an dem er erstellt wurde. Eine Zielwahl ist eine Anfrage, kein Beweis dafür, dass ein Gerät den Alarm geplant oder abgebrochen hat. XTimers meldet „Ausstehende Anwendung“, „Ausstehende Stornierung“, „Berechtigung erforderlich“, „Nicht verfügbar“, „Fehlgeschlagen“, „Sync ausstehend“ und andere wahre Zustände, wenn die Zustellung nicht bestätigt werden kann. — Anwendung ausstehend; Abbruch ausstehend; Synchronisierung ausstehend.",
+          "oldValue": "Ein angemeldeter Alarm kann eine gemeinsame Definition und eine separate „Geräte, auf denen der Alarm klingelt“-Option für jedes berechtigte Gerät haben. Ein nur lokal verfügbarer Alarm kann nur an dem Installationsort klingeln, an dem er erstellt wurde. Eine Zielwahl ist eine Anfrage, kein Beweis dafür, dass ein Gerät den Alarm geplant oder abgebrochen hat. XTimers meldet „Ausstehende Anwendung“, „Ausstehende Stornierung“, „Berechtigung erforderlich“, „Nicht verfügbar“, „Fehlgeschlagen“, „Sync ausstehend“ und andere wahre Zustände, wenn die Zustellung nicht bestätigt werden kann. — Klingelt auf. — Klingeln aktiviert; Anwendung ausstehend; Abbruch ausstehend; Synchronisierung ausstehend.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "A signed-in alarm may have one shared definition and a separate\n      “Rings On” choice for each eligible device. A local-only\n      alarm can ring only on the installation where it was created. A target\n      choice is a request, not proof that a device scheduled or canceled the\n      alarm. XTimers reports “Pending Apply,” “Pending Cancellation,” “Needs\n      Permission,” “Unavailable,” “Failed,” “Sync Pending,” and other truthful\n      states when it cannot confirm delivery."
+        },
+        {
+          "newValue": "Alarme und die Einstellung „Klingelt auf“ verwalten",
+          "oldValue": "Klingeln aktiviert",
+          "reason": "Direct GPT translation preserves both management of alarms and the exact quoted current app label for the target-device setting.",
+          "source": "Manage Alarms and Rings On"
+        },
+        {
+          "newValue": "Im abgemeldeten Zustand sind Alarme ausschließlich lokal und „Dieses Gerät“ ist das einzige Ziel. Durch eine Anmeldung wird ein Alarm niemals automatisch verschoben. Verwenden Sie die ausdrückliche Hochstufungsaktion der App, wenn ein geeigneter lokaler Alarm freigegeben werden soll. Verwenden Sie bei einem freigegebenen Alarm für jedes Gerät den Schalter „Klingelt auf“, um festzulegen, wo er klingeln soll, und prüfen Sie, ob die App „Geplant“, „Anwendung ausstehend“, „Stornierung ausstehend“, „Berechtigung erforderlich“, „Nicht verfügbar“, „Fehlgeschlagen“, „Synchronisierung ausstehend“ oder einen anderen Status anzeigt. Benennen Sie Installationen in der Geräteverwaltung um oder setzen Sie sie außer Betrieb, sofern diese Funktionen verfügbar sind. Das Löschen eines ausschließlich lokalen Alarms entfernt ihn nur von dieser Installation. — Ausstehende Anwendung; Ausstehende Stornierung; Sync ausstehend. — Abbruch ausstehend.",
+          "oldValue": "Im abgemeldeten Zustand sind Alarme ausschließlich lokal und „Dieses Gerät“ ist das einzige Ziel. Durch eine Anmeldung wird ein Alarm niemals automatisch verschoben. Verwenden Sie die ausdrückliche Hochstufungsaktion der App, wenn ein geeigneter lokaler Alarm freigegeben werden soll. Verwenden Sie bei einem freigegebenen Alarm für jedes Gerät den Schalter „Klingelt auf“, um festzulegen, wo er klingeln soll, und prüfen Sie, ob die App „Geplant“, „Anwendung ausstehend“, „Stornierung ausstehend“, „Berechtigung erforderlich“, „Nicht verfügbar“, „Fehlgeschlagen“, „Synchronisierung ausstehend“ oder einen anderen Status anzeigt. Benennen Sie Installationen in der Geräteverwaltung um oder setzen Sie sie außer Betrieb, sofern diese Funktionen verfügbar sind. Das Löschen eines ausschließlich lokalen Alarms entfernt ihn nur von dieser Installation. — Ausstehende Anwendung; Ausstehende Stornierung; Sync ausstehend. — Klingeln aktiviert; Abbruch ausstehend.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "While signed out, alarms are local-only and “This Device”\n      is the only target. Signing in never moves one automatically. Use the\n      app's explicit promotion action if you want an eligible local alarm to\n      become shared. For a shared alarm, use each device's “Rings On” switch to\n      request where it should ring and review whether the app shows “Scheduled,”\n      “Pending Apply,” “Pending Cancellation,” “Needs Permission,” “Unavailable,”\n      “Failed,” “Sync Pending,” or another status.\n      Rename or retire installations from the device controls when available.\n      Deleting a local-only alarm removes it only from that installation."
+        }
+      ],
+      "newLabel": "Klingelt auf",
+      "oldLabel": "Klingeln aktiviert",
+      "sourceTerm": "Rings On"
+    },
+    "fr": {
+      "appCatalogEvidence": {
+        "ios": {
+          "path": "/Users/sam/GitHub/FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources/fr.lproj/Localizable.strings",
+          "sha256": "c509117f3ec6943547ecd6a7bf36e4517b7b2b1225a9a4cd2bc1ba21b841309d",
+          "value": "Sonne sur"
+        },
+        "mac": {
+          "path": "/Users/sam/GitHub/FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources/fr.lproj/Localizable.strings",
+          "sha256": "82946bf88fd0c023ea2472fe9ced96d2deeabf2ad700be0bd0339c7c9fca8b3b",
+          "value": "Sonne sur"
+        }
+      },
+      "changes": [
+        {
+          "newValue": "Pour mettre en œuvre un choix séparé « Sonne sur » pour chaque appareil, XTimers traite les identifiants d'installation par appareil et les noms d'appareils visibles par l'utilisateur, les capacités de la plateforme et de l'alarme, les choix cibles souhaités et l'état de planification signalé par l'appareil. Les reçus de planification et d'annulation peuvent inclure les identifiants d'alarme et de dispositif, la révision de la définition, l'état souhaité et réel, les horodatages, les informations de tentative, le statut ou le motif de l'échec, ainsi que la preuve qu'une alarme a été programmée, arrêtée, mise en veille, déclenchée ou annulée. Ces informations permettent de maintenir la liste partagée véridique ; une cible demandée n'est pas considérée comme livrée tant que le dispositif cible ne la confirme pas.",
+          "oldValue": "Pour mettre en œuvre un choix séparé « Appareils où l’alarme sonne » pour chaque appareil, XTimers traite les identifiants d'installation par appareil et les noms d'appareils visibles par l'utilisateur, les capacités de la plateforme et de l'alarme, les choix cibles souhaités et l'état de planification signalé par l'appareil. Les reçus de planification et d'annulation peuvent inclure les identifiants d'alarme et de dispositif, la révision de la définition, l'état souhaité et réel, les horodatages, les informations de tentative, le statut ou le motif de l'échec, ainsi que la preuve qu'une alarme a été programmée, arrêtée, mise en veille, déclenchée ou annulée. Ces informations permettent de maintenir la liste partagée véridique ; une cible demandée n'est pas considérée comme livrée tant que le dispositif cible ne la confirme pas. — Sonnerie activée.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "To implement a separate “Rings On” choice for each device,\n      XTimers processes per-installation identifiers and user-visible device\n      names, platform and alarm capabilities, desired target choices, and the\n      device's reported scheduling state. Scheduling and cancellation receipts\n      can include the alarm and device identifiers, definition revision,\n      desired and actual state, timestamps, attempt information, status or\n      failure reason, and evidence that an alarm was scheduled, stopped,\n      snoozed, fired, or canceled. This information keeps the shared list\n      truthful; a requested target is not represented as delivered until the\n      target device confirms it."
+        },
+        {
+          "newValue": "Sonne sur",
+          "oldValue": "Sonnerie activée",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "Rings On"
+        },
+        {
+          "newValue": "Une alarme connectée peut avoir une définition partagée et un choix séparé « Sonne sur » pour chaque appareil éligible. Une alarme locale uniquement ne peut sonner que sur l'installation où elle a été créée. Un choix de cible est une demande, pas une preuve qu'un appareil a programmé ou annulé l'alarme. XTimers affiche « Application en attente », « Annulation en attente », « Besoin d'autorisation », « Indisponible », « Échec », « Synchronisation en attente » et d'autres états exacts lorsqu'il ne peut pas confirmer la livraison.",
+          "oldValue": "Une alarme connectée peut avoir une définition partagée et un choix séparé « Appareils où l’alarme sonne » pour chaque appareil éligible. Une alarme locale uniquement ne peut sonner que sur l'installation où elle a été créée. Un choix de cible est une demande, pas une preuve qu'un appareil a programmé ou annulé l'alarme. XTimers affiche « Application en attente », « Annulation en attente », « Besoin d'autorisation », « Indisponible », « Échec », « Synchronisation en attente » et d'autres états exacts lorsqu'il ne peut pas confirmer la livraison. — Sonnerie activée.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "A signed-in alarm may have one shared definition and a separate\n      “Rings On” choice for each eligible device. A local-only\n      alarm can ring only on the installation where it was created. A target\n      choice is a request, not proof that a device scheduled or canceled the\n      alarm. XTimers reports “Pending Apply,” “Pending Cancellation,” “Needs\n      Permission,” “Unavailable,” “Failed,” “Sync Pending,” and other truthful\n      states when it cannot confirm delivery."
+        },
+        {
+          "newValue": "Gérer les alarmes et le réglage « Sonne sur »",
+          "oldValue": "Sonnerie activée",
+          "reason": "Direct GPT translation preserves both management of alarms and the exact quoted current app label for the target-device setting.",
+          "source": "Manage Alarms and Rings On"
+        },
+        {
+          "newValue": "Lorsque vous êtes déconnecté, les alarmes sont exclusivement locales et « Cet appareil » est la seule cible. La connexion ne transfère jamais automatiquement une alarme. Utilisez l’action explicite de promotion de l’application si vous souhaitez qu’une alarme locale admissible devienne partagée. Pour une alarme partagée, utilisez le commutateur « Sonne sur » de chaque appareil afin de demander où elle doit sonner et vérifiez si l’application affiche « Programmée », « Application en attente », « Annulation en attente », « Autorisation requise », « Indisponible », « Échec », « Synchronisation en attente » ou un autre état. Renommez ou retirez les installations dans les contrôles des appareils lorsque cette option est disponible. La suppression d’une alarme exclusivement locale ne la retire que de cette installation. — Besoin d'autorisation.",
+          "oldValue": "Lorsque vous êtes déconnecté, les alarmes sont exclusivement locales et « Cet appareil » est la seule cible. La connexion ne transfère jamais automatiquement une alarme. Utilisez l’action explicite de promotion de l’application si vous souhaitez qu’une alarme locale admissible devienne partagée. Pour une alarme partagée, utilisez le commutateur « Appareils où l’alarme sonne » de chaque appareil afin de demander où elle doit sonner et vérifiez si l’application affiche « Programmée », « Application en attente », « Annulation en attente », « Autorisation requise », « Indisponible », « Échec », « Synchronisation en attente » ou un autre état. Renommez ou retirez les installations dans les contrôles des appareils lorsque cette option est disponible. La suppression d’une alarme exclusivement locale ne la retire que de cette installation. — Besoin d'autorisation. — Sonnerie activée.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "While signed out, alarms are local-only and “This Device”\n      is the only target. Signing in never moves one automatically. Use the\n      app's explicit promotion action if you want an eligible local alarm to\n      become shared. For a shared alarm, use each device's “Rings On” switch to\n      request where it should ring and review whether the app shows “Scheduled,”\n      “Pending Apply,” “Pending Cancellation,” “Needs Permission,” “Unavailable,”\n      “Failed,” “Sync Pending,” or another status.\n      Rename or retire installations from the device controls when available.\n      Deleting a local-only alarm removes it only from that installation."
+        }
+      ],
+      "newLabel": "Sonne sur",
+      "oldLabel": "Sonnerie activée",
+      "sourceTerm": "Rings On"
+    },
+    "hu": {
+      "appCatalogEvidence": {
+        "ios": {
+          "path": "/Users/sam/GitHub/FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources/hu.lproj/Localizable.strings",
+          "sha256": "806b1306dc8dd1045bab6f142de781abef6caeb77246cc6e31c22931c19501fb",
+          "value": "Ezeken az eszközökön szól"
+        },
+        "mac": {
+          "path": "/Users/sam/GitHub/FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources/hu.lproj/Localizable.strings",
+          "sha256": "28dc19fd158853ff8730f94601d3d46b10d8928ee256a26064c522557e7eb7d0",
+          "value": "Ezeken az eszközökön szól"
+        }
+      },
+      "changes": [
+        {
+          "newValue": "Annak érdekében, hogy minden eszköz számára külön „Ezeken az eszközökön szól” választási lehetőség legyen érvényesíthető,\n      XTimers feldolgozza az egy telepítésre vonatkozó azonosítókat és a felhasználó számára látható eszközneveket, a platform és az ébresztési képességeket, a kívánt célválasztásokat, valamint az eszköz által jelentett ütemezési állapotot. Az ütemezési és lemondási nyugták tartalmazhatják a riasztás- és eszközazonosítókat, a definíció felülvizsgálatát, a kívánt és a tényleges állapotot, időbélyegeket, kísérleti információkat, állapotot vagy a hibák okát, valamint a bizonyítékot arra, hogy egy riasztás ütemezve, leállítva, szundi állapotba helyezve, működtetve vagy törölve lett. Ez az információ hitelessé teszi a megosztott listát; a kért célpont nem jelenik meg kézbesítettként, amíg a cél eszköz azt nem erősíti meg.",
+          "oldValue": "Annak érdekében, hogy minden eszköz számára külön „Eszközök, ahol ez az ébresztő megszólal” választási lehetőség legyen érvényesíthető,\n      XTimers feldolgozza az egy telepítésre vonatkozó azonosítókat és a felhasználó számára látható eszközneveket, a platform és az ébresztési képességeket, a kívánt célválasztásokat, valamint az eszköz által jelentett ütemezési állapotot. Az ütemezési és lemondási nyugták tartalmazhatják a riasztás- és eszközazonosítókat, a definíció felülvizsgálatát, a kívánt és a tényleges állapotot, időbélyegeket, kísérleti információkat, állapotot vagy a hibák okát, valamint a bizonyítékot arra, hogy egy riasztás ütemezve, leállítva, szundi állapotba helyezve, működtetve vagy törölve lett. Ez az információ hitelessé teszi a megosztott listát; a kért célpont nem jelenik meg kézbesítettként, amíg a cél eszköz azt nem erősíti meg. — Cseng ezen:.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "To implement a separate “Rings On” choice for each device,\n      XTimers processes per-installation identifiers and user-visible device\n      names, platform and alarm capabilities, desired target choices, and the\n      device's reported scheduling state. Scheduling and cancellation receipts\n      can include the alarm and device identifiers, definition revision,\n      desired and actual state, timestamps, attempt information, status or\n      failure reason, and evidence that an alarm was scheduled, stopped,\n      snoozed, fired, or canceled. This information keeps the shared list\n      truthful; a requested target is not represented as delivered until the\n      target device confirms it."
+        },
+        {
+          "newValue": "Ezeken az eszközökön szól",
+          "oldValue": "Cseng ezen:",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "Rings On"
+        },
+        {
+          "newValue": "A bejelentkezett felhasználó riasztásának lehet egy közös definíciója és minden jogosult eszközhöz külön „Ezeken az eszközökön szól” beállítása. A csak helyben tárolt riasztás kizárólag abban az alkalmazástelepítésben szólalhat meg, amelyben létrehozták. A céleszköz kiválasztása kérés, nem pedig bizonyíték arra, hogy egy eszköz ütemezte vagy lemondta a riasztást. Ha a kézbesítést nem tudja megerősíteni, az XTimers az „Alkalmazásra vár”, „Lemondásra vár”, „Engedély szükséges”, „Nem érhető el”, „Sikertelen”, „Szinkronizálásra vár” és más, a tényleges állapotot tükröző állapotokat jelenti. — Alkalmazás függőben; Lemondás függőben; Szinkronizálás függőben.",
+          "oldValue": "A bejelentkezett felhasználó riasztásának lehet egy közös definíciója és minden jogosult eszközhöz külön „Eszközök, ahol ez az ébresztő megszólal” beállítása. A csak helyben tárolt riasztás kizárólag abban az alkalmazástelepítésben szólalhat meg, amelyben létrehozták. A céleszköz kiválasztása kérés, nem pedig bizonyíték arra, hogy egy eszköz ütemezte vagy lemondta a riasztást. Ha a kézbesítést nem tudja megerősíteni, az XTimers az „Alkalmazásra vár”, „Lemondásra vár”, „Engedély szükséges”, „Nem érhető el”, „Sikertelen”, „Szinkronizálásra vár” és más, a tényleges állapotot tükröző állapotokat jelenti. — Cseng ezen:; Alkalmazás függőben; Lemondás függőben; Szinkronizálás függőben.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "A signed-in alarm may have one shared definition and a separate\n      “Rings On” choice for each eligible device. A local-only\n      alarm can ring only on the installation where it was created. A target\n      choice is a request, not proof that a device scheduled or canceled the\n      alarm. XTimers reports “Pending Apply,” “Pending Cancellation,” “Needs\n      Permission,” “Unavailable,” “Failed,” “Sync Pending,” and other truthful\n      states when it cannot confirm delivery."
+        },
+        {
+          "newValue": "Riasztások és az „Ezeken az eszközökön szól” beállítás kezelése",
+          "oldValue": "Cseng ezen:",
+          "reason": "Direct GPT translation preserves both management of alarms and the exact quoted current app label for the target-device setting.",
+          "source": "Manage Alarms and Rings On"
+        },
+        {
+          "newValue": "Kijelentkezett állapotban az ébresztések csak helyiek, és csak a \"Ez az eszköz\" a cél. A bejelentkezés soha nem helyez át automatikusan riasztást. Használja az alkalmazás kifejezett promóciós műveletét, ha azt szeretné, hogy egy jogosult helyi riasztás megosztottá váljon. Megosztott riasztás esetén használja minden eszköz „Ezeken az eszközökön szól” kapcsolóját, hogy kérje, hol szólaljon meg, és ellenőrizze, hogy az alkalmazás „Ütemezett”, „Alkalmazásra vár”, „Lemondásra vár”, „Engedély szükséges”, „Nem érhető el”, „Sikertelen”, „Szinkronizálásra vár” vagy más státuszt jelez-e.\n      Nevezze át vagy törölje az eszközvezérlőből a telepítéseket, ha elérhetők.\n      A csak a helyi riasztás törlése csak abból a telepítésből távolítja el. — Alkalmazás függőben; Lemondás függőben; Szinkronizálás függőben.",
+          "oldValue": "Kijelentkezett állapotban az ébresztések csak helyiek, és csak a \"Ez az eszköz\" a cél. A bejelentkezés soha nem helyez át automatikusan riasztást. Használja az alkalmazás kifejezett promóciós műveletét, ha azt szeretné, hogy egy jogosult helyi riasztás megosztottá váljon. Megosztott riasztás esetén használja minden eszköz „Eszközök, ahol ez az ébresztő megszólal” kapcsolóját, hogy kérje, hol szólaljon meg, és ellenőrizze, hogy az alkalmazás „Ütemezett”, „Alkalmazásra vár”, „Lemondásra vár”, „Engedély szükséges”, „Nem érhető el”, „Sikertelen”, „Szinkronizálásra vár” vagy más státuszt jelez-e.\n      Nevezze át vagy törölje az eszközvezérlőből a telepítéseket, ha elérhetők.\n      A csak a helyi riasztás törlése csak abból a telepítésből távolítja el. — Cseng ezen:; Alkalmazás függőben; Lemondás függőben; Szinkronizálás függőben.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "While signed out, alarms are local-only and “This Device”\n      is the only target. Signing in never moves one automatically. Use the\n      app's explicit promotion action if you want an eligible local alarm to\n      become shared. For a shared alarm, use each device's “Rings On” switch to\n      request where it should ring and review whether the app shows “Scheduled,”\n      “Pending Apply,” “Pending Cancellation,” “Needs Permission,” “Unavailable,”\n      “Failed,” “Sync Pending,” or another status.\n      Rename or retire installations from the device controls when available.\n      Deleting a local-only alarm removes it only from that installation."
+        }
+      ],
+      "newLabel": "Ezeken az eszközökön szól",
+      "oldLabel": "Cseng ezen:",
+      "sourceTerm": "Rings On"
+    },
+    "tr": {
+      "appCatalogEvidence": {
+        "ios": {
+          "path": "/Users/sam/GitHub/FlexibleTimersiOS/Sources/FlexibleTimersiOS/Resources/tr.lproj/Localizable.strings",
+          "sha256": "4e7d563f8ae6def5f34ba00599ff1c182e58ea69b70513fbcc2089d4d57aae5c",
+          "value": "Çalacağı cihazlar"
+        },
+        "mac": {
+          "path": "/Users/sam/GitHub/FlexibleTimersSwiftUI/Sources/FlexibleTimersSwiftUI/Resources/tr.lproj/Localizable.strings",
+          "sha256": "6a188e0844abc783327079d6e402d444a38f836166d0bb559d61431aea28039b",
+          "value": "Çalacağı cihazlar"
+        }
+      },
+      "changes": [
+        {
+          "newValue": "Her cihaz için ayrı bir “Çalacağı cihazlar” seçeneği uygulamak için, XTimers yükleme başına kimlikleri ve kullanıcıya görünür cihaz isimlerini, platform ve alarm yeteneklerini, istenen hedef seçeneklerini ve cihazın bildirilen zamanlama durumunu işler. Zamanlama ve iptal makbuzları, alarm ve cihaz tanımlayıcıları, tanım revizyonu, istenen ve mevcut durum, zaman damgaları, deneme bilgileri, durum veya hata nedeni ve bir alarmın planlandığını, durdurulduğunu, ertelediğini, tetiklendiğini veya iptal edildiğini kanıtlayan bilgileri içerebilir. Bu bilgi paylaşılan listeyi doğru tutar; talep edilen bir hedef, hedef cihaz onay verene kadar teslim edilmiş olarak temsil edilmez.",
+          "oldValue": "Her cihaz için ayrı bir “Bu alarmın çaldığı cihazlar” seçeneği uygulamak için, XTimers yükleme başına kimlikleri ve kullanıcıya görünür cihaz isimlerini, platform ve alarm yeteneklerini, istenen hedef seçeneklerini ve cihazın bildirilen zamanlama durumunu işler. Zamanlama ve iptal makbuzları, alarm ve cihaz tanımlayıcıları, tanım revizyonu, istenen ve mevcut durum, zaman damgaları, deneme bilgileri, durum veya hata nedeni ve bir alarmın planlandığını, durdurulduğunu, ertelediğini, tetiklendiğini veya iptal edildiğini kanıtlayan bilgileri içerebilir. Bu bilgi paylaşılan listeyi doğru tutar; talep edilen bir hedef, hedef cihaz onay verene kadar teslim edilmiş olarak temsil edilmez. — Zil Açık.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "To implement a separate “Rings On” choice for each device,\n      XTimers processes per-installation identifiers and user-visible device\n      names, platform and alarm capabilities, desired target choices, and the\n      device's reported scheduling state. Scheduling and cancellation receipts\n      can include the alarm and device identifiers, definition revision,\n      desired and actual state, timestamps, attempt information, status or\n      failure reason, and evidence that an alarm was scheduled, stopped,\n      snoozed, fired, or canceled. This information keeps the shared list\n      truthful; a requested target is not represented as delivered until the\n      target device confirms it."
+        },
+        {
+          "newValue": "Çalacağı cihazlar",
+          "oldValue": "Zil Açık",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "Rings On"
+        },
+        {
+          "newValue": "Oturum açmış bir kullanıcının alarmı, tek bir ortak tanıma ve uygun her cihaz için ayrı bir “Çalacağı cihazlar” seçeneğine sahip olabilir. Yalnızca yerel olarak saklanan bir alarm, sadece oluşturulduğu uygulama kurulumunda çalabilir. Hedef cihaz seçimi bir istektir; cihazın alarmı planladığının veya iptal ettiğinin kanıtı değildir. XTimers teslimatı doğrulayamadığında “Uygulanmayı Bekliyor”, “İptal Bekleniyor”, “İzin Gerekli”, “Kullanılamıyor”, “Başarısız”, “Senkronizasyon Bekleniyor” ve gerçek durumu yansıtan diğer durumları bildirir. — Uygulamayı Bekliyor; Kullanılamaz; Beklenen senkronizasyon.",
+          "oldValue": "Oturum açmış bir kullanıcının alarmı, tek bir ortak tanıma ve uygun her cihaz için ayrı bir “Bu alarmın çaldığı cihazlar” seçeneğine sahip olabilir. Yalnızca yerel olarak saklanan bir alarm, sadece oluşturulduğu uygulama kurulumunda çalabilir. Hedef cihaz seçimi bir istektir; cihazın alarmı planladığının veya iptal ettiğinin kanıtı değildir. XTimers teslimatı doğrulayamadığında “Uygulanmayı Bekliyor”, “İptal Bekleniyor”, “İzin Gerekli”, “Kullanılamıyor”, “Başarısız”, “Senkronizasyon Bekleniyor” ve gerçek durumu yansıtan diğer durumları bildirir. — Zil Açık; Uygulamayı Bekliyor; Kullanılamaz; Beklenen senkronizasyon.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "A signed-in alarm may have one shared definition and a separate\n      “Rings On” choice for each eligible device. A local-only\n      alarm can ring only on the installation where it was created. A target\n      choice is a request, not proof that a device scheduled or canceled the\n      alarm. XTimers reports “Pending Apply,” “Pending Cancellation,” “Needs\n      Permission,” “Unavailable,” “Failed,” “Sync Pending,” and other truthful\n      states when it cannot confirm delivery."
+        },
+        {
+          "newValue": "Alarmları ve “Çalacağı cihazlar” ayarını yönetin",
+          "oldValue": "Zil Açık",
+          "reason": "Direct GPT translation preserves both management of alarms and the exact quoted current app label for the target-device setting.",
+          "source": "Manage Alarms and Rings On"
+        },
+        {
+          "newValue": "Oturum kapalıyken, alarmlar yalnızca yereldir ve “Bu Cihaz” tek hedeftir. Oturum açmak hiçbir alarmı otomatik olarak taşımaz. Uygulamanın açık terfi eylemini kullanın, eğer uygun bir yerel alarmın paylaşılan hale gelmesini istiyorsanız. Paylaşılan bir alarm için, her cihazın “Çalacağı cihazlar” anahtarını, aların nerede çalması gerektiğini istemek ve uygulamanın “Planlandı,” “Uygulanmayı Bekliyor,” “İptal Bekleniyor,” “İzin Gerekli,” “Kullanılamıyor,” “Başarısız,” “Senkronizasyon Bekleniyor” veya başka bir durumu gösterip göstermediğini gözden geçirmek için kullanın.\n      Müsait olduğunda cihaz kontrollerinden kurulumların adını değiştirin veya devre dışı bırakın.\n      Yerel-sadece bir alarmı silmek, onu yalnızca o kurulumdan kaldırır. — Bu Aygıt; Uygulamayı Bekliyor; İzin Gerekir; Kullanılamaz; Beklenen senkronizasyon.",
+          "oldValue": "Oturum kapalıyken, alarmlar yalnızca yereldir ve “Bu Cihaz” tek hedeftir. Oturum açmak hiçbir alarmı otomatik olarak taşımaz. Uygulamanın açık terfi eylemini kullanın, eğer uygun bir yerel alarmın paylaşılan hale gelmesini istiyorsanız. Paylaşılan bir alarm için, her cihazın “Bu alarmın çaldığı cihazlar” anahtarını, aların nerede çalması gerektiğini istemek ve uygulamanın “Planlandı,” “Uygulanmayı Bekliyor,” “İptal Bekleniyor,” “İzin Gerekli,” “Kullanılamıyor,” “Başarısız,” “Senkronizasyon Bekleniyor” veya başka bir durumu gösterip göstermediğini gözden geçirmek için kullanın.\n      Müsait olduğunda cihaz kontrollerinden kurulumların adını değiştirin veya devre dışı bırakın.\n      Yerel-sadece bir alarmı silmek, onu yalnızca o kurulumdan kaldırır. — Zil Açık; Bu Aygıt; Uygulamayı Bekliyor; İzin Gerekir; Kullanılamaz; Beklenen senkronizasyon.",
+          "reason": "Use the exact current app label in the standalone label, shared heading, or quoted policy reference; remove redundant appended copies of this same label only.",
+          "source": "While signed out, alarms are local-only and “This Device”\n      is the only target. Signing in never moves one automatically. Use the\n      app's explicit promotion action if you want an eligible local alarm to\n      become shared. For a shared alarm, use each device's “Rings On” switch to\n      request where it should ring and review whether the app shows “Scheduled,”\n      “Pending Apply,” “Pending Cancellation,” “Needs Permission,” “Unavailable,”\n      “Failed,” “Sync Pending,” or another status.\n      Rename or retire installations from the device controls when available.\n      Deleting a local-only alarm removes it only from that installation."
+        }
+      ],
+      "newLabel": "Çalacağı cihazlar",
+      "oldLabel": "Zil Açık",
+      "sourceTerm": "Rings On"
+    }
+  },
+  "model": "gpt-6",
+  "qualifiedNativeReview": false,
+  "schemaVersion": 1,
+  "scope": "Six website alarm UI labels, five associated management headings, and their quoted policy references. Current matching Mac/iOS labels and the full meaning of the affected English headings were directly semantically reaffirmed by the active GPT model. No other policy meaning was revised.",
+  "sourceSha256": "d7fd6316b28a72de02612ff33a04d04076e10e29adaee1d62d9bfd56a1e85546"
+}

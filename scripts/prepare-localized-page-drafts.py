@@ -1469,8 +1469,12 @@ TRANSLATABLE_META_PROPERTIES = {
     "twitter:title",
 }
 INLINE_BLOCK_TAGS = {"h1", "h2", "h3", "li", "p"}
-INLINE_TAGS = {"a", "br", "code", "em", "span", "strong", "time"}
-OPAQUE_INLINE_TAGS = {"br", "code"}
+INLINE_TAGS = {"a", "br", "code", "em", "img", "small", "span", "strong", "svg", "time", "use"}
+OPAQUE_INLINE_TAGS = {"br", "code", "img", "svg"}
+TRANSLATABLE_ATTRIBUTES = (
+    "aria-label", "alt", "title", "placeholder", "data-caption",
+    "data-open-label", "data-close-label",
+)
 INLINE_PLACEHOLDER_PATTERN = re.compile(r"%(\d+)\$@")
 INITIAL_POLICY_LOCALIZATION_REVISION = (
     "f340d4531b42c5a52ded1b717f0f4135cc70a22f"
@@ -1787,7 +1791,7 @@ def extracted_values(root: Path) -> set[str]:
             if is_translatable(value):
                 values.add(value)
         for tag in soup.find_all(True):
-            for attribute in ("aria-label", "alt", "title", "placeholder"):
+            for attribute in TRANSLATABLE_ATTRIBUTES:
                 value = tag.get(attribute)
                 if isinstance(value, str) and is_translatable(value):
                     values.add(value)
@@ -1958,7 +1962,7 @@ def imported_page_values(
             localized_tag = tag_at_path(localized, tag_path(source_tag, source))
         except RuntimeError:
             continue
-        for attribute in ("aria-label", "alt", "title", "placeholder"):
+        for attribute in TRANSLATABLE_ATTRIBUTES:
             source_value = source_tag.get(attribute)
             if isinstance(source_value, str) and is_translatable(source_value):
                 translated = localized_tag.get(attribute)
@@ -2146,10 +2150,9 @@ def reviewed_correction_values(
     ).items():
         matching_keys = [key for key in source if source_fragment in key]
         if not matching_keys:
-            raise RuntimeError(
-                f"Reviewed correction source is absent for {identifier}: "
-                f"{source_fragment!r}"
-            )
+            # Keep historical review artifacts intact without restoring retired
+            # copy or requiring it in the current source catalog.
+            continue
         for key in matching_keys:
             if (
                 key in reviewed_overlay.get(identifier, {})
@@ -2216,7 +2219,7 @@ def replace_copy(soup: BeautifulSoup, translations: dict[str, str]) -> None:
         trailing = original[len(original.rstrip()) :]
         node.replace_with(leading + translations[stripped] + trailing)
     for tag in soup.find_all(True):
-        for attribute in ("aria-label", "alt", "title", "placeholder"):
+        for attribute in TRANSLATABLE_ATTRIBUTES:
             value = tag.get(attribute)
             if isinstance(value, str) and value in translations:
                 tag[attribute] = translations[value]
@@ -2228,7 +2231,7 @@ def replace_copy(soup: BeautifulSoup, translations: dict[str, str]) -> None:
 
 def adjust_relative_references(soup: BeautifulSoup) -> None:
     for tag in soup.find_all(True):
-        for attribute in ("href", "src"):
+        for attribute in ("href", "src", "data-zoom"):
             value = tag.get(attribute)
             if not isinstance(value, str) or not value:
                 continue

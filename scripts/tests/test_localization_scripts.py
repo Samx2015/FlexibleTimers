@@ -105,7 +105,7 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             self.assertEqual(document["authorship"], "direct-codex-gpt")
             self.assertEqual(
                 document["reviewScope"],
-                "all-262-values-retranslated-or-reaffirmed-from-English",
+                f"all-{len(source)}-values-retranslated-or-reaffirmed-from-English",
             )
             catalog = checker.load_strings(
                 ROOT
@@ -148,8 +148,13 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         overlay = json.loads(authoring.REVIEWED_OVERLAY_PATH.read_text(encoding="utf-8"))
         self.assertEqual(len(overlay), 30)
         self.assertEqual(sum(len(values) for values in overlay.values()), 45)
+        current_source = authoring.load_strings(
+            ROOT / "generated" / "WebsiteSource.strings"
+        )
         for identifier, values in overlay.items():
             for source, target in values.items():
+                if source not in current_source:
+                    continue
                 direct_path = (
                     ROOT
                     / "generated"
@@ -268,8 +273,10 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             )
         )["translations"]
         defective = dict(catalog)
-        sample_key = next(iter(website_overlay["kn"]))
-        second_audit_key = next(iter(second_audit_overlay["kn"]))
+        sample_key = next(key for key in website_overlay["kn"] if key in source)
+        second_audit_key = next(
+            key for key in second_audit_overlay["kn"] if key in source
+        )
         sample_term = next(iter(alarm_overlay["kn"]))
         defective[sample_key] = "ದೋಷಪೂರಿತ ಅನುವಾದ"
         defective[second_audit_key] = "ಮತ್ತೊಂದು ದೋಷಪೂರಿತ ಅನುವಾದ"
@@ -278,9 +285,9 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             source, defective, "kn"
         )
         self.assertGreaterEqual(count, 2)
-        for key in website_overlay["kn"]:
+        for key in website_overlay["kn"].keys() & source.keys():
             self.assertEqual(corrected[key], direct[key])
-        for key in second_audit_overlay["kn"]:
+        for key in second_audit_overlay["kn"].keys() & source.keys():
             self.assertEqual(corrected[key], direct[key])
         for term in alarm_overlay["kn"]:
             self.assertEqual(corrected[term], direct[term])
@@ -720,6 +727,44 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "Unsupported inline translation tags"):
             authoring.inline_translation_blocks(soup)
 
+    def test_landing_icons_and_footer_markup_survive_localization(self) -> None:
+        soup = authoring.BeautifulSoup(
+            '<li><a href="#timers"><img src="assets/icon.png" alt=""/>'
+            '<span>Timers</span></a></li>'
+            '<p><svg aria-hidden="true"><use href="#check"/></svg>Offline</p>'
+            '<p><small>Copyright</small><span>Your time</span></p>',
+            "html.parser",
+        )
+        translations = {
+            "%1$@%2$@%3$@Timers%4$@%5$@": "%1$@%2$@%3$@Minuteurs%4$@%5$@",
+            "%1$@Offline": "%1$@Hors ligne",
+            "%1$@Copyright%2$@%3$@Your time%4$@": "%1$@Droits d’auteur%2$@%3$@Votre temps%4$@",
+        }
+        authoring.replace_copy(soup, translations)
+        self.assertEqual(soup.select_one("li span").text, "Minuteurs")
+        self.assertEqual(soup.select_one("img")["src"], "assets/icon.png")
+        self.assertEqual(soup.select_one("svg use")["href"], "#check")
+        self.assertIn("Hors ligne", soup.text)
+        self.assertEqual(soup.select_one("small").text, "Droits d’auteur")
+
+    def test_screenshot_and_navigation_runtime_labels_are_localized(self) -> None:
+        soup = authoring.BeautifulSoup(
+            '<button data-caption="Your timer" data-zoom="assets/timer.png" '
+            'data-open-label="Open navigation" data-close-label="Close navigation" '
+            'aria-label="Your timer"></button>', "html.parser",
+        )
+        authoring.replace_copy(soup, {
+            "Your timer": "Votre minuteur",
+            "Open navigation": "Ouvrir le menu",
+            "Close navigation": "Fermer le menu",
+        })
+        authoring.adjust_relative_references(soup)
+        button = soup.button
+        self.assertEqual(button["data-caption"], "Votre minuteur")
+        self.assertEqual(button["data-open-label"], "Ouvrir le menu")
+        self.assertEqual(button["data-close-label"], "Fermer le menu")
+        self.assertEqual(button["data-zoom"], "../assets/timer.png")
+
     def test_owner_support_links_follow_the_localized_support_route(self) -> None:
         extension_policy = (ROOT / "extension-privacy.html").read_text(
             encoding="utf-8"
@@ -948,21 +993,23 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             {sign_out_source: sign_out_expected},
             "ur",
         )
-        swiftui_source = (
-            "SwiftUI timers with task sets, reports, sync, custom sounds, and menu-bar "
-            "status."
+        workspace_source = (
+            "Bring timers, countdowns and world clocks into one workspace. Add "
+            "reusable routines, reminders and reports, with layouts and appearance "
+            "you can make your own."
         )
-        swiftui_expected = (
-            "ٹاسک سیٹس، رپورٹس، مطابقت پذیری، اپنی مرضی کے مطابق آوازیں، اور مینو بار "
-            "کی حیثیت کے ساتھ SwiftUI ٹائمر۔"
+        workspace_expected = (
+            "ٹائمر، کاؤنٹ ڈاؤن اور عالمی گھڑیاں ایک ہی ورک اسپیس میں جمع کریں۔ "
+            "دوبارہ استعمال ہونے والے معمولات، یاددہانیاں اور رپورٹیں شامل کریں، "
+            "اور ترتیب و ظاہری شکل کو اپنی پسند کا بنائیں۔"
         )
         self.assertEqual(
-            authoring.REVIEWED_TRANSLATION_CORRECTIONS["ur"][swiftui_source],
-            swiftui_expected,
+            authoring.REVIEWED_TRANSLATION_CORRECTIONS["ur"][workspace_source],
+            workspace_expected,
         )
         checker.validate_translation_values(
-            {swiftui_source: swiftui_source},
-            {swiftui_source: swiftui_expected},
+            {workspace_source: workspace_source},
+            {workspace_source: workspace_expected},
             "ur",
         )
         active_tab_source = (
@@ -1099,6 +1146,36 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
                 source,
                 {"fr": {source_key: expected + " Texte parasite."}},
                 corrections,
+            )
+
+    def test_retired_review_fragments_preserve_current_correction_checks(self) -> None:
+        current_key = "Current policy sentence."
+        retired_key = "Retired landing sentence."
+        expected = "Phrase actuelle révisée."
+        source = {current_key: current_key}
+        historical = {
+            retired_key: "Ancienne phrase révisée.",
+            current_key: expected,
+        }
+        corrections = {"test": dict(historical)}
+        defective = {current_key: "Traduction incorrecte"}
+        with mock.patch.dict(authoring.REVIEWED_TRANSLATION_CORRECTIONS, corrections):
+            corrected, count = authoring.reviewed_correction_values(
+                source, defective, "test"
+            )
+            replayed, replay_count = authoring.reviewed_correction_values(
+                source, corrected, "test"
+            )
+        self.assertEqual(corrected, {current_key: expected})
+        self.assertEqual(count, 1)
+        self.assertEqual((replayed, replay_count), (corrected, 0))
+        self.assertEqual(corrections["test"], historical)
+        checker.validate_reviewed_translation_corrections(
+            source, {"test": corrected}, corrections
+        )
+        with self.assertRaisesRegex(RuntimeError, "correction is missing for test"):
+            checker.validate_reviewed_translation_corrections(
+                source, {"test": defective}, corrections
             )
 
     def test_exact_overlay_supersedes_an_older_fragment_repair(self) -> None:
@@ -1315,7 +1392,7 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
                 encoding="utf-8"
             )
         )["translations"]
-        for key in website_overlay["te"]:
+        for key in website_overlay["te"].keys() & source.keys():
             self.assertEqual(catalog[key], direct[key])
         for term in alarm_overlay["te"]:
             self.assertEqual(catalog[term], direct[term])
@@ -1353,7 +1430,7 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
                 encoding="utf-8"
             )
         )["translations"]
-        for key in document["pa"]:
+        for key in document["pa"].keys() & source.keys():
             self.assertEqual(catalog[key], direct[key])
         for term in document["_app_glossary"]["pa"]:
             self.assertEqual(catalog[term], direct[term])
@@ -1388,7 +1465,7 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             / "bn.lproj"
             / "Website.strings"
         )
-        for key in overlay["bn"]:
+        for key in overlay["bn"].keys() & source.keys():
             self.assertEqual(
                 catalog[key],
                 authoring.REVIEWED_TRANSLATION_CORRECTIONS["bn"][key],

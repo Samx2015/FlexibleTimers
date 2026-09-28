@@ -33,7 +33,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("locale")
     parser.add_argument("corrections", type=Path)
-    parser.add_argument("--reviewed-all-262-values", action="store_true", required=True)
+    parser.add_argument("--reviewed-all-values", action="store_true", required=True)
     arguments = parser.parse_args()
     source = checker.load_strings(ROOT / "generated" / "WebsiteSource.strings")
     path = (
@@ -48,8 +48,8 @@ def main() -> int:
     if not isinstance(corrections, dict) or any(key not in source for key in corrections):
         raise RuntimeError("Direct GPT correction packet is malformed")
     translations.update({str(key): str(value) for key, value in corrections.items()})
-    if set(translations) != set(source) or len(source) != 262:
-        raise RuntimeError("Full direct GPT catalog review requires all 262 values")
+    if set(translations) != set(source):
+        raise RuntimeError(f"Full direct GPT catalog review requires all {len(source)} values")
     checker.validate_translation_values(source, translations, arguments.locale)
     output = (
         ROOT / "generated" / "DirectGPTWebsiteTranslations" / f"{arguments.locale}.json"
@@ -61,7 +61,7 @@ def main() -> int:
                 "schemaVersion": 1,
                 "locale": arguments.locale,
                 "authorship": "direct-codex-gpt",
-                "reviewScope": "all-262-values-retranslated-or-reaffirmed-from-English",
+                "reviewScope": f"all-{len(source)}-values-retranslated-or-reaffirmed-from-English",
                 "translations": translations,
             },
             ensure_ascii=False,

@@ -56,6 +56,12 @@ APPROVED_ENGLISH_EQUAL_VALUES = {
     "%1$@admin@xintechllc.com%2$@",
     "EULA",
     "Mac • iPhone • iPad",
+    "Mac",
+    "iPhone",
+    "iPhone · iPad",
+    "Mac · iPhone · iPad",
+    # Native sound-collection label in the unchanged application screenshots.
+    "World Ceremonial",
     "Xin Account",
     "XTimers",
     "admin@xintechllc.com",
@@ -66,13 +72,18 @@ APPROVED_ENGLISH_EQUAL_VALUES = {
 }
 APPROVED_ENGLISH_EQUAL_VALUES_BY_LOCALE = {
     # French uses the same established noun for this support heading.
-    "fr": {"Contact"},
+    "fr": {
+        "Contact", "Questions",
+        "%1$@%2$@%3$@Archives%4$@%5$@",
+        "%1$@%2$@Routines%3$@↘%4$@%5$@",
+        "%1$@09%2$@Archives",
+    },
     # German product support uses this established English loanword unchanged.
-    "de": {"Support"},
+    "de": {"Support", "Mac · separate app"},
     # These are established, correctly spelled local-language words or phrases.
     "it": {"Privacy"},
-    "nb": {"XTimers for Mac"},
-    "nl": {"Contact", "Privacy"},
+    "nb": {"XTimers for Mac", "For Mac, iPhone & iPad", "XTimers for iPhone & iPad"},
+    "nl": {"Contact", "Privacy", "%1$@%2$@Routines%3$@↘%4$@%5$@"},
     "ro": {"Contact"},
     "sv": {"Support"},
 }
@@ -246,7 +257,7 @@ class PageParser(HTMLParser):
                 self.canonicals.append(attributes.get("href", ""))
             if "alternate" in relationships:
                 self.alternates.append(attributes)
-        for attribute in ("href", "src"):
+        for attribute in ("href", "src", "data-zoom"):
             value = attributes.get(attribute)
             if value:
                 self.references.append(value)
@@ -313,6 +324,9 @@ def internal_reference_target(
         if hostname == "xintechllc.com" and parsed.scheme != "https":
             raise RuntimeError(f"Insecure internal XTimers URL: {reference}")
         if parsed.scheme != "https" or hostname != "xintechllc.com":
+            return None
+        # This companion product is owned by a separate website checkout.
+        if parsed.path == "/XHelpersPro/":
             return None
         product_prefixes = ("/XTimers", "/FlexibleTimers")
         prefix = next(
@@ -809,10 +823,9 @@ def validate_reviewed_translation_corrections(
         for source_fragment, expected_fragment in localized_corrections.items():
             matching_keys = [key for key in source if source_fragment in key]
             if not matching_keys:
-                raise RuntimeError(
-                    f"Reviewed source fragment must match at least one website key for "
-                    f"{identifier}: {source_fragment!r}"
-                )
+                # Historical review artifacts also retain retired website copy.
+                # Only fragments present in the current source govern its catalog.
+                continue
             for matching_key in matching_keys:
                 if (
                     matching_key in exact_overlays.get(identifier, {})

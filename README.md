@@ -107,3 +107,38 @@ control. Supplying a missing or invalid app resource root is a hard failure;
 the workspace release gate must pass both roots shown above.
 The shared draft tool fills only current-source gaps. None of these commands
 publishes or modifies the GitHub Pages repository.
+
+## Current landing-page design
+
+`index.html` and `flexible-timers.html` share the approved landing-page layout.
+All 44 non-English routes are generated from that same structure and use the
+shared styles, script, feature icons and native captures in `assets/marketing/`.
+Captions, image descriptions and navigation accessibility labels are translated;
+the pixels of the native application screenshots are retained.
+
+The September 28 landing-page translation delta is recorded in
+`generated/LandingTranslations20260928/`. Each packet contains 380 directly
+GPT-authored strings and its source checksum and semantic-review record. The
+importer retains the 219 existing, previously reviewed support/policy values
+and rejects incomplete, mismatched or invalid packets:
+
+```sh
+python3 scripts/import-landing-translations.py --write
+python3 scripts/prepare-localized-page-drafts.py --generate
+python3 scripts/generate-localization-navigation.py
+python3 scripts/generate-website-value-provenance.py
+```
+
+The subsequent glossary alignment in
+`generated/WebsiteAlarmLabelReview20260928.json` records 28 scoped corrections
+across Arabic, Czech, German, French, Hungarian and Turkish. The labels match
+the current Mac and iOS app catalogs; the record includes the directly
+GPT-reviewed old/new values, associated headings and policy references. These
+corrections are already included in the full translation authorities.
+
+These commands do not grant release approval. Publication still uses the full
+workspace release gate and its source-bound review evidence. Historical review
+ledgers remain immutable; the current review is recorded separately under
+`TimerWorkspace/Docs/Localization/ReleaseReviews/Website20260928/`.
+Design studies and screenshot-capture tooling stay outside the published source.
+The obsolete `preview-3-5.html` study is removed.

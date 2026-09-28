@@ -196,7 +196,7 @@ reconciled_privacy_and_callback_semantics() {
     && tree_text_has "$root" sms-opt-in.html \
       'Last updated: August 23, 2026' \
     && tree_text_has "$root" index.html \
-      "Xin Account sign-in\. XTimers data stays separate" \
+      "XTimers uses a Xin Account.*shared identity layer.*not an XTimers product.*does not contain XTimers timers, reports, sounds, or SMS data" \
     && tree_text_has "$root" compliance.html \
       'rel="canonical" href="https://xintechllc.com/FlexibleTimers/compliance.html"' \
     && tree_text_lacks "$root" compliance.html 'sms-consent.png' \
