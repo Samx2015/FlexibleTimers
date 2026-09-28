@@ -220,6 +220,7 @@
 "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details." = "日常的な操作にすばやくアクセスできる、独立したMacユーティリティXHelpers Proをご紹介します。XTimersをご利用の方は、ライセンスの特典ページで現在の条件と有効化の方法をご確認いただけます。";
 "Explore XTimers features" = "XTimersの機能を見る";
 "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder." = "祝日、文化にまつわる日、世界のイベント、歴史上の出来事を見てみましょう。Appleのカレンダーを読み取り専用で表示し、日付やイベントからカウントダウンや個人用リマインダーを作成できます。";
+"Explore the mobile experience" = "モバイルでの使い方を見る";
 "Failed" = "失敗しました";
 "Features" = "機能";
 "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected." = "機能は、権限、デバイスの電力や接続性、オペレーティングシステムの動作、サードパーティサービス、メンテナンス、または障害により、遅延、中断、変更、または利用不可になることがあります。 法律で許可される範囲において、XTimers は「現状のまま」および「利用可能な状態で」提供され、すべてのアラーム、通知、メッセージ、同期、またはレポートが配信される、保持される、またはエラーがないことを保証するものではありません。 法的に放棄できない適用される消費者の権利は影響を受けません。";
@@ -274,8 +275,6 @@
 "Local reports and exports work offline. Email and online sharing need a connection." = "ローカルレポートと書き出しはオフラインで使えます。メールとオンライン共有には接続が必要です。";
 "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata." = "ローカル専用アラームは、それが作成されたインストールに残り、ユーザーがサインインしただけではアップロードされません。ユーザーがアラームを明示的に昇格させるか、サインインアラームを作成した場合、XTimers はその名前、スケジュール、繰り返し、音と表示の選択、有効状態、改訂履歴、その他の定義メタデータを同期する可能性があります。";
 "Mac" = "Mac";
-"Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app." = "Mac 3.4は現在配信中です。このページの機能紹介とスクリーンショットは、Mac 3.5および未公開のiPhone/iPadアプリのプレビューです。";
-"Mac 3.4 · Available on the App Store" = "Mac 3.4 · App Storeで配信中";
 "Mac · English" = "Mac · 英語";
 "Mac · English — General settings in English, captured from the installed Mac app in light appearance." = "Mac · 英語 — インストール済みMacアプリのライト外観で撮影した、英語の一般設定画面。";
 "Mac · Grid" = "Mac · グリッド";
@@ -375,8 +374,6 @@
 "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons" = "20:04で一時停止した「Planning」が、Macのメニューバーのシステム状態アイコンの隣に表示されている";
 "Press kit" = "プレスキット";
 "Press kit in English" = "プレスキット（英語）";
-"Preview only · No public download" = "プレビューのみ · 一般向けダウンロードはありません";
-"Preview screenshots show development builds; the public Mac app may differ." = "プレビューのスクリーンショットは開発中のビルドを示しています。公開中のMacアプリとは異なる場合があります。";
 "Privacy" = "プライバシー";
 "Privacy Choices" = "プライバシーに関する選択";
 "Privacy Policy" = "プライバシーポリシー";
@@ -516,6 +513,7 @@
 "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded." = "ユーザーは匿名でフィードバックを送信するか、サインイン中のアカウントに関連付けて送信するかを選択できます。XTimersは、依頼内容の確認、不正利用の防止、返信、または問題の修正に必要なフィードバック本文と運用メタデータを保存します。匿名のフィードバックはアカウント識別子に関連付けられませんが、通常のネットワークリクエストに伴うメタデータが記録される場合があります。";
 "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@." = "ユーザーは、XTimers アプリ内で電話番号を入力し、事前に選択されていないチェックボックスに積極的にチェックを入れることでオプトインします。 チェックボックスには次のように書かれています：「私は、この電話番号で、Xintech LLC が提供する XTimers から SMS 確認コードと、自分自身のために予定したリマインダーメッセージを受け取ることに同意します。」オプトイン画面にはこれらの SMS 利用規約、プライバシーポリシー、標準メッセージおよびデータ料金の開示、STOP および HELP の指示、メッセージ頻度情報、そして非マーケティング文言も表示されます。 同意は購入条件ではありません。 オプトイン証拠ページは %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@ でご覧ください。";
 "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:" = "検証の配信には、プロバイダーまたは地域固有のテンプレートを使用することがあります。\n      代表的な検証メッセージのフォーマットは次の通りです：";
+"View on the Mac App Store" = "Mac App Storeで見る";
 "View the XHelpers Pro offer" = "XHelpers Proの特典を見る";
 "Visit support" = "サポートを見る";
 "Website Analytics" = "ウェブサイト分析";
@@ -542,7 +540,6 @@
 "World clocks images" = "世界時計の画像";
 "XHelpers Pro benefit images" = "XHelpers Proの特典の画像";
 "XTimers" = "XTimers";
-"XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features." = "Mac向けXTimers 3.4を配信中。タイマーとカウントダウンに加え、Mac 3.5とiPhone/iPad向け機能のプレビューをご覧ください。";
 "XTimers Activity Extension Privacy Policy" = "XTimers アクティビティ拡張 プライバシーポリシー";
 "XTimers Messaging Help" = "XTimersメッセージングのヘルプ";
 "XTimers Privacy Choices" = "XTimers プライバシーに関する選択肢";
@@ -563,7 +560,7 @@
 "XTimers for Mac" = "Mac版XTimers";
 "XTimers for iPhone & iPad" = "iPhone・iPad用XTimers";
 "XTimers home" = "XTimersホーム";
-"XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer." = "XTimersのアイコン、英語表示のMac 3.5ワークスペースのプレビュー、コンパクトなタイマー。";
+"XTimers icon with an English Mac workspace and a compact timer." = "XTimers のアイコンと、英語表示の Mac ワークスペース、コンパクトなタイマー。";
 "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs." = "XTimers は、緊急、医療、安全性が極めて重要、または生命に関わる用途の時間管理を目的としていません。これらの用途には専用のシステムを使用してください。";
 "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features." = "XTimers は Xintech LLC によって運営されており、共有サインインには Xin Account を使用します。 このポリシーでは、Xin Account のIDサービスおよび XTimers のタイマー、アラーム、カウントダウン、アクティビティ追跡、カレンダー機能、同期、レポート、カスタムサウンド、リマインダー、サポート、メッセージ機能のために処理される情報について説明します。";
 "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling." = "XTimers は Xintech LLC により運営されています。 サインインしたユーザーが明示的な同意を与えた後、XTimers はユーザーが入力した提案アカウントの電話番号にセットアップ確認コードを送信しようとする場合があります。 認証に成功し、オプトインが完了した後、XTimers はユーザーが作成したタイマー／リマインダー SMS を、同じ電話番号に対して、かつユーザー自身がスケジュールした場合にのみ試みることができます。 XTimers はマーケティング SMS を送信せず、ユーザーが任意の第三者受信者に SMS を送信することも許可していません。 XTimers SMS は双方向チャットや会話サービスではなく、受信キーワードは STOP、HELP、START、および YES のコンプライアンス処理のみに使用されます。";

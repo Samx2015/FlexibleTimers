@@ -1,0 +1,32 @@
+{
+  "locale": "gu",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "01f9b9a853c051bb2e25d666ed155e5c83afc64a855eab5f33f57a87df5b07b9",
+  "translations": {
+    "XTimers icon with an English Mac workspace and a compact timer.": "અંગ્રેજીમાં દર્શાવેલા Mac કાર્યસ્થળ અને નાના ટાઇમર સાથેનું XTimers આઇકન.",
+    "View on the Mac App Store": "Mac App Store પર જુઓ",
+    "Explore the mobile experience": "મોબાઇલ પરનો અનુભવ જાણો"
+  },
+  "retiredSources": [
+    "Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app.",
+    "Mac 3.4 · Available on the App Store",
+    "Preview only · No public download",
+    "Preview screenshots show development builds; the public Mac app may differ.",
+    "XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features.",
+    "XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer."
+  ],
+  "restoredEvidence": {
+    "revision": "336dfdd71121c25369a7183739ebd6a328f4d848",
+    "authoritySha256": "6d888accc84c3e603d4d09aebff28a166373b88a29bac4cf80013e61f10f4877",
+    "sources": [
+      "View on the Mac App Store",
+      "Explore the mobile experience"
+    ]
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "One new social-image description directly authored; two exact prior GPT-authored link labels personally reviewed and reaffirmed against English. The six obsolete release-framing values are retired.",
+    "completedAt": "2026-09-28T15:57:04.038508+00:00"
+  }
+}
