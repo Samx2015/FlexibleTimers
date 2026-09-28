@@ -1,0 +1,27 @@
+{
+  "locale": "fi",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Ajanotto ja lähtölaskenta Macille",
+    "m002": "XTimers 3.4 on saatavilla Macille. Tutustu ajanottoon ja lähtölaskentoihin sekä Mac 3.5 -version ja iPhone/iPad-sovelluksen toimintojen esikatseluun.",
+    "m003": "Mac 3.4 on nyt saatavilla. Tämän sivun toiminnot ja kuvakaappaukset esittelevät ennakkoon Mac 3.5 -versiota ja vielä julkaisematonta iPhone/iPad-sovellusta.",
+    "m004": "Mac 3.4 · Saatavilla App Store -kaupasta",
+    "m005": "Vain esikatselu · Ei julkista latausta",
+    "m006": "Esikatselukuvat ovat kehitysversioista; julkisesti saatavilla oleva Mac-sovellus voi poiketa niistä.",
+    "m007": "Oppaat",
+    "m008": "Lehdistöaineisto",
+    "m009": "Apua tietojen palauttamiseen",
+    "m010": "Englanninkieliset oppaat",
+    "m011": "Englanninkielinen lehdistöaineisto",
+    "m012": "Englanninkielinen apu tietojen palauttamiseen",
+    "m013": "XTimers-kuvake, englanninkielinen esikatselu Mac 3.5 -version työtilasta ja kompakti ajastin."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.575550+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

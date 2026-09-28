@@ -142,7 +142,6 @@
 "Core timers can be used without signing in. Xin Account sign-in is used\n      to authorize XTimers synchronization. Signing out pauses future\n      authenticated synchronization without deleting either account scope." = "Основні таймери можна використовувати без входу в систему. Xin Account вхід використовується\n      для авторизації синхронізації XTimers. Вихід призупиняє майбутню\n      автентифіковану синхронізацію без видалення будь-якого обсягу облікового запису.";
 "Core timing and local reports work offline. Synchronization, online sharing and server reminders need a connection. World Calendar on Mac needs an initial catalog download; its installed catalog can then be used offline." = "Основний відлік часу та локальні звіти працюють офлайн. Для синхронізації, поширення онлайн і серверних нагадувань потрібне з’єднання. Світовий календар на Mac спочатку потребує завантаження каталогу; після встановлення каталог доступний офлайн.";
 "Count up. Count down. World clocks. World Calendar." = "Прямий відлік. Зворотний відлік. Світові годинники. Світовий календар.";
-"Count up. Count down. World clocks. World Calendar. Flexible. Customizable. Bring timers, routines, reminders and reports into one workspace." = "Прямий відлік. Зворотний відлік. Світові годинники. Світовий календар. Гнучкість. Ваші налаштування. Об’єднайте таймери, звичні справи, нагадування та звіти в одному робочому просторі.";
 "Cross-device synchronization images" = "Зображення: Синхронізація між пристроями";
 "Current Consent Evidence" = "Поточні докази згоди";
 "Current Readings" = "Поточні показники";
@@ -221,7 +220,6 @@
 "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details." = "Познайомтеся з XHelpers Pro — окремою утилітою для Mac, що надає швидкий доступ до повсякденних елементів керування. Користувачі XTimers можуть відкрити сторінку акційної ліцензійної пропозиції, щоб переглянути чинні умови та відомості про активацію.";
 "Explore XTimers features" = "Переглянути функції XTimers";
 "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder." = "Досліджуйте свята, культурні дати, світові події та миті історії. Додайте свої календарі Apple лише для перегляду, а потім перетворіть дату чи подію на зворотний відлік або особисте нагадування.";
-"Explore the mobile experience" = "Ознайомитися з мобільною версією";
 "Failed" = "Не вдалося";
 "Features" = "Функції";
 "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected." = "Функції можуть затримуватися, перериватися, змінюватися або бути недоступними через дозволи, потужність пристрою або підключення, поведінку операційної системи, сторонні сервіси, технічне обслуговування або збої. У межах, дозволених законом, XTimers надається «як є» та «як доступно», без обіцянки того, що кожна тривога, сповіщення, повідомлення, синхронізація або звіт буде доставлений, збережений або безпомилковий. Застосовні права споживачів, які не можуть бути законно скасовані, залишаються без змін.";
@@ -240,6 +238,8 @@
 "For support, see %1$@xintechllc.com/XTimers/support.html%2$@." = "Для підтримки дивіться %1$@xintechllc.com/XTimers/support.html%2$@.";
 "General settings in English, captured from the installed Mac app in light appearance." = "Загальні налаштування англійською у світлому вигляді, зняті у встановленій програмі для Mac.";
 "Give work, learning and everyday life their own named task sets. Save a task or a whole set as a template, then bring a familiar routine into your next session." = "Створіть окремі названі набори завдань для роботи, навчання та повсякденних справ. Збережіть завдання або весь набір як шаблон і перенесіть звичний порядок дій у наступний сеанс.";
+"Guides" = "Посібники";
+"Guides in English" = "Посібники англійською";
 "Have something else in mind?" = "Маєте інші запитання?";
 "Help" = "Допомога";
 "Home" = "Головна сторінка";
@@ -274,6 +274,8 @@
 "Local reports and exports work offline. Email and online sharing need a connection." = "Локальні звіти та експорт працюють офлайн. Для електронної пошти й поширення онлайн потрібне з’єднання.";
 "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata." = "Локальні сигнали тривоги залишаються на установці, де вони були створені, і\n      не завантажуються лише через те, що користувач увійшов у систему. Якщо користувач явно\n      просуває сигнал тривоги або створює сигнал тривоги для увійшовшого користувача, XTimers може синхронізувати\n      його назву, графік, повторюваність, звук та налаштування відображення, активний стан, історію змін та інші метадані визначення.";
 "Mac" = "Mac";
+"Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app." = "Mac 3.4 уже доступний. Функції та знімки екрана на цій сторінці показують попередню версію Mac 3.5 і ще не випущену програму для iPhone/iPad.";
+"Mac 3.4 · Available on the App Store" = "Mac 3.4 · Доступний в App Store";
 "Mac · English" = "Mac · Англійська";
 "Mac · English — General settings in English, captured from the installed Mac app in light appearance." = "Mac · Англійська — Загальні налаштування англійською у світлому вигляді, зняті у встановленій програмі для Mac.";
 "Mac · Grid" = "Mac · Сітка";
@@ -310,7 +312,6 @@
 "Mac · local only" = "Mac · лише локально";
 "Mac · selected profiles" = "Mac · окремі профілі";
 "Mac · separate app" = "Mac · окрема програма";
-"Mac, iPhone and iPad. Each with a place in your day." = "Mac, iPhone та iPad. Кожен має своє місце у вашому дні.";
 "Main navigation" = "Основна навігація";
 "Make a little time%1$@for %2$@yourself.%3$@" = "Знайдіть трохи часу%1$@для %2$@себе.%3$@";
 "Make a start. No sign-in needed." = "Почніть без входу в обліковий запис.";
@@ -372,6 +373,10 @@
 "Planning at 20:04 in the installed Mac app’s Single view, with visible controls and the Yosemite photo background." = "«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті.";
 "Planning at 20:04 over a mountain photograph in Minimal view" = "«Planning» із показником 20:04 на тлі фотографії гір у мінімальному режимі";
 "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons" = "«Planning», призупинений на 20:04, видно просто в рядку меню Mac поруч із системними значками стану";
+"Press kit" = "Матеріали для преси";
+"Press kit in English" = "Матеріали для преси англійською";
+"Preview only · No public download" = "Лише попередній огляд · Публічне завантаження недоступне";
+"Preview screenshots show development builds; the public Mac app may differ." = "Знімки показують версії в розробці; загальнодоступна програма для Mac може відрізнятися.";
 "Privacy" = "Конфіденційність";
 "Privacy Choices" = "Вибір щодо конфіденційності";
 "Privacy Policy" = "Політика конфіденційності";
@@ -379,6 +384,8 @@
 "Provide customer support and investigate reported problems." = "Надання підтримки клієнтам та розслідування повідомлених проблем.";
 "Put your day in context." = "Погляньте на день у ширшому контексті.";
 "Questions" = "Запитання";
+"Recovery help" = "Допомога з відновленням даних";
+"Recovery help in English" = "Допомога з відновленням даних англійською";
 "Reminders go to your own eligible, verified number with separate SMS or call consent. Availability depends on your account, region and the service. A scheduled call needs server confirmation; Call Me uses English and does not automatically redial." = "Нагадування надходять на ваш власний підтверджений номер, що відповідає вимогам, за окремою згодою на SMS або дзвінки. Доступність залежить від облікового запису, регіону й сервісу. Запланований дзвінок потребує підтвердження сервера; «Call Me» працює англійською та не повторює дзвінки автоматично.";
 "Reply HELP for help. You can also contact XTimers support at %1$@xintechllc.com/XTimers/support.html%2$@." = "Відповідь HELP, щоб отримати допомогу. Ви також можете звернутися до служби підтримки XTimers за адресою %1$@xintechllc.com/XTimers/support.html%2$@.";
 "Reply STOP to opt out of SMS messages from XTimers. After you send STOP,\n      XTimers will stop sending SMS messages to that phone number\n      unless you opt in again." = "Відповісти STOP, щоб відмовитися від повідомлень SMS від XTimers. Після того як ви надішлете STOP,\n      XTimers припинить надсилати повідомлення SMS на цей номер телефону,\n      якщо ви знову не підпишетесь.";
@@ -509,7 +516,6 @@
 "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded." = "Користувачі можуть надсилати відгуки анонімно або долучати їх до облікового запису, у який увійшли. XTimers зберігає текст відгуку та операційні метадані, потрібні для розгляду запиту, запобігання зловживанням, відповіді або усунення проблем. Анонімний відгук не пов’язується з ідентифікатором облікового запису, хоча звичайні метадані мережевого запиту все одно можуть записуватися.";
 "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@." = "Користувачі погоджуються в самому додатку XTimers, ввівши свій номер телефону та свідомо поставивши позначку у полі, яке не вибране за замовчуванням. Прапорець говорить: \"Я погоджуюся отримувати SMS коди підтвердження та нагадувальні повідомлення від XTimers через Xintech LLC, які я сам налаштовую на цьому номері телефону.\" На екрані підтвердження також відображаються ці SMS Умови, Політика конфіденційності, стандартне повідомлення та розкриття тарифів на дані, STOP та HELP інструкції, інформація про частоту повідомлень і текст без маркетингової складової. Згода не є умовою покупки. Дивіться сторінку з доказами підтвердження за посиланням %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@.";
 "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:" = "Доставка для перевірки може використовувати шаблон, специфічний для постачальника або регіону.\n      Представницький формат повідомлення для перевірки:";
-"View on the Mac App Store" = "Переглянути в Mac App Store";
 "View the XHelpers Pro offer" = "Переглянути пропозицію XHelpers Pro";
 "Visit support" = "Перейти до підтримки";
 "Website Analytics" = "Аналітика веб-сайту";
@@ -536,6 +542,7 @@
 "World clocks images" = "Зображення: Світові годинники";
 "XHelpers Pro benefit images" = "Зображення: Пропозиція XHelpers Pro";
 "XTimers" = "XTimers";
+"XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features." = "XTimers 3.4 доступний для Mac. Ознайомтеся із секундомірами й таймерами зворотного відліку, а також із попереднім оглядом функцій Mac 3.5 і програми для iPhone/iPad.";
 "XTimers Activity Extension Privacy Policy" = "XTimers Політика конфіденційності розширення активності";
 "XTimers Messaging Help" = "Довідка щодо повідомлень XTimers";
 "XTimers Privacy Choices" = "Налаштування конфіденційності XTimers";
@@ -556,6 +563,7 @@
 "XTimers for Mac" = "XTimers для Mac";
 "XTimers for iPhone & iPad" = "XTimers для iPhone та iPad";
 "XTimers home" = "Головна сторінка XTimers";
+"XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer." = "Піктограма XTimers з англомовним зображенням робочого простору попередньої версії Mac 3.5 і компактним секундоміром.";
 "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs." = "XTimers не призначений для аварійного, медичного, безпечного або життєво критичного обліку часу. Використовуйте спеціалізовану систему для цих потреб.";
 "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features." = "XTimers керується Xintech LLC і використовує Xin Account для спільного входу. Ця політика пояснює інформацію, що обробляється для служб ідентифікації Xin Account та для таймерів, сигналізацій, зворотного відліку, відстеження активності, функцій календаря, синхронізації, звітів, користувацьких звуків, нагадувань, підтримки та функцій обміну повідомленнями XTimers.";
 "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling." = "XTimers управляється Xintech LLC. Після того як увійшовший користувач надасть явну згоду, XTimers може спробувати надіслати код перевірки налаштувань на введений користувачем номер телефону з пропонованого облікового запису. Після успішної перевірки та підтвердження згоди, XTimers може намагатися надіслати користувацький таймер/нагадування SMS лише на той самий номер телефону і лише тоді, коли користувач планує їх для себе. XTimers не надсилає маркетингові SMS і не дозволяє користувачам надсилати SMS довільним третім особам. XTimers SMS не є сервісом двостороннього чату або розмови; вхідні ключові слова використовуються лише для STOP, HELP, START та YES для забезпечення відповідності.";
@@ -566,7 +574,7 @@
 "XTimers uses Xin Account for shared sign-in. You are responsible for the\n      identity information you provide, protecting your sign-in methods and\n      devices, maintaining access to your account email, and promptly reporting\n      suspected unauthorized access. You may not misuse identity, recovery,\n      linked-provider, session, or connected-product features or attempt to\n      access another person's account." = "XTimers використовує Xin Account для спільного входу. Ви несете відповідальність за\n      інформацію про особу, яку ви надаєте, захист ваших методів входу та\n      пристроїв, підтримання доступу до вашої електронної пошти облікового запису та своєчасне повідомлення\n      про підозрілий несанкціонований доступ. Ви не можете неправомірно використовувати функції ідентифікації, відновлення,\n      пов'язаного провайдера, сесії або пов'язаного продукту, а також намагатися\n      отримати доступ до облікового запису іншої особи.";
 "XTimers uses a Xin Account to identify and authenticate a user. A Xin\n      Account is the shared identity layer for XTimers and any other connected\n      products listed in the account controls; it is not an XTimers product\n      account and does not contain XTimers timers, reports, sounds, or SMS data." = "XTimers використовує Xin Account для ідентифікації та автентифікації користувача. Xin Account є спільним рівнем ідентифікації для XTimers та будь-яких інших підключених продуктів, зазначених у засобах керування обліковим записом; це не обліковий запис продукту XTimers і він не містить таймерів XTimers, звітів, звуків або даних SMS.";
 "XTimers website tracking is off by default and opt-in. Turning tracking\n      off in XTimers stops the app from recording active-tab data and disables\n      its integration. Disable or remove the browser extension to stop its own\n      event listeners, periodic active-tab queries, and local delivery attempts.\n      Existing XTimers history remains until you use Reset tracked data." = "Відстеження на вебсайті XTimers за замовчуванням вимкнено і здійснюється лише за бажанням користувача. Вимкнення відстеження в XTimers зупиняє запис даних про активні вкладки та відключає його інтеграцію. Вимкніть або видаліть розширення браузера, щоб зупинити його власні слухачі подій, періодичні запити активних вкладок та спроби локальної доставки.\n      Існуюча історія XTimers залишиться до тих пір, поки ви не скористаєтеся опцією Скинути відстежені дані.";
-"XTimers — Count up. Count down. World clocks. World Calendar." = "XTimers — Прямий відлік. Зворотний відлік. Світові годинники. Світовий календар.";
+"XTimers — Timers and Countdowns for Mac" = "XTimers — Секундоміри й таймери зворотного відліку для Mac";
 "Xin Account Identity and Recovery" = "Ідентифікація та відновлення Xin Account";
 "Xin Account Identity and Security" = "Ідентифікація та безпека Xin Account";
 "Xin Account Identity and Sign-In" = "Ідентифікація та вхід у Xin Account";

@@ -142,7 +142,6 @@
 "Core timers can be used without signing in. Xin Account sign-in is used\n      to authorize XTimers synchronization. Signing out pauses future\n      authenticated synchronization without deleting either account scope." = "核心計時器可以在未登入的情況下使用。 Xin Account 登入用於授權 XTimers 同步。 登出會暫停未來的經身份驗證之同步，但不會刪除任一帳戶範圍。";
 "Core timing and local reports work offline. Synchronization, online sharing and server reminders need a connection. World Calendar on Mac needs an initial catalog download; its installed catalog can then be used offline." = "基本計時與本機報告可離線使用。同步、線上分享與伺服器提醒需要連線。Mac 上的世界行事曆首次使用時需要下載目錄；安裝後即可離線使用該目錄。";
 "Count up. Count down. World clocks. World Calendar." = "正向計時。倒數計時。世界時鐘。世界行事曆。";
-"Count up. Count down. World clocks. World Calendar. Flexible. Customizable. Bring timers, routines, reminders and reports into one workspace." = "正向計時。倒數計時。世界時鐘。世界行事曆。 靈活隨心。自由自訂。 將計時器、日常流程、提醒與報告匯集在同一個工作區。";
 "Cross-device synchronization images" = "跨裝置同步圖片";
 "Current Consent Evidence" = "目前同意證據";
 "Current Readings" = "目前讀值";
@@ -221,7 +220,6 @@
 "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details." = "認識獨立的 Mac 工具程式 XHelpers Pro，快速取用日常控制功能。XTimers 使用者可前往其促銷授權優惠頁面，查看目前條款與啟用詳細資訊。";
 "Explore XTimers features" = "探索 XTimers 功能";
 "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder." = "探索假日、文化紀念日、全球活動與歷史時刻。加入 Apple 行事曆的唯讀檢視，再將日期或行程設為倒數計時或個人提醒。";
-"Explore the mobile experience" = "了解行動裝置使用體驗";
 "Failed" = "失敗";
 "Features" = "功能";
 "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected." = "功能可能因權限、設備電力或連接性、操作系統行為、第三方服務、維護或故障而延遲、中斷、更改或無法使用。 在法律許可的範圍內，XTimers 以“現狀”和“可用性”提供，並不保證每個警報、通知、訊息、同步或報告都能送達、保留或無錯誤。 適用的消費者權利，如果法律不允許放棄，則不受影響。";
@@ -240,6 +238,8 @@
 "For support, see %1$@xintechllc.com/XTimers/support.html%2$@." = "如需支援，請參閱 %1$@xintechllc.com/XTimers/support.html%2$@。";
 "General settings in English, captured from the installed Mac app in light appearance." = "已安裝的 Mac App 中的英文一般設定，以淺色外觀擷取。";
 "Give work, learning and everyday life their own named task sets. Save a task or a whole set as a template, then bring a familiar routine into your next session." = "為工作、學習與日常生活分別建立具名的任務組合。將單項任務或整個組合儲存為範本，下次計時即可沿用熟悉的流程。";
+"Guides" = "指南";
+"Guides in English" = "英文指南";
 "Have something else in mind?" = "還有其他想了解的事嗎？";
 "Help" = "幫助";
 "Home" = "首頁";
@@ -274,6 +274,8 @@
 "Local reports and exports work offline. Email and online sharing need a connection." = "本機報告與輸出可離線使用。電子郵件與線上分享需要連線。";
 "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata." = "僅限本地的鬧鐘會保留在建立它們的裝置上，僅因使用者登入並不會上傳。如果使用者明確提升鬧鐘或建立已登入的鬧鐘，XTimers 可能會同步其名稱、計畫、重複設定、聲音與呈現選項、啟用狀態、修訂歷史及其他定義的元資料。";
 "Mac" = "Mac";
+"Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app." = "Mac 3.4 現已推出。本頁的功能介紹和截圖展示了 Mac 3.5 及尚未發行的 iPhone/iPad App 的預覽。";
+"Mac 3.4 · Available on the App Store" = "Mac 3.4 · 已在 App Store 上架";
 "Mac · English" = "Mac · 英語";
 "Mac · English — General settings in English, captured from the installed Mac app in light appearance." = "Mac · 英語 — 已安裝的 Mac App 中的英文一般設定，以淺色外觀擷取。";
 "Mac · Grid" = "Mac · 格狀";
@@ -310,7 +312,6 @@
 "Mac · local only" = "Mac · 僅限本機";
 "Mac · selected profiles" = "Mac · 部分設定檔";
 "Mac · separate app" = "Mac · 獨立 App";
-"Mac, iPhone and iPad. Each with a place in your day." = "Mac、iPhone 與 iPad，在你的一天中各有位置。";
 "Main navigation" = "主要導覽";
 "Make a little time%1$@for %2$@yourself.%3$@" = "留一點時間%1$@給%2$@自己。%3$@";
 "Make a start. No sign-in needed." = "開始使用，無須登入。";
@@ -372,6 +373,10 @@
 "Planning at 20:04 in the installed Mac app’s Single view, with visible controls and the Yosemite photo background." = "已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。";
 "Planning at 20:04 over a mountain photograph in Minimal view" = "極簡檢視中的「Planning」在山景照片上方顯示 20:04";
 "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons" = "暫停在 20:04 的「Planning」，直接顯示在 Mac 選單列的系統狀態圖像旁";
+"Press kit" = "媒體資料包";
+"Press kit in English" = "英文媒體資料包";
+"Preview only · No public download" = "僅供預覽 · 尚無公開下載";
+"Preview screenshots show development builds; the public Mac app may differ." = "預覽截圖展示的是開發版本；已公開發行的 Mac App 可能有所不同。";
 "Privacy" = "隱私";
 "Privacy Choices" = "隱私選項";
 "Privacy Policy" = "隱私權政策";
@@ -379,6 +384,8 @@
 "Provide customer support and investigate reported problems." = "提供客戶支援並調查報告的問題。";
 "Put your day in context." = "讓今天，與更廣闊的世界相連。";
 "Questions" = "常見問題";
+"Recovery help" = "資料復原說明";
+"Recovery help in English" = "英文資料復原說明";
 "Reminders go to your own eligible, verified number with separate SMS or call consent. Availability depends on your account, region and the service. A scheduled call needs server confirmation; Call Me uses English and does not automatically redial." = "提醒會傳送至符合資格且已驗證的本人號碼，SMS 或電話需分別取得同意。供應情況取決於帳號、地區與服務。預約電話需經伺服器確認；「Call Me」以英語提供，且不會自動重撥。";
 "Reply HELP for help. You can also contact XTimers support at %1$@xintechllc.com/XTimers/support.html%2$@." = "回覆 HELP 可獲取幫助。 您也可以透過 %1$@xintechllc.com/XTimers/support.html%2$@ 聯絡 XTimers 支援。";
 "Reply STOP to opt out of SMS messages from XTimers. After you send STOP,\n      XTimers will stop sending SMS messages to that phone number\n      unless you opt in again." = "回覆 STOP 以選擇退出 SMS 來自 XTimers 的訊息。 在您發送 STOP 後，\n      XTimers 將停止向該電話號碼發送 SMS 訊息，\n      除非您再次選擇加入。";
@@ -509,7 +516,6 @@
 "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded." = "使用者可以匿名提交意見回饋，或選擇將其附加到已登入的帳戶。XTimers 會儲存檢查要求、防止濫用以及回應或修正問題所需的意見回饋文字與操作中繼資料。匿名意見回饋不會附加至帳戶識別碼，但一般網路要求的中繼資料仍可能被記錄。";
 "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@." = "用戶可在 XTimers 應用程式內通過輸入他們的電話號碼並主動勾選未預先選中的方框來選擇加入。 該方框上寫著：「我同意在此電話號碼接收由 Xintech LLC 營運的 XTimers 所發送的 SMS 驗證碼，以及我為自己排定的提醒訊息。」選擇加入的畫面還會顯示這些 SMS 條款、隱私政策、標準訊息與數據費率披露、STOP 與 HELP 說明、訊息頻率資訊，以及非行銷語言。 同意並非購買的前提條件。 請參見 %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@ 的選擇加入證據頁面。";
 "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:" = "驗證傳送可以使用特定提供者或地區的範本。\n      代表性驗證訊息格式為：";
-"View on the Mac App Store" = "在 Mac App Store 檢視";
 "View the XHelpers Pro offer" = "查看 XHelpers Pro 優惠";
 "Visit support" = "造訪支援頁面";
 "Website Analytics" = "網站分析";
@@ -536,6 +542,7 @@
 "World clocks images" = "世界時鐘圖片";
 "XHelpers Pro benefit images" = "XHelpers Pro 優惠圖片";
 "XTimers" = "XTimers";
+"XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features." = "Mac 版 XTimers 3.4 現已推出。探索計時與倒數計時功能，並預覽 Mac 3.5 和 iPhone/iPad 的功能。";
 "XTimers Activity Extension Privacy Policy" = "XTimers 活動擴展隱私政策";
 "XTimers Messaging Help" = "XTimers 訊息說明";
 "XTimers Privacy Choices" = "XTimers 隱私選項";
@@ -556,6 +563,7 @@
 "XTimers for Mac" = "XTimers Mac 版";
 "XTimers for iPhone & iPad" = "適用於 iPhone 與 iPad 的 XTimers";
 "XTimers home" = "XTimers 首頁";
+"XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer." = "XTimers 圖示，搭配英文版 Mac 3.5 工作區預覽及一個小型計時器。";
 "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs." = "XTimers 並非設計用於緊急、醫療、安全關鍵或生命關鍵的計時。請為這些需求使用專用系統。";
 "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features." = "XTimers 由 Xintech LLC 運營，並使用 Xin Account 進行共享登入。 本政策說明了在 Xin Account 身份服務以及 XTimers 計時器、鬧鐘、倒數計時、活動追蹤、日曆功能、同步、報告、自訂音效、提醒、支援和訊息功能中處理的信息。";
 "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling." = "XTimers 由 Xintech LLC 運營。 在已登入的用戶明確同意後，XTimers 可能會嘗試向用戶輸入的建議帳號電話號碼發送設定驗證代碼。 在成功驗證並選擇加入後，XTimers 可能僅向相同的電話號碼嘗試用戶創建的計時器/提醒 SMS，並且僅在用戶為自己安排時發送。 XTimers 不會發送行銷 SMS，也不允許用戶將 SMS 發送給任意第三方收件人。 XTimers 的 SMS 不是雙向聊天或對話服務；接收關鍵字僅用於 STOP、HELP、START 和 YES 的合規處理。";
@@ -566,7 +574,7 @@
 "XTimers uses Xin Account for shared sign-in. You are responsible for the\n      identity information you provide, protecting your sign-in methods and\n      devices, maintaining access to your account email, and promptly reporting\n      suspected unauthorized access. You may not misuse identity, recovery,\n      linked-provider, session, or connected-product features or attempt to\n      access another person's account." = "XTimers 使用 Xin Account 進行共用登入。 您對您提供的身份資訊負責，保護您的登入方式和裝置，維護對您的帳戶電子郵件的存取權限，並及時報告可疑的未經授權的存取行為。 您不得濫用身份、恢復、連結提供者、會話或連接產品功能，也不得嘗試存取他人的帳戶。";
 "XTimers uses a Xin Account to identify and authenticate a user. A Xin\n      Account is the shared identity layer for XTimers and any other connected\n      products listed in the account controls; it is not an XTimers product\n      account and does not contain XTimers timers, reports, sounds, or SMS data." = "XTimers 使用 Xin Account 來識別和驗證使用者。 Xin Account 是 XTimers 以及帳戶控管中列出的任何其他相關產品的共享身份層；它不是 XTimers 產品帳戶，也不包含 XTimers 計時器、報告、聲音或 SMS 資料。";
 "XTimers website tracking is off by default and opt-in. Turning tracking\n      off in XTimers stops the app from recording active-tab data and disables\n      its integration. Disable or remove the browser extension to stop its own\n      event listeners, periodic active-tab queries, and local delivery attempts.\n      Existing XTimers history remains until you use Reset tracked data." = "XTimers 網站追蹤預設為關閉，需要選擇加入。 在 XTimers 中關閉追蹤功能會停止應用程式記錄活動標籤資料，並停用其整合功能。 禁用或移除瀏覽器擴充功能以停止其自身的事件監聽器、定期活動標籤查詢以及本地傳送嘗試。\n      現有的 XTimers 歷史記錄將保留，直到您使用「重設追蹤資料」。";
-"XTimers — Count up. Count down. World clocks. World Calendar." = "XTimers — 正向計時。倒數計時。世界時鐘。世界行事曆。";
+"XTimers — Timers and Countdowns for Mac" = "XTimers — Mac 計時器與倒數計時";
 "Xin Account Identity and Recovery" = "Xin Account 身分與復原";
 "Xin Account Identity and Security" = "Xin Account 身份與安全";
 "Xin Account Identity and Sign-In" = "Xin Account 身分與登入";

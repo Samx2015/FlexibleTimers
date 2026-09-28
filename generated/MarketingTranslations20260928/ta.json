@@ -1,0 +1,27 @@
+{
+  "locale": "ta",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac-க்கான டைமர்களும் கவுண்ட்டவுன்களும்",
+    "m002": "Mac-க்கான XTimers 3.4 கிடைக்கிறது. டைமர்கள் மற்றும் கவுண்ட்டவுன்களுடன் Mac 3.5 மற்றும் iPhone/iPad அம்சங்களின் முன்னோட்டத்தையும் பாருங்கள்.",
+    "m003": "Mac 3.4 இப்போது கிடைக்கிறது. இந்தப் பக்கத்தின் அம்சங்களும் ஸ்கிரீன்ஷாட்களும் Mac 3.5 மற்றும் இன்னும் வெளியிடப்படாத iPhone/iPad செயலியின் முன்னோட்டத்தைக் காட்டுகின்றன.",
+    "m004": "Mac 3.4 · App Store-இல் கிடைக்கிறது",
+    "m005": "முன்னோட்டம் மட்டும் · பொதுப் பதிவிறக்கம் இல்லை",
+    "m006": "முன்னோட்ட ஸ்கிரீன்ஷாட்கள் உருவாக்கத்தில் உள்ள பதிப்புகளைக் காட்டுகின்றன; பொதுமக்களுக்குக் கிடைக்கும் Mac செயலி வேறுபடலாம்.",
+    "m007": "வழிகாட்டிகள்",
+    "m008": "ஊடகத் தொகுப்பு",
+    "m009": "தரவு மீட்பு உதவி",
+    "m010": "ஆங்கிலத்தில் வழிகாட்டிகள்",
+    "m011": "ஆங்கிலத்தில் ஊடகத் தொகுப்பு",
+    "m012": "ஆங்கிலத்தில் தரவு மீட்பு உதவி",
+    "m013": "Mac 3.5 பணிப்பகுதியின் ஆங்கில முன்னோட்டம் மற்றும் சிறிய டைமருடன் XTimers ஐகான்."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.829774+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

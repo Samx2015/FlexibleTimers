@@ -1,0 +1,27 @@
+{
+  "locale": "ca",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Cronòmetres i comptes enrere per a Mac",
+    "m002": "XTimers 3.4 està disponible per a Mac. Descobreix cronòmetres i comptes enrere, i una vista prèvia de les funcions de Mac 3.5 i iPhone/iPad.",
+    "m003": "Mac 3.4 ja està disponible. Les funcions i captures d’aquesta pàgina mostren una vista prèvia de Mac 3.5 i de l’app per a iPhone/iPad, encara no publicada.",
+    "m004": "Mac 3.4 · Disponible a l’App Store",
+    "m005": "Només una vista prèvia · Sense descàrrega pública",
+    "m006": "Les captures mostren versions en desenvolupament; l’app pública per a Mac pot ser diferent.",
+    "m007": "Guies",
+    "m008": "Dossier de premsa",
+    "m009": "Ajuda per recuperar dades",
+    "m010": "Guies en anglès",
+    "m011": "Dossier de premsa en anglès",
+    "m012": "Ajuda per recuperar dades en anglès",
+    "m013": "Icona de XTimers amb una vista prèvia en anglès de l’espai de treball de Mac 3.5 i un cronòmetre compacte."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.221103+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "locale": "ml",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac-നുള്ള ടൈമറുകളും കൗണ്ട്ഡൗണുകളും",
+    "m002": "Mac-നായി XTimers 3.4 ലഭ്യമാണ്. ടൈമറുകളും കൗണ്ട്ഡൗണുകളും പരിചയപ്പെടൂ; ഒപ്പം Mac 3.5, iPhone/iPad സവിശേഷതകളുടെ പ്രിവ്യൂവും കാണൂ.",
+    "m003": "Mac 3.4 ഇപ്പോൾ ലഭ്യമാണ്. ഈ പേജിലെ സവിശേഷതകളും സ്ക്രീൻഷോട്ടുകളും Mac 3.5-ന്റെയും ഇതുവരെ പുറത്തിറങ്ങാത്ത iPhone/iPad ആപ്പിന്റെയും പ്രിവ്യൂ ആണ്.",
+    "m004": "Mac 3.4 · App Store-ൽ ലഭ്യമാണ്",
+    "m005": "പ്രിവ്യൂ മാത്രം · പൊതുജനങ്ങൾക്ക് ഡൗൺലോഡ് ലഭ്യമല്ല",
+    "m006": "പ്രിവ്യൂ സ്ക്രീൻഷോട്ടുകൾ വികസനത്തിലുള്ള പതിപ്പുകൾ കാണിക്കുന്നു; പൊതുജനങ്ങൾക്ക് ലഭ്യമായ Mac ആപ്പിൽ വ്യത്യാസങ്ങളുണ്ടാകാം.",
+    "m007": "മാർഗ്ഗനിർദ്ദേശങ്ങൾ",
+    "m008": "പ്രസ് കിറ്റ്",
+    "m009": "ഡാറ്റ വീണ്ടെടുക്കാനുള്ള സഹായം",
+    "m010": "ഇംഗ്ലീഷിലുള്ള മാർഗ്ഗനിർദ്ദേശങ്ങൾ",
+    "m011": "ഇംഗ്ലീഷിലുള്ള പ്രസ് കിറ്റ്",
+    "m012": "ഇംഗ്ലീഷിലുള്ള ഡാറ്റ വീണ്ടെടുക്കൽ സഹായം",
+    "m013": "Mac 3.5 വർക്ക്‌സ്‌പേസിന്റെ ഇംഗ്ലീഷ് പ്രിവ്യൂവും ചെറിയൊരു ടൈമറും സഹിതമുള്ള XTimers ഐക്കൺ."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.145873+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

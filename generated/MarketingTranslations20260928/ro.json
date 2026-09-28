@@ -1,0 +1,27 @@
+{
+  "locale": "ro",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Cronometre și numărători inverse pentru Mac",
+    "m002": "XTimers 3.4 este disponibil pentru Mac. Descoperă cronometrele și numărătorile inverse, precum și o previzualizare a funcțiilor din Mac 3.5 și din aplicația pentru iPhone/iPad.",
+    "m003": "Mac 3.4 este disponibil acum. Funcțiile și capturile de pe această pagină prezintă o previzualizare a Mac 3.5 și a aplicației pentru iPhone/iPad, care nu a fost încă lansată.",
+    "m004": "Mac 3.4 · Disponibil în App Store",
+    "m005": "Doar previzualizare · Fără descărcare publică",
+    "m006": "Capturile de previzualizare arată versiuni în dezvoltare; aplicația publică pentru Mac poate fi diferită.",
+    "m007": "Ghiduri",
+    "m008": "Materiale de presă",
+    "m009": "Ajutor pentru recuperarea datelor",
+    "m010": "Ghiduri în engleză",
+    "m011": "Materiale de presă în engleză",
+    "m012": "Ajutor pentru recuperarea datelor în engleză",
+    "m013": "Pictograma XTimers cu o previzualizare în engleză a spațiului de lucru din Mac 3.5 și un cronometru compact."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.638534+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

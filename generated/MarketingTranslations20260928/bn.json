@@ -1,0 +1,27 @@
+{
+  "locale": "bn",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac-এর জন্য টাইমার ও কাউন্টডাউন",
+    "m002": "Mac-এর জন্য XTimers 3.4 উপলভ্য। টাইমার ও কাউন্টডাউন সম্পর্কে জানুন, সঙ্গে দেখুন Mac 3.5 এবং iPhone/iPad-এর বৈশিষ্ট্যগুলির পূর্বরূপ।",
+    "m003": "Mac 3.4 এখন উপলভ্য। এই পৃষ্ঠার বৈশিষ্ট্য ও স্ক্রিনশটগুলিতে Mac 3.5 এবং এখনও প্রকাশিত না হওয়া iPhone/iPad অ্যাপের পূর্বরূপ দেখানো হয়েছে।",
+    "m004": "Mac 3.4 · App Store-এ উপলভ্য",
+    "m005": "শুধু পূর্বরূপ · সর্বসাধারণের জন্য ডাউনলোড উপলভ্য নয়",
+    "m006": "পূর্বরূপের স্ক্রিনশটগুলিতে উন্নয়নাধীন সংস্করণ দেখানো হয়েছে; প্রকাশিত Mac অ্যাপটি আলাদা হতে পারে।",
+    "m007": "নির্দেশিকা",
+    "m008": "প্রেস কিট",
+    "m009": "ডেটা পুনরুদ্ধারে সহায়তা",
+    "m010": "ইংরেজিতে নির্দেশিকা",
+    "m011": "ইংরেজিতে প্রেস কিট",
+    "m012": "ইংরেজিতে ডেটা পুনরুদ্ধারে সহায়তা",
+    "m013": "Mac 3.5-এর কর্মক্ষেত্রের ইংরেজি পূর্বরূপ ও একটি ছোট টাইমারসহ XTimers আইকন।"
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.172307+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

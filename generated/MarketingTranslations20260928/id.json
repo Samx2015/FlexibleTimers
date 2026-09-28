@@ -1,0 +1,27 @@
+{
+  "locale": "id",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Pengatur Waktu dan Hitung Mundur untuk Mac",
+    "m002": "XTimers 3.4 tersedia untuk Mac. Jelajahi pengatur waktu dan hitung mundur, serta pratinjau fitur Mac 3.5 dan iPhone/iPad.",
+    "m003": "Mac 3.4 kini tersedia. Fitur dan tangkapan layar di halaman ini menampilkan pratinjau Mac 3.5 dan aplikasi iPhone/iPad yang belum dirilis.",
+    "m004": "Mac 3.4 · Tersedia di App Store",
+    "m005": "Hanya pratinjau · Belum tersedia untuk diunduh publik",
+    "m006": "Tangkapan layar pratinjau menampilkan versi pengembangan; aplikasi Mac yang tersedia untuk publik mungkin berbeda.",
+    "m007": "Panduan",
+    "m008": "Kit pers",
+    "m009": "Bantuan pemulihan data",
+    "m010": "Panduan dalam bahasa Inggris",
+    "m011": "Kit pers dalam bahasa Inggris",
+    "m012": "Bantuan pemulihan data dalam bahasa Inggris",
+    "m013": "Ikon XTimers dengan pratinjau ruang kerja Mac 3.5 dalam bahasa Inggris dan pengatur waktu ringkas."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.927444+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

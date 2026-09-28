@@ -1,0 +1,27 @@
+{
+  "locale": "fr",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Chronomètres et comptes à rebours pour Mac",
+    "m002": "XTimers 3.4 est disponible pour Mac. Découvrez les chronomètres et comptes à rebours, ainsi qu’un aperçu des fonctions de Mac 3.5 et de l’app iPhone/iPad.",
+    "m003": "Mac 3.4 est disponible dès maintenant. Les fonctions et captures de cette page présentent un aperçu de Mac 3.5 et de l’app iPhone/iPad, qui n’est pas encore publiée.",
+    "m004": "Mac 3.4 · Disponible sur l’App Store",
+    "m005": "Aperçu uniquement · Aucun téléchargement public",
+    "m006": "Les captures présentent des versions de développement ; l’app Mac disponible au public peut être différente.",
+    "m007": "Guides pratiques",
+    "m008": "Dossier de presse",
+    "m009": "Aide à la récupération",
+    "m010": "Guides en anglais",
+    "m011": "Dossier de presse en anglais",
+    "m012": "Aide à la récupération en anglais",
+    "m013": "Icône XTimers avec un aperçu en anglais de l’espace de travail de Mac 3.5 et un chronomètre compact."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.643414+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

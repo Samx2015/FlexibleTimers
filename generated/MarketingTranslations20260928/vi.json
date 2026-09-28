@@ -1,0 +1,27 @@
+{
+  "locale": "vi",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Hẹn giờ và đếm ngược cho Mac",
+    "m002": "XTimers 3.4 đã có cho Mac. Khám phá bộ hẹn giờ và đếm ngược, cùng bản xem trước các tính năng của Mac 3.5 và iPhone/iPad.",
+    "m003": "Mac 3.4 hiện đã có. Các tính năng và ảnh chụp màn hình trên trang này là bản xem trước của Mac 3.5 và ứng dụng iPhone/iPad chưa phát hành.",
+    "m004": "Mac 3.4 · Có trên App Store",
+    "m005": "Chỉ là bản xem trước · Chưa có bản tải xuống công khai",
+    "m006": "Ảnh chụp màn hình xem trước cho thấy các bản dựng đang phát triển; ứng dụng Mac đã phát hành có thể khác.",
+    "m007": "Hướng dẫn",
+    "m008": "Bộ tài liệu báo chí",
+    "m009": "Trợ giúp khôi phục dữ liệu",
+    "m010": "Hướng dẫn bằng tiếng Anh",
+    "m011": "Bộ tài liệu báo chí bằng tiếng Anh",
+    "m012": "Trợ giúp khôi phục dữ liệu bằng tiếng Anh",
+    "m013": "Biểu tượng XTimers cùng bản xem trước không gian làm việc Mac 3.5 bằng tiếng Anh và một bộ hẹn giờ nhỏ gọn."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:59.103863+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

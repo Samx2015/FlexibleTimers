@@ -1,0 +1,27 @@
+{
+  "locale": "ru",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Секундомеры и таймеры обратного отсчёта для Mac",
+    "m002": "XTimers 3.4 доступен для Mac. Познакомьтесь с секундомерами и таймерами обратного отсчёта, а также с предварительным обзором функций Mac 3.5 и приложения для iPhone/iPad.",
+    "m003": "Mac 3.4 уже доступен. Функции и снимки экрана на этой странице показывают предварительную версию Mac 3.5 и ещё не выпущенное приложение для iPhone/iPad.",
+    "m004": "Mac 3.4 · Доступен в App Store",
+    "m005": "Только предварительный обзор · Публичной загрузки пока нет",
+    "m006": "На снимках показаны версии в разработке; общедоступное приложение для Mac может отличаться.",
+    "m007": "Руководства",
+    "m008": "Материалы для прессы",
+    "m009": "Помощь с восстановлением данных",
+    "m010": "Руководства на английском",
+    "m011": "Материалы для прессы на английском",
+    "m012": "Помощь с восстановлением данных на английском",
+    "m013": "Значок XTimers с англоязычным изображением рабочего пространства предварительной версии Mac 3.5 и компактным секундомером."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.675695+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

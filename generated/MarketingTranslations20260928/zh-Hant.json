@@ -1,0 +1,27 @@
+{
+  "locale": "zh-Hant",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac 計時器與倒數計時",
+    "m002": "Mac 版 XTimers 3.4 現已推出。探索計時與倒數計時功能，並預覽 Mac 3.5 和 iPhone/iPad 的功能。",
+    "m003": "Mac 3.4 現已推出。本頁的功能介紹和截圖展示了 Mac 3.5 及尚未發行的 iPhone/iPad App 的預覽。",
+    "m004": "Mac 3.4 · 已在 App Store 上架",
+    "m005": "僅供預覽 · 尚無公開下載",
+    "m006": "預覽截圖展示的是開發版本；已公開發行的 Mac App 可能有所不同。",
+    "m007": "指南",
+    "m008": "媒體資料包",
+    "m009": "資料復原說明",
+    "m010": "英文指南",
+    "m011": "英文媒體資料包",
+    "m012": "英文資料復原說明",
+    "m013": "XTimers 圖示，搭配英文版 Mac 3.5 工作區預覽及一個小型計時器。"
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:59.160225+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "context": "XTimers website marketing update. Public Mac version3.4 is available; Mac3.5 and iPhone/iPad imagery is development preview only, not a public mobile download. Keep concise UI copy. Mac/Apple/App Store/XTimers/iPhone/iPad must stay exact. 3.4/3.5 remain exact. English means language, can be translated. Countdowns means timers counting down, not a general event countdown. Recovery help means safely recovering saved timer data. Press kit means media kit for journalists. All authorship directly inherited Codex/GPT, no other provider.",
+  "strings": {
+    "m001": "XTimers — Timers and Countdowns for Mac",
+    "m002": "XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features.",
+    "m003": "Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app.",
+    "m004": "Mac 3.4 · Available on the App Store",
+    "m005": "Preview only · No public download",
+    "m006": "Preview screenshots show development builds; the public Mac app may differ.",
+    "m007": "Guides",
+    "m008": "Press kit",
+    "m009": "Recovery help",
+    "m010": "Guides in English",
+    "m011": "Press kit in English",
+    "m012": "Recovery help in English",
+    "m013": "XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer."
+  },
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "authorshipBatches": {
+    "europe.json": "94c6e543fee3ac0412946a5aa4f5e13b3ae0f8e8bb734bc636ff26ae0074f820",
+    "asia.json": "356301668ba690b08819ab219f84574da74c576457c0191b4ef0ba7af8c62dc9"
+  }
+}

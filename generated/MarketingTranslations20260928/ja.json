@@ -1,0 +1,27 @@
+{
+  "locale": "ja",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac用タイマーとカウントダウン",
+    "m002": "Mac向けXTimers 3.4を配信中。タイマーとカウントダウンに加え、Mac 3.5とiPhone/iPad向け機能のプレビューをご覧ください。",
+    "m003": "Mac 3.4は現在配信中です。このページの機能紹介とスクリーンショットは、Mac 3.5および未公開のiPhone/iPadアプリのプレビューです。",
+    "m004": "Mac 3.4 · App Storeで配信中",
+    "m005": "プレビューのみ · 一般向けダウンロードはありません",
+    "m006": "プレビューのスクリーンショットは開発中のビルドを示しています。公開中のMacアプリとは異なる場合があります。",
+    "m007": "ガイド",
+    "m008": "プレスキット",
+    "m009": "データ復元のヘルプ",
+    "m010": "ガイド（英語）",
+    "m011": "プレスキット（英語）",
+    "m012": "データ復元のヘルプ（英語）",
+    "m013": "XTimersのアイコン、英語表示のMac 3.5ワークスペースのプレビュー、コンパクトなタイマー。"
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.014760+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

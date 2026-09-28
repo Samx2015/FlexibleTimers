@@ -1,0 +1,191 @@
+{
+  "format": "lossless WebP after Lanczos resampling",
+  "originalsUnchanged": true,
+  "images": [
+    {
+      "original": {
+        "path": "assets/marketing/mac-dark.png",
+        "bytes": 177055,
+        "sha256": "dde39431a3cdf85369734a3973c282f580cbe79c51596edde68c4006e723c9a4"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-dark-480.webp",
+          "bytes": 46026,
+          "sha256": "bc83f4e737c1b60bec6a01cb7fc6f9b793428d0dd9ce41f7748da7a0ef4dd061",
+          "width": 480,
+          "height": 308
+        },
+        {
+          "path": "assets/marketing/responsive/mac-dark-960.webp",
+          "bytes": 115976,
+          "sha256": "56f0ea55b76eda452ffb1f121479bf8039fe0a4a2325b88e0e84f15adef8b153",
+          "width": 960,
+          "height": 616
+        }
+      ]
+    },
+    {
+      "original": {
+        "path": "assets/marketing/mac-timer-minimal-hidden.png",
+        "bytes": 41466,
+        "sha256": "5f7482cb4e89e098a90e89418607956403f5179c2ae7b558ca54cea71bb6f157"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-timer-minimal-hidden-320.webp",
+          "bytes": 7454,
+          "sha256": "806ecf58fee901c15bcbbc78a81511333771db108b993e9f08861f23d3867351",
+          "width": 320,
+          "height": 124
+        },
+        {
+          "path": "assets/marketing/responsive/mac-timer-minimal-hidden-640.webp",
+          "bytes": 16000,
+          "sha256": "ba5f1a686c349237b5508270037792a6a5a2fd52885eafe6b34aa5d301e43d1a",
+          "width": 640,
+          "height": 248
+        }
+      ]
+    },
+    {
+      "original": {
+        "path": "assets/marketing/mac-world-calendar-month.png",
+        "bytes": 1256322,
+        "sha256": "c15e735adc847374207bec475af6a0cf3e3c59df378e7b60738689a285611206"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-world-calendar-month-240.webp",
+          "bytes": 22440,
+          "sha256": "ce8e4caad71e2512ae79f9350c8d641a5f03d84d504bbd3de2e121156f6afdb4",
+          "width": 240,
+          "height": 169
+        },
+        {
+          "path": "assets/marketing/responsive/mac-world-calendar-month-480.webp",
+          "bytes": 60474,
+          "sha256": "a5cfacd8adced54af685857da27548deed8c4830882521f96f9cebeceb1338fc",
+          "width": 480,
+          "height": 339
+        }
+      ]
+    },
+    {
+      "original": {
+        "path": "assets/marketing/mac-sound-ceremonial.png",
+        "bytes": 203707,
+        "sha256": "4995ca5d35f987df8942ab50a56fddeda95ce7e0e83c6b9c47dd0515327438d7"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-sound-ceremonial-240.webp",
+          "bytes": 11798,
+          "sha256": "ac7aa5f66c61f5445d5b3cad7c82742373a6b3693ec81c3e92e9e4dd639a2e8e",
+          "width": 240,
+          "height": 187
+        },
+        {
+          "path": "assets/marketing/responsive/mac-sound-ceremonial-480.webp",
+          "bytes": 27916,
+          "sha256": "5d7612e3fa57977a73a60606e33c0d59b6db3834812876b1ef693c1da1040822",
+          "width": 480,
+          "height": 373
+        }
+      ]
+    },
+    {
+      "original": {
+        "path": "assets/marketing/mac-planning-minimal-hidden-dolomites.png",
+        "bytes": 592980,
+        "sha256": "604ae02b04e102a2d4b3806636fb8ac3243e64968858970058491ccde79a845c"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-planning-minimal-hidden-dolomites-320.webp",
+          "bytes": 87590,
+          "sha256": "27126d30e85485577193f7be9e5c37acde6be049aed9e946bbe0a191322b0a97",
+          "width": 320,
+          "height": 228
+        },
+        {
+          "path": "assets/marketing/responsive/mac-planning-minimal-hidden-dolomites-658.webp",
+          "bytes": 361464,
+          "sha256": "45b25b2d10f06e64fb2fa81dff4cca9d57dfac9415259600961b3dfd460e4cd2",
+          "width": 658,
+          "height": 468
+        }
+      ]
+    },
+    {
+      "original": {
+        "path": "assets/marketing/mac-report-week-daily-totals.png",
+        "bytes": 550445,
+        "sha256": "5909d1050b9860f3290f3fcecf12b245e443b588dc51293d312a6e1086707c34"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-report-week-daily-totals-320.webp",
+          "bytes": 53814,
+          "sha256": "9ec757f28b23b209619f270c1cf1a05114550674e32209a42aaec5b87f5e280d",
+          "width": 320,
+          "height": 504
+        },
+        {
+          "path": "assets/marketing/responsive/mac-report-week-daily-totals-640.webp",
+          "bytes": 116198,
+          "sha256": "d55b790104ccfa8939edd1bb0ec278e1ed5d80727194f8ef617e7ca879cc0ba8",
+          "width": 640,
+          "height": 1009
+        }
+      ]
+    },
+    {
+      "original": {
+        "path": "assets/marketing/mac-menubar-status-planning.png",
+        "bytes": 12292,
+        "sha256": "1f5f88f6a48ef2ca175ea1af6f713645fc7d20cb039b8d5e23d932a402da396f"
+      },
+      "variants": [
+        {
+          "path": "assets/marketing/responsive/mac-menubar-status-planning-320.webp",
+          "bytes": 4368,
+          "sha256": "b7d98f513230665148f5a2bddec28b819dc36aea70add0d9896c8808e04f4a17",
+          "width": 320,
+          "height": 34
+        },
+        {
+          "path": "assets/marketing/responsive/mac-menubar-status-planning-572.webp",
+          "bytes": 3248,
+          "sha256": "81d70b28238ea0a8126ea03ee0b4d79a62d7592ecc0fbf0179370b871f14cec4",
+          "width": 572,
+          "height": 60
+        }
+      ]
+    }
+  ],
+  "shareCard": {
+    "path": "assets/marketing/xtimers-share.png",
+    "bytes": 153702,
+    "sha256": "d25d5a521be860ea5b03723e45eb3147b1a5f7383649ee345f3f62322a7513b8",
+    "width": 1200,
+    "height": 630,
+    "textLanguage": "en",
+    "inputs": [
+      "assets/marketing/app-icon.png",
+      "assets/marketing/mac-dark.png",
+      "assets/marketing/mac-timer-minimal-hidden.png"
+    ]
+  },
+  "heroTransfer": {
+    "originalPngBytes": 2834267,
+    "smallRenditions": {
+      "bytes": 233490,
+      "reductionPercent": 91.8
+    },
+    "largeRenditions": {
+      "bytes": 701276,
+      "reductionPercent": 75.3
+    }
+  }
+}

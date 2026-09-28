@@ -1,0 +1,27 @@
+{
+  "locale": "ar",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — مؤقتات وعد تنازلي لـ Mac",
+    "m002": "يتوفر XTimers 3.4 لـ Mac. استكشف المؤقتات والعد التنازلي، إلى جانب معاينة لميزات Mac 3.5 وميزات iPhone/iPad.",
+    "m003": "يتوفر Mac 3.4 الآن. تعرض الميزات ولقطات الشاشة في هذه الصفحة معاينة لـ Mac 3.5 وتطبيق iPhone/iPad الذي لم يُطرح بعد.",
+    "m004": "Mac 3.4 · متوفر على App Store",
+    "m005": "للمعاينة فقط · غير متاح للتنزيل العام",
+    "m006": "تعرض لقطات المعاينة نسخًا قيد التطوير؛ وقد يختلف عنها تطبيق Mac المتاح للجمهور.",
+    "m007": "الأدلة",
+    "m008": "الملف الصحفي",
+    "m009": "المساعدة في استعادة البيانات",
+    "m010": "الأدلة بالإنجليزية",
+    "m011": "الملف الصحفي بالإنجليزية",
+    "m012": "المساعدة في استعادة البيانات بالإنجليزية",
+    "m013": "أيقونة XTimers مع معاينة بالإنجليزية لمساحة العمل في Mac 3.5 ومؤقت صغير."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.122201+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed. Arabic conjunction before iPhone was rephrased as “وميزات iPhone/iPad” to preserve a separated protected product token without changing meaning; all 13 Arabic signatures pass the website checker."
+  }
+}

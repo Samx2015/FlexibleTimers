@@ -1,0 +1,27 @@
+{
+  "locale": "cs",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Stopky a odpočty pro Mac",
+    "m002": "XTimers 3.4 je k dispozici pro Mac. Prohlédněte si stopky a odpočty i náhled funkcí Mac 3.5 a aplikace pro iPhone/iPad.",
+    "m003": "Mac 3.4 je již k dispozici. Funkce a snímky na této stránce představují náhled Mac 3.5 a dosud nevydané aplikace pro iPhone/iPad.",
+    "m004": "Mac 3.4 · K dispozici v App Store",
+    "m005": "Pouze náhled · Veřejné stažení není k dispozici",
+    "m006": "Snímky náhledu ukazují vývojové verze; veřejná aplikace pro Mac se může lišit.",
+    "m007": "Návody",
+    "m008": "Materiály pro média",
+    "m009": "Pomoc s obnovou dat",
+    "m010": "Návody v angličtině",
+    "m011": "Materiály pro média v angličtině",
+    "m012": "Pomoc s obnovou dat v angličtině",
+    "m013": "Ikona XTimers s anglickým náhledem pracovní plochy Mac 3.5 a kompaktními stopkami."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.263905+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

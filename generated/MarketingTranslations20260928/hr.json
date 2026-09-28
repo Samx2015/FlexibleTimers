@@ -1,0 +1,27 @@
+{
+  "locale": "hr",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Štoperice i odbrojavanja za Mac",
+    "m002": "XTimers 3.4 dostupan je za Mac. Istražite štoperice i odbrojavanja te pregled značajki verzije Mac 3.5 i aplikacije za iPhone/iPad.",
+    "m003": "Mac 3.4 sada je dostupan. Značajke i snimke zaslona na ovoj stranici prikazuju verziju Mac 3.5 i još neobjavljenu aplikaciju za iPhone/iPad.",
+    "m004": "Mac 3.4 · Dostupno u trgovini App Store",
+    "m005": "Samo pregled · Nije dostupno za javno preuzimanje",
+    "m006": "Snimke pregleda prikazuju razvojne verzije; javno dostupna aplikacija za Mac može se razlikovati.",
+    "m007": "Vodiči",
+    "m008": "Materijali za medije",
+    "m009": "Pomoć pri oporavku podataka",
+    "m010": "Vodiči na engleskom",
+    "m011": "Materijali za medije na engleskom",
+    "m012": "Pomoć pri oporavku podataka na engleskom",
+    "m013": "Ikona XTimers s pregledom radnog prostora verzije Mac 3.5 na engleskom i kompaktnom štopericom."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.833273+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "locale": "ko",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac용 타이머와 카운트다운",
+    "m002": "Mac용 XTimers 3.4를 이용할 수 있습니다. 타이머와 카운트다운을 살펴보고 Mac 3.5 및 iPhone/iPad 기능도 미리 확인하세요.",
+    "m003": "Mac 3.4를 지금 이용할 수 있습니다. 이 페이지의 기능과 스크린샷은 Mac 3.5 및 아직 출시되지 않은 iPhone/iPad 앱의 미리보기입니다.",
+    "m004": "Mac 3.4 · App Store에서 이용 가능",
+    "m005": "미리보기 전용 · 공개 다운로드 없음",
+    "m006": "미리보기 스크린샷은 개발 중인 빌드를 보여 주며, 공개된 Mac 앱과 다를 수 있습니다.",
+    "m007": "가이드",
+    "m008": "프레스 키트",
+    "m009": "데이터 복구 도움말",
+    "m010": "영어 가이드",
+    "m011": "영어 프레스 키트",
+    "m012": "영어 데이터 복구 도움말",
+    "m013": "XTimers 아이콘과 영어로 표시된 Mac 3.5 작업 공간 미리보기, 작은 타이머."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.100390+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

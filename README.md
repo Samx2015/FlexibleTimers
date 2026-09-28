@@ -120,10 +120,11 @@ The September 28 landing-page translation delta is recorded in
 `generated/LandingTranslations20260928/`. Each packet contains 380 directly
 GPT-authored strings and its source checksum and semantic-review record. The
 importer retains the 219 existing, previously reviewed support/policy values
-and rejects incomplete, mismatched or invalid packets:
+and rejects incomplete, mismatched or invalid packets. These packets remain
+bound to the historical source snapshot; do not reimport them over later deltas.
+Regenerate the current catalog-backed pages with:
 
 ```sh
-python3 scripts/import-landing-translations.py --write
 python3 scripts/prepare-localized-page-drafts.py --generate
 python3 scripts/generate-localization-navigation.py
 python3 scripts/generate-website-value-provenance.py
@@ -138,7 +139,34 @@ corrections are already included in the full translation authorities.
 
 These commands do not grant release approval. Publication still uses the full
 workspace release gate and its source-bound review evidence. Historical review
-ledgers remain immutable; the current review is recorded separately under
+ledgers remain immutable; the historical landing-page review is recorded under
 `TimerWorkspace/Docs/Localization/ReleaseReviews/Website20260928/`.
+Later deltas require their own source-bound review bundle, selected for the
+release gate with `XTIMERS_WEBSITE_RELEASE_REVIEW`.
 Design studies and screenshot-capture tooling stay outside the published source.
 The obsolete `preview-3-5.html` study is removed.
+
+The marketing delta in `generated/MarketingTranslations20260928/` adds 13
+directly authored and semantically reviewed strings per locale. It retains 594
+unchanged reviewed values and retires five obsolete values, producing 607 current
+values per locale. The packets and full authorities distinguish the new review
+from retained evidence; they do not claim a native-speaker review.
+
+Availability is a September 28, 2026 snapshot: Mac 3.4 is public, while the
+feature imagery previews Mac 3.5 and the unreleased iPhone/iPad app. The header
+retains a visible Mac download action on compact screens. The approved hero
+artwork and removal of its separate action buttons remain unchanged.
+
+Mac download links use the exact Apple-generated `website_mac` campaign URL.
+The existing Umami `App Store Click` event now includes placement, platform and
+locale; mobile-preview exploration has its own event. Clicks are not installs.
+Guides and the press kit are explicitly English resources linked from every
+homepage; their five canonical URLs are included in the sitemap.
+
+`scripts/generate-marketing-renditions.py` uses Pillow with WebP support to
+create lossless display renditions and the shared English social card. It
+preserves every original PNG and zoom target. The source hashes, dimensions,
+output hashes and aggregate transfer comparison are recorded in
+`generated/MarketingMedia20260928.json`; browser selection depends on viewport
+and pixel density. The shared card labels the Mac 3.5 preview and current Mac
+3.4 availability. Localized metadata identifies the card's English artwork.

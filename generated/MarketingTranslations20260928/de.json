@@ -1,0 +1,27 @@
+{
+  "locale": "de",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Zeitmesser und Countdowns für Mac",
+    "m002": "XTimers 3.4 ist für Mac erhältlich. Entdecke Zeitmesser und Countdowns sowie eine Vorschau auf die Funktionen von Mac 3.5 und iPhone/iPad.",
+    "m003": "Mac 3.4 ist jetzt erhältlich. Die Funktionen und Screenshots auf dieser Seite zeigen eine Vorschau auf Mac 3.5 und die noch unveröffentlichte App für iPhone/iPad.",
+    "m004": "Mac 3.4 · Im App Store erhältlich",
+    "m005": "Nur Vorschau · Kein öffentlicher Download",
+    "m006": "Die Vorschaubilder zeigen Entwicklungsversionen; die öffentlich verfügbare App für Mac kann davon abweichen.",
+    "m007": "Anleitungen",
+    "m008": "Pressemappe",
+    "m009": "Hilfe zur Datenwiederherstellung",
+    "m010": "Anleitungen auf Englisch",
+    "m011": "Pressemappe auf Englisch",
+    "m012": "Hilfe zur Datenwiederherstellung auf Englisch",
+    "m013": "XTimers-Symbol mit einer englischsprachigen Vorschau auf den Arbeitsbereich von Mac 3.5 und einen kompakten Zeitmesser."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.375480+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

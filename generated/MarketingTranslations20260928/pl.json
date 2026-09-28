@@ -1,0 +1,27 @@
+{
+  "locale": "pl",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Stopery i odliczanie dla Mac",
+    "m002": "XTimers 3.4 jest dostępny dla Mac. Poznaj stopery i odliczanie oraz zapowiedź funkcji wersji Mac 3.5 i aplikacji dla iPhone/iPad.",
+    "m003": "Mac 3.4 jest już dostępny. Funkcje i zrzuty ekranu na tej stronie przedstawiają wersję Mac 3.5 oraz niewydaną jeszcze aplikację dla iPhone/iPad.",
+    "m004": "Mac 3.4 · Dostępny w App Store",
+    "m005": "Tylko podgląd · Brak publicznej wersji do pobrania",
+    "m006": "Zrzuty ekranu przedstawiają wersje rozwojowe; publiczna aplikacja dla Mac może się różnić.",
+    "m007": "Poradniki",
+    "m008": "Materiały prasowe",
+    "m009": "Pomoc w odzyskiwaniu danych",
+    "m010": "Poradniki po angielsku",
+    "m011": "Materiały prasowe po angielsku",
+    "m012": "Pomoc w odzyskiwaniu danych po angielsku",
+    "m013": "Ikona XTimers z anglojęzycznym podglądem obszaru roboczego Mac 3.5 i kompaktowym stoperem."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.489766+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

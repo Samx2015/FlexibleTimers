@@ -1,0 +1,27 @@
+{
+  "locale": "hu",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Stopperórák és visszaszámlálók Mac gépre",
+    "m002": "Az XTimers 3.4 elérhető Mac gépre. Ismerd meg a stopperórákat és visszaszámlálókat, valamint a Mac 3.5 és az iPhone/iPad-alkalmazás funkcióinak előzetesét.",
+    "m003": "A Mac 3.4 már elérhető. Az oldalon bemutatott funkciók és képernyőképek a Mac 3.5 és a még kiadatlan iPhone/iPad-alkalmazás előzetesét mutatják.",
+    "m004": "Mac 3.4 · Elérhető az App Store áruházban",
+    "m005": "Csak előzetes · Nyilvánosan nem tölthető le",
+    "m006": "Az előzetes képernyőképei fejlesztés alatt álló verziókat mutatnak; a nyilvánosan elérhető Mac-alkalmazás eltérhet tőlük.",
+    "m007": "Útmutatók",
+    "m008": "Sajtóanyagok",
+    "m009": "Adat-helyreállítási segítség",
+    "m010": "Angol nyelvű útmutatók",
+    "m011": "Angol nyelvű sajtóanyagok",
+    "m012": "Angol nyelvű adat-helyreállítási segítség",
+    "m013": "XTimers-ikon a Mac 3.5 munkaterületének angol nyelvű előzetesével és egy kompakt stopperórával."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.880220+00:00",
+    "notes": "All 13 values directly authored and reviewed against English: Mac 3.4 public, Mac 3.5 and unreleased iPhone/iPad preview, no mobile download promise, English-only resources identified; brands and version numbers retained. No qualified-native review claimed."
+  }
+}

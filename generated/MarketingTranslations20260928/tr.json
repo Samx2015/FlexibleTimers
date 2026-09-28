@@ -1,0 +1,27 @@
+{
+  "locale": "tr",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — Mac için Zamanlayıcılar ve Geri Sayımlar",
+    "m002": "XTimers 3.4, Mac için kullanıma sunuldu. Zamanlayıcıları ve geri sayımları keşfedin; Mac 3.5 ve iPhone/iPad özelliklerinin önizlemesine göz atın.",
+    "m003": "Mac 3.4 şu anda kullanılabilir. Bu sayfadaki özellikler ve ekran görüntüleri, Mac 3.5 ile henüz yayımlanmamış iPhone/iPad uygulamasının önizlemesidir.",
+    "m004": "Mac 3.4 · App Store üzerinden edinilebilir",
+    "m005": "Yalnızca önizleme · Genel indirmeye açık değil",
+    "m006": "Önizleme ekran görüntüleri geliştirme sürümlerini gösterir; yayımlanmış Mac uygulaması farklı olabilir.",
+    "m007": "Kılavuzlar",
+    "m008": "Basın kiti",
+    "m009": "Veri kurtarma yardımı",
+    "m010": "İngilizce kılavuzlar",
+    "m011": "İngilizce basın kiti",
+    "m012": "İngilizce veri kurtarma yardımı",
+    "m013": "İngilizce Mac 3.5 çalışma alanı önizlemesi ve kompakt bir zamanlayıcıyla XTimers simgesi."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:58.942794+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

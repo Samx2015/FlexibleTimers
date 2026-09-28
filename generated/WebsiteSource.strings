@@ -142,7 +142,6 @@
 "Core timers can be used without signing in. Xin Account sign-in is used\n      to authorize XTimers synchronization. Signing out pauses future\n      authenticated synchronization without deleting either account scope." = "Core timers can be used without signing in. Xin Account sign-in is used\n      to authorize XTimers synchronization. Signing out pauses future\n      authenticated synchronization without deleting either account scope.";
 "Core timing and local reports work offline. Synchronization, online sharing and server reminders need a connection. World Calendar on Mac needs an initial catalog download; its installed catalog can then be used offline." = "Core timing and local reports work offline. Synchronization, online sharing and server reminders need a connection. World Calendar on Mac needs an initial catalog download; its installed catalog can then be used offline.";
 "Count up. Count down. World clocks. World Calendar." = "Count up. Count down. World clocks. World Calendar.";
-"Count up. Count down. World clocks. World Calendar. Flexible. Customizable. Bring timers, routines, reminders and reports into one workspace." = "Count up. Count down. World clocks. World Calendar. Flexible. Customizable. Bring timers, routines, reminders and reports into one workspace.";
 "Cross-device synchronization images" = "Cross-device synchronization images";
 "Current Consent Evidence" = "Current Consent Evidence";
 "Current Readings" = "Current Readings";
@@ -221,7 +220,6 @@
 "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details." = "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details.";
 "Explore XTimers features" = "Explore XTimers features";
 "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder." = "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder.";
-"Explore the mobile experience" = "Explore the mobile experience";
 "Failed" = "Failed";
 "Features" = "Features";
 "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected." = "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected.";
@@ -240,6 +238,8 @@
 "For support, see %1$@xintechllc.com/XTimers/support.html%2$@." = "For support, see %1$@xintechllc.com/XTimers/support.html%2$@.";
 "General settings in English, captured from the installed Mac app in light appearance." = "General settings in English, captured from the installed Mac app in light appearance.";
 "Give work, learning and everyday life their own named task sets. Save a task or a whole set as a template, then bring a familiar routine into your next session." = "Give work, learning and everyday life their own named task sets. Save a task or a whole set as a template, then bring a familiar routine into your next session.";
+"Guides" = "Guides";
+"Guides in English" = "Guides in English";
 "Have something else in mind?" = "Have something else in mind?";
 "Help" = "Help";
 "Home" = "Home";
@@ -274,6 +274,8 @@
 "Local reports and exports work offline. Email and online sharing need a connection." = "Local reports and exports work offline. Email and online sharing need a connection.";
 "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata." = "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata.";
 "Mac" = "Mac";
+"Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app." = "Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app.";
+"Mac 3.4 · Available on the App Store" = "Mac 3.4 · Available on the App Store";
 "Mac · English" = "Mac · English";
 "Mac · English — General settings in English, captured from the installed Mac app in light appearance." = "Mac · English — General settings in English, captured from the installed Mac app in light appearance.";
 "Mac · Grid" = "Mac · Grid";
@@ -310,7 +312,6 @@
 "Mac · local only" = "Mac · local only";
 "Mac · selected profiles" = "Mac · selected profiles";
 "Mac · separate app" = "Mac · separate app";
-"Mac, iPhone and iPad. Each with a place in your day." = "Mac, iPhone and iPad. Each with a place in your day.";
 "Main navigation" = "Main navigation";
 "Make a little time%1$@for %2$@yourself.%3$@" = "Make a little time%1$@for %2$@yourself.%3$@";
 "Make a start. No sign-in needed." = "Make a start. No sign-in needed.";
@@ -372,6 +373,10 @@
 "Planning at 20:04 in the installed Mac app’s Single view, with visible controls and the Yosemite photo background." = "Planning at 20:04 in the installed Mac app’s Single view, with visible controls and the Yosemite photo background.";
 "Planning at 20:04 over a mountain photograph in Minimal view" = "Planning at 20:04 over a mountain photograph in Minimal view";
 "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons" = "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons";
+"Press kit" = "Press kit";
+"Press kit in English" = "Press kit in English";
+"Preview only · No public download" = "Preview only · No public download";
+"Preview screenshots show development builds; the public Mac app may differ." = "Preview screenshots show development builds; the public Mac app may differ.";
 "Privacy" = "Privacy";
 "Privacy Choices" = "Privacy Choices";
 "Privacy Policy" = "Privacy Policy";
@@ -379,6 +384,8 @@
 "Provide customer support and investigate reported problems." = "Provide customer support and investigate reported problems.";
 "Put your day in context." = "Put your day in context.";
 "Questions" = "Questions";
+"Recovery help" = "Recovery help";
+"Recovery help in English" = "Recovery help in English";
 "Reminders go to your own eligible, verified number with separate SMS or call consent. Availability depends on your account, region and the service. A scheduled call needs server confirmation; Call Me uses English and does not automatically redial." = "Reminders go to your own eligible, verified number with separate SMS or call consent. Availability depends on your account, region and the service. A scheduled call needs server confirmation; Call Me uses English and does not automatically redial.";
 "Reply HELP for help. You can also contact XTimers support at %1$@xintechllc.com/XTimers/support.html%2$@." = "Reply HELP for help. You can also contact XTimers support at %1$@xintechllc.com/XTimers/support.html%2$@.";
 "Reply STOP to opt out of SMS messages from XTimers. After you send STOP,\n      XTimers will stop sending SMS messages to that phone number\n      unless you opt in again." = "Reply STOP to opt out of SMS messages from XTimers. After you send STOP,\n      XTimers will stop sending SMS messages to that phone number\n      unless you opt in again.";
@@ -509,7 +516,6 @@
 "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded." = "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded.";
 "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@." = "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@.";
 "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:" = "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:";
-"View on the Mac App Store" = "View on the Mac App Store";
 "View the XHelpers Pro offer" = "View the XHelpers Pro offer";
 "Visit support" = "Visit support";
 "Website Analytics" = "Website Analytics";
@@ -536,6 +542,7 @@
 "World clocks images" = "World clocks images";
 "XHelpers Pro benefit images" = "XHelpers Pro benefit images";
 "XTimers" = "XTimers";
+"XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features." = "XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features.";
 "XTimers Activity Extension Privacy Policy" = "XTimers Activity Extension Privacy Policy";
 "XTimers Messaging Help" = "XTimers Messaging Help";
 "XTimers Privacy Choices" = "XTimers Privacy Choices";
@@ -556,6 +563,7 @@
 "XTimers for Mac" = "XTimers for Mac";
 "XTimers for iPhone & iPad" = "XTimers for iPhone & iPad";
 "XTimers home" = "XTimers home";
+"XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer." = "XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer.";
 "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs." = "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs.";
 "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features." = "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features.";
 "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling." = "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling.";
@@ -566,7 +574,7 @@
 "XTimers uses Xin Account for shared sign-in. You are responsible for the\n      identity information you provide, protecting your sign-in methods and\n      devices, maintaining access to your account email, and promptly reporting\n      suspected unauthorized access. You may not misuse identity, recovery,\n      linked-provider, session, or connected-product features or attempt to\n      access another person's account." = "XTimers uses Xin Account for shared sign-in. You are responsible for the\n      identity information you provide, protecting your sign-in methods and\n      devices, maintaining access to your account email, and promptly reporting\n      suspected unauthorized access. You may not misuse identity, recovery,\n      linked-provider, session, or connected-product features or attempt to\n      access another person's account.";
 "XTimers uses a Xin Account to identify and authenticate a user. A Xin\n      Account is the shared identity layer for XTimers and any other connected\n      products listed in the account controls; it is not an XTimers product\n      account and does not contain XTimers timers, reports, sounds, or SMS data." = "XTimers uses a Xin Account to identify and authenticate a user. A Xin\n      Account is the shared identity layer for XTimers and any other connected\n      products listed in the account controls; it is not an XTimers product\n      account and does not contain XTimers timers, reports, sounds, or SMS data.";
 "XTimers website tracking is off by default and opt-in. Turning tracking\n      off in XTimers stops the app from recording active-tab data and disables\n      its integration. Disable or remove the browser extension to stop its own\n      event listeners, periodic active-tab queries, and local delivery attempts.\n      Existing XTimers history remains until you use Reset tracked data." = "XTimers website tracking is off by default and opt-in. Turning tracking\n      off in XTimers stops the app from recording active-tab data and disables\n      its integration. Disable or remove the browser extension to stop its own\n      event listeners, periodic active-tab queries, and local delivery attempts.\n      Existing XTimers history remains until you use Reset tracked data.";
-"XTimers — Count up. Count down. World clocks. World Calendar." = "XTimers — Count up. Count down. World clocks. World Calendar.";
+"XTimers — Timers and Countdowns for Mac" = "XTimers — Timers and Countdowns for Mac";
 "Xin Account Identity and Recovery" = "Xin Account Identity and Recovery";
 "Xin Account Identity and Security" = "Xin Account Identity and Security";
 "Xin Account Identity and Sign-In" = "Xin Account Identity and Sign-In";

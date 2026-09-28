@@ -1,0 +1,27 @@
+{
+  "locale": "he",
+  "authorship": "direct-codex-gpt",
+  "sourceSha256": "fa5abbb37915d2365437d2af901fe4403237fea854248f9e5b088879acc517ac",
+  "translations": {
+    "m001": "XTimers — טיימרים וספירה לאחור ל-Mac",
+    "m002": "XTimers 3.4 זמין ל-Mac. גלו טיימרים וספירה לאחור, לצד הצצה לתכונות של Mac 3.5 ושל iPhone/iPad.",
+    "m003": "Mac 3.4 זמין עכשיו. התכונות וצילומי המסך בעמוד זה מציגים תצוגה מקדימה של Mac 3.5 ושל אפליקציית iPhone/iPad שטרם פורסמה.",
+    "m004": "Mac 3.4 · זמין ב-App Store",
+    "m005": "תצוגה מקדימה בלבד · אין הורדה לציבור",
+    "m006": "צילומי המסך בתצוגה המקדימה מציגים גרסאות בפיתוח; אפליקציית Mac הזמינה לציבור עשויה להיות שונה.",
+    "m007": "מדריכים",
+    "m008": "ערכת עיתונות",
+    "m009": "עזרה בשחזור נתונים",
+    "m010": "מדריכים באנגלית",
+    "m011": "ערכת עיתונות באנגלית",
+    "m012": "עזרה בשחזור נתונים באנגלית",
+    "m013": "סמל XTimers לצד תצוגה מקדימה באנגלית של סביבת העבודה של Mac 3.5 וטיימר קומפקטי."
+  },
+  "review": {
+    "model": "gpt-6-astra",
+    "qualifiedNativeReview": false,
+    "scope": "all-13-marketing-delta-values",
+    "completedAt": "2026-09-28T14:39:57.742754+00:00",
+    "notes": "Direct inherited-GPT review of all 13 values: Mac 3.4 is currently public; Mac 3.5 and unreleased iPhone/iPad are previews; preview-only availability is explicit; screenshots show development builds; linked guides, press materials, and recovery help are identified as English. Recovery refers to saved data; no new delivery, release-date, or rank claim. Brand/version tokens and both middle dots preserved. No native-speaker review claimed."
+  }
+}

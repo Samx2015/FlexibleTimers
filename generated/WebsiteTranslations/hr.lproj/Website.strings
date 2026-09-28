@@ -142,7 +142,6 @@
 "Core timers can be used without signing in. Xin Account sign-in is used\n      to authorize XTimers synchronization. Signing out pauses future\n      authenticated synchronization without deleting either account scope." = "Glavni tajmeri se mogu koristiti bez prijave. Xin Account prijava se koristi za autorizaciju XTimers sinkronizacije. Odjava pauzira buduću autentificiranu sinkronizaciju bez brisanja bilo kojeg opsega računa.";
 "Core timing and local reports work offline. Synchronization, online sharing and server reminders need a connection. World Calendar on Mac needs an initial catalog download; its installed catalog can then be used offline." = "Osnovno mjerenje vremena i lokalna izvješća rade izvanmrežno. Sinkronizacija, mrežno dijeljenje i poslužiteljski podsjetnici zahtijevaju vezu. Svjetski kalendar na računalu Mac zahtijeva početno preuzimanje kataloga; instalirani katalog zatim se može upotrebljavati izvanmrežno.";
 "Count up. Count down. World clocks. World Calendar." = "Mjeri vrijeme. Odbrojavaj. Svjetski satovi. Svjetski kalendar.";
-"Count up. Count down. World clocks. World Calendar. Flexible. Customizable. Bring timers, routines, reminders and reports into one workspace." = "Mjeri vrijeme. Odbrojavaj. Svjetski satovi. Svjetski kalendar. Fleksibilno. Prilagodljivo. Objedini mjerače vremena, rutine, podsjetnike i izvješća u jednom radnom prostoru.";
 "Cross-device synchronization images" = "Slike: Sinkronizacija među uređajima";
 "Current Consent Evidence" = "Trenutačni dokaz privole";
 "Current Readings" = "Trenutačna očitanja";
@@ -221,7 +220,6 @@
 "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details." = "Istraži XHelpers Pro, zaseban uslužni program za Mac s brzim pristupom svakodnevnim kontrolama. Korisnici aplikacije XTimers mogu posjetiti promotivnu ponudu licence za aktualne uvjete i pojedinosti aktivacije.";
 "Explore XTimers features" = "Istraži značajke aplikacije XTimers";
 "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder." = "Istraži blagdane, kulturne datume, svjetske događaje i povijesne trenutke. Dodaj prikaz svojih kalendara Apple samo za čitanje, a zatim pretvori datum ili događaj u odbrojavanje ili osobni podsjetnik.";
-"Explore the mobile experience" = "Istraži mobilno iskustvo";
 "Failed" = "Neuspjelo";
 "Features" = "Značajke";
 "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected." = "Značajke mogu biti odgođene, prekinute, promijenjene ili nedostupne zbog dopuštenja, snage uređaja ili povezivosti, ponašanja operativnog sustava, usluga trećih strana, održavanja ili kvarova. U okviru dopuštenom zakonom, XTimers se pruža „kakva jest“ i „kako je dostupna“, bez obećanja da će svaki alarm, obavijest, poruka, sinkronizacija ili izvješće biti dostavljeno, pohranjeno ili bez pogrešaka. Primjenjiva prava potrošača koja se zakonski ne mogu odreći ostaju nepromijenjena.";
@@ -240,6 +238,8 @@
 "For support, see %1$@xintechllc.com/XTimers/support.html%2$@." = "Za podršku, pogledajte %1$@xintechllc.com/XTimers/support.html%2$@.";
 "General settings in English, captured from the installed Mac app in light appearance." = "Opće postavke na engleskom, snimljene u instaliranoj aplikaciji za Mac u svijetlom izgledu.";
 "Give work, learning and everyday life their own named task sets. Save a task or a whole set as a template, then bring a familiar routine into your next session." = "Dodijeli radu, učenju i svakodnevnom životu vlastite imenovane skupove zadataka. Spremi zadatak ili cijeli skup kao predložak i prenesi poznatu rutinu u sljedeću sesiju.";
+"Guides" = "Vodiči";
+"Guides in English" = "Vodiči na engleskom";
 "Have something else in mind?" = "Imaš li još nešto na umu?";
 "Help" = "Pomoć";
 "Home" = "Početna";
@@ -274,6 +274,8 @@
 "Local reports and exports work offline. Email and online sharing need a connection." = "Lokalna izvješća i izvoz rade izvanmrežno. E-pošta i mrežno dijeljenje zahtijevaju vezu.";
 "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata." = "Lokalni alarmi ostaju u instalaciji u kojoj su stvoreni i ne prenose se samo zato što se korisnik prijavio. Ako korisnik izričito pretvori alarm u zajednički ili stvori alarm dok je prijavljen, XTimers može sinkronizirati njegov naziv, raspored, ponavljanje, odabire zvuka i prikaza, omogućeno stanje, povijest revizija i druge metapodatke definicije.";
 "Mac" = "Mac";
+"Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app." = "Mac 3.4 sada je dostupan. Značajke i snimke zaslona na ovoj stranici prikazuju verziju Mac 3.5 i još neobjavljenu aplikaciju za iPhone/iPad.";
+"Mac 3.4 · Available on the App Store" = "Mac 3.4 · Dostupno u trgovini App Store";
 "Mac · English" = "Mac · engleski";
 "Mac · English — General settings in English, captured from the installed Mac app in light appearance." = "Mac · engleski — Opće postavke na engleskom, snimljene u instaliranoj aplikaciji za Mac u svijetlom izgledu.";
 "Mac · Grid" = "Mac · „Grid”";
@@ -310,7 +312,6 @@
 "Mac · local only" = "Mac · samo lokalno";
 "Mac · selected profiles" = "Mac · odabrani profili";
 "Mac · separate app" = "Mac · zasebna aplikacija";
-"Mac, iPhone and iPad. Each with a place in your day." = "Mac, iPhone i iPad. Svaki ima mjesto u tvom danu.";
 "Main navigation" = "Glavna navigacija";
 "Make a little time%1$@for %2$@yourself.%3$@" = "Odvoji malo vremena%1$@za %2$@sebe.%3$@";
 "Make a start. No sign-in needed." = "Započni. Prijava nije potrebna.";
@@ -372,6 +373,10 @@
 "Planning at 20:04 in the installed Mac app’s Single view, with visible controls and the Yosemite photo background." = "„Planning” na 20:04 u prikazu „Single” u instaliranoj aplikaciji za Mac, s vidljivim kontrolama, uz fotografiju Yosemitea u pozadini.";
 "Planning at 20:04 over a mountain photograph in Minimal view" = "„Planning” na 20:04 preko fotografije planine u prikazu „Minimal”";
 "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons" = "„Planning” pauziran na 20:04, vidljiv izravno na traci izbornika računala Mac uz ikone stanja sustava";
+"Press kit" = "Materijali za medije";
+"Press kit in English" = "Materijali za medije na engleskom";
+"Preview only · No public download" = "Samo pregled · Nije dostupno za javno preuzimanje";
+"Preview screenshots show development builds; the public Mac app may differ." = "Snimke pregleda prikazuju razvojne verzije; javno dostupna aplikacija za Mac može se razlikovati.";
 "Privacy" = "Privatnost";
 "Privacy Choices" = "Izbori za zaštitu privatnosti";
 "Privacy Policy" = "Pravila privatnosti";
@@ -379,6 +384,8 @@
 "Provide customer support and investigate reported problems." = "Pružati korisničku podršku i istraživati prijavljene probleme.";
 "Put your day in context." = "Stavi svoj dan u kontekst.";
 "Questions" = "Pitanja";
+"Recovery help" = "Pomoć pri oporavku podataka";
+"Recovery help in English" = "Pomoć pri oporavku podataka na engleskom";
 "Reminders go to your own eligible, verified number with separate SMS or call consent. Availability depends on your account, region and the service. A scheduled call needs server confirmation; Call Me uses English and does not automatically redial." = "Podsjetnici stižu na tvoj vlastiti podržani i potvrđeni broj uz zasebnu privolu za SMS ili poziv. Dostupnost ovisi o računu, regiji i usluzi. Zakazani poziv zahtijeva potvrdu poslužitelja; „Call Me” koristi engleski i ne poziva ponovno automatski.";
 "Reply HELP for help. You can also contact XTimers support at %1$@xintechllc.com/XTimers/support.html%2$@." = "Odgovorite HELP za pomoć. Također možete kontaktirati XTimers podršku na %1$@xintechllc.com/XTimers/support.html%2$@.";
 "Reply STOP to opt out of SMS messages from XTimers. After you send STOP,\n      XTimers will stop sending SMS messages to that phone number\n      unless you opt in again." = "Odgovorite STOP kako biste se odjavili s SMS poruka od XTimers. Nakon što pošaljete STOP, XTimers će prestati slati SMS poruke na taj telefonski broj osim ako se ponovno ne prijavite.";
@@ -509,7 +516,6 @@
 "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded." = "Korisnici mogu poslati povratne informacije anonimno ili ih povezati sa svojim\n      prijavljenim računom. XTimers pohranjuje tekst povratnih informacija i operativne\n      metapodatke potrebne za pregled zahtjeva, sprječavanje zloupotrebe te odgovor ili rješavanje\n      problema. Anonimne povratne informacije nisu povezane s identifikatorom računa,\n      iako se uobičajeni metapodaci mrežnih zahtjeva ipak mogu zabilježiti.";
 "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@." = "Korisnici se uključuju unutar XTimers aplikacije unošenjem svog broja telefona i potvrđivanjem kućice koja nije unaprijed označena. Potvrdni okvir glasi: \"Slažem se primati SMS verifikacijske kodove i podsjetničke poruke od XTimers putem Xintech LLC koje sami zakazujem na ovom broju telefona.\" Ekran za odabir također prikazuje ove SMS Uvjete, Politiku privatnosti, standardno obavještenje o porukama i naknadama za podatke, STOP i HELP upute, informacije o učestalosti poruka i jezik koji ne uključuje marketing. Davanje pristanka nije uvjet za kupnju. Pogledajte stranicu s dokazima o odabiru na %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@.";
 "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:" = "Dostava za provjeru može koristiti predložak specifičan za davatelja usluga ili regiju.\n      Predstavnički format poruke za provjeru je:";
-"View on the Mac App Store" = "Pogledaj u trgovini Mac App Store";
 "View the XHelpers Pro offer" = "Pogledaj ponudu za XHelpers Pro";
 "Visit support" = "Posjeti podršku";
 "Website Analytics" = "Analitika web-stranice";
@@ -536,6 +542,7 @@
 "World clocks images" = "Slike: Svjetski satovi";
 "XHelpers Pro benefit images" = "Slike: Pogodnost za XHelpers Pro";
 "XTimers" = "XTimers";
+"XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features." = "XTimers 3.4 dostupan je za Mac. Istražite štoperice i odbrojavanja te pregled značajki verzije Mac 3.5 i aplikacije za iPhone/iPad.";
 "XTimers Activity Extension Privacy Policy" = "Pravila privatnosti proširenja aktivnosti XTimers";
 "XTimers Messaging Help" = "Pomoć za poruke XTimers";
 "XTimers Privacy Choices" = "Izbori privatnosti aplikacije XTimers";
@@ -556,6 +563,7 @@
 "XTimers for Mac" = "XTimers za Mac";
 "XTimers for iPhone & iPad" = "XTimers za iPhone i iPad";
 "XTimers home" = "Početna stranica aplikacije XTimers";
+"XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer." = "Ikona XTimers s pregledom radnog prostora verzije Mac 3.5 na engleskom i kompaktnom štopericom.";
 "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs." = "XTimers nije dizajniran za hitne situacije, medicinske, sigurnosno kritične ili životno kritične vremenske zadaće. Za te potrebe koristite namjenski sustav.";
 "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features." = "XTimers upravlja Xintech LLC i koristi Xin Account za zajedničko prijavljivanje. Ova politika objašnjava informacije koje se obrađuju za Xin Account usluge identiteta i za XTimers tajmere, alarme, odbrojavanja, praćenje aktivnosti, kalendarske funkcije, sinkronizaciju, izvještaje, prilagođene zvukove, podsjetnike, podršku i funkcije poruka.";
 "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling." = "Aplikacijom XTimers upravlja Xintech LLC. Nakon što prijavljeni korisnik da izričitu privolu, XTimers može pokušati poslati kod za provjeru postavljanja na predloženi telefonski broj računa koji je korisnik unio. Nakon uspješne provjere i davanja privole XTimers može pokušati poslati SMS tajmera ili podsjetnika koji je korisnik izradio samo na taj isti broj i samo kada ga korisnik zakaže za sebe. XTimers ne šalje marketinške SMS poruke i ne dopušta korisnicima slanje SMS-a proizvoljnim primateljima trećih strana. XTimers SMS nije usluga dvosmjernog razgovora; dolazne ključne riječi upotrebljavaju se samo za obradu usklađenosti STOP, HELP, START i YES.";
@@ -566,7 +574,7 @@
 "XTimers uses Xin Account for shared sign-in. You are responsible for the\n      identity information you provide, protecting your sign-in methods and\n      devices, maintaining access to your account email, and promptly reporting\n      suspected unauthorized access. You may not misuse identity, recovery,\n      linked-provider, session, or connected-product features or attempt to\n      access another person's account." = "XTimers koristi Xin Account za zajedničko prijavljivanje. Odgovorni ste za\n      identitetske podatke koje pružate, zaštitu svojih metoda prijave i\n      uređaja, održavanje pristupa svojoj e-pošti računa i pravovremeno prijavljivanje\n      sumnjivog neovlaštenog pristupa. Ne smijete zloupotrebljavati značajke identiteta, oporavka,\n      povezane s davateljem, sesije ili povezanog proizvoda, niti pokušavati\n      pristupiti računu druge osobe.";
 "XTimers uses a Xin Account to identify and authenticate a user. A Xin\n      Account is the shared identity layer for XTimers and any other connected\n      products listed in the account controls; it is not an XTimers product\n      account and does not contain XTimers timers, reports, sounds, or SMS data." = "XTimers koristi Xin Account za identifikaciju i autentifikaciju korisnika. Xin Account je sloj zajedničkog identiteta za XTimers i sve druge povezane proizvode navedene u kontrolama računa; nije račun proizvoda XTimers i ne sadrži XTimers tajmere, izvještaje, zvukove ili SMS podatke.";
 "XTimers website tracking is off by default and opt-in. Turning tracking\n      off in XTimers stops the app from recording active-tab data and disables\n      its integration. Disable or remove the browser extension to stop its own\n      event listeners, periodic active-tab queries, and local delivery attempts.\n      Existing XTimers history remains until you use Reset tracked data." = "Praćenje na web stranici XTimers prema zadanim postavkama je isključeno i zahtijeva pristanak. Isključivanje praćenja u XTimers zaustavlja aplikaciju u bilježenju podataka o aktivnoj kartici i onemogućuje njezinu integraciju. Onemogućite ili uklonite proširenje preglednika kako biste zaustavili vlastite slušatelje događaja, periodične upite aktivne kartice i pokušaje lokalne dostave.\n      Postojeća povijest XTimers ostaje dok ne upotrijebite Poništi praćene podatke.";
-"XTimers — Count up. Count down. World clocks. World Calendar." = "XTimers — Mjeri vrijeme. Odbrojavaj. Svjetski satovi. Svjetski kalendar.";
+"XTimers — Timers and Countdowns for Mac" = "XTimers — Štoperice i odbrojavanja za Mac";
 "Xin Account Identity and Recovery" = "Identitet i oporavak Xin Account";
 "Xin Account Identity and Security" = "Identitet i sigurnost Xin Account";
 "Xin Account Identity and Sign-In" = "Identitet i prijava Xin Account";

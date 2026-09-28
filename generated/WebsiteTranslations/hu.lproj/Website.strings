@@ -142,7 +142,6 @@
 "Core timers can be used without signing in. Xin Account sign-in is used\n      to authorize XTimers synchronization. Signing out pauses future\n      authenticated synchronization without deleting either account scope." = "Az alapértelmezett időzítők használhatók bejelentkezés nélkül. Xin Account bejelentkezés az XTimers szinkronizáció engedélyezésére szolgál. A kijelentkezés felfüggeszti a jövőbeni hitelesített szinkronizációt anélkül, hogy bármely fióktartományt törölné.";
 "Core timing and local reports work offline. Synchronization, online sharing and server reminders need a connection. World Calendar on Mac needs an initial catalog download; its installed catalog can then be used offline." = "Az alapvető időmérés és a helyi kimutatások offline is működnek. A szinkronizáláshoz, az online megosztáshoz és a szerveres emlékeztetőkhöz kapcsolat kell. A Világnaptár Mac gépen először katalógusletöltést igényel; a telepített katalógus utána offline is használható.";
 "Count up. Count down. World clocks. World Calendar." = "Mérd az időt. Számolj vissza. Világórák. Világnaptár.";
-"Count up. Count down. World clocks. World Calendar. Flexible. Customizable. Bring timers, routines, reminders and reports into one workspace." = "Mérd az időt. Számolj vissza. Világórák. Világnaptár. Rugalmas. Testreszabható. Egyesítsd az időmérőket, rutinokat, emlékeztetőket és kimutatásokat egy munkaterületen.";
 "Cross-device synchronization images" = "Képek – Eszközök közötti szinkronizálás";
 "Current Consent Evidence" = "Jelenlegi hozzájárulási bizonyíték";
 "Current Readings" = "Aktuális értékek";
@@ -221,7 +220,6 @@
 "Explore XHelpers Pro, a separate Mac utility with quick access to everyday controls. XTimers users can visit its promotional license offer for the current terms and activation details." = "Ismerd meg az XHelpers Pro különálló Mac-segédprogramot, amellyel gyorsan eléred a mindennapi vezérlőket. Az XTimers felhasználói a promóciós licencajánlatban találják az aktuális feltételeket és az aktiválás részleteit.";
 "Explore XTimers features" = "Fedezd fel az XTimers funkcióit";
 "Explore holidays, cultural dates, global events and moments in history. Add a read-only view of your Apple calendars, then turn a date or event into a countdown or personal reminder." = "Fedezz fel ünnepeket, kulturális dátumokat, világméretű eseményeket és történelmi pillanatokat. Add hozzá Apple-naptáraid csak olvasható nézetét, majd készíts egy dátumból vagy eseményből visszaszámlálót vagy személyes emlékeztetőt.";
-"Explore the mobile experience" = "Fedezd fel a mobilos élményt";
 "Failed" = "Sikertelen";
 "Features" = "Funkciók";
 "Features can be delayed, interrupted, changed, or unavailable because of\n      permissions, device power or connectivity, operating-system behavior,\n      third-party services, maintenance, or failures. To the extent permitted\n      by law, XTimers is provided “as is” and “as available,” without a promise\n      that every alarm, notification, message, synchronization, or report will\n      be delivered, retained, or error-free. Applicable consumer rights that\n      cannot legally be waived remain unaffected." = "A funkciók késleltethetők, megszakíthatók, megváltoztathatók vagy nem elérhetők lehetnek a jogosultságok, az eszköz energiája vagy csatlakozási lehetőségei, az operációs rendszer viselkedése, harmadik féltől származó szolgáltatások, karbantartás vagy hibák miatt. A jog által engedélyezett mértékben az XTimers „ahogyan van” és „ahogyan elérhető” alapon kerül biztosításra, anélkül a ígéret nélkül, hogy minden riasztás, értesítés, üzenet, szinkronizáció vagy jelentés kézbesítésre, megőrzésre kerülne, vagy hibamentes lenne. Az alkalmazandó fogyasztói jogok, amelyeket törvényesen nem lehet lemondani, változatlanok maradnak.";
@@ -240,6 +238,8 @@
 "For support, see %1$@xintechllc.com/XTimers/support.html%2$@." = "Támogatásért tekintse meg %1$@xintechllc.com/XTimers/support.html%2$@.";
 "General settings in English, captured from the installed Mac app in light appearance." = "Általános beállítások angolul, a telepített Mac-alkalmazásban, világos megjelenéssel rögzítve.";
 "Give work, learning and everyday life their own named task sets. Save a task or a whole set as a template, then bring a familiar routine into your next session." = "Adj saját nevű feladatcsoportot a munkának, tanulásnak és mindennapoknak. Ments egy feladatot vagy egy egész csoportot sablonként, és vidd át a megszokott rutint a következő munkamenetbe.";
+"Guides" = "Útmutatók";
+"Guides in English" = "Angol nyelvű útmutatók";
 "Have something else in mind?" = "Másra vagy kíváncsi?";
 "Help" = "Segítség";
 "Home" = "Kezdőlap";
@@ -274,6 +274,8 @@
 "Local reports and exports work offline. Email and online sharing need a connection." = "A helyi kimutatások és exportálások offline is működnek. Az e-mailhez és online megosztáshoz kapcsolat kell.";
 "Local-only alarms remain on the installation where they were created and\n      are not uploaded merely because a user signs in. If the user explicitly\n      promotes an alarm or creates a signed-in alarm, XTimers may synchronize\n      its name, schedule, recurrence, sound and presentation choices, enabled\n      state, revision history, and other definition metadata." = "A helyi riasztások csak azon a telepítésen maradnak aktívak, ahol létrehozták őket, és nem töltődnek fel pusztán azért, mert egy felhasználó bejelentkezik. Ha a felhasználó kifejezetten előlépteti egy riasztását vagy létrehoz egy bejelentkezett riasztást, az XTimers szinkronizálhatja a nevét, ütemezését, ismétlődési beállításait, hangját és megjelenítési választásait, engedélyezett állapotát, felülvizsgálati előzményeit és egyéb definíciós metaadatait.";
 "Mac" = "Mac";
+"Mac 3.4 is available now. Features and screenshots on this page preview Mac 3.5 and the unreleased iPhone/iPad app." = "A Mac 3.4 már elérhető. Az oldalon bemutatott funkciók és képernyőképek a Mac 3.5 és a még kiadatlan iPhone/iPad-alkalmazás előzetesét mutatják.";
+"Mac 3.4 · Available on the App Store" = "Mac 3.4 · Elérhető az App Store áruházban";
 "Mac · English" = "Mac · angol";
 "Mac · English — General settings in English, captured from the installed Mac app in light appearance." = "Mac · angol — Általános beállítások angolul, a telepített Mac-alkalmazásban, világos megjelenéssel rögzítve.";
 "Mac · Grid" = "Mac · rács";
@@ -310,7 +312,6 @@
 "Mac · local only" = "Mac · csak helyben";
 "Mac · selected profiles" = "Mac · kiválasztott profilok";
 "Mac · separate app" = "Mac · külön alkalmazás";
-"Mac, iPhone and iPad. Each with a place in your day." = "Mac, iPhone és iPad. Mindegyiknek helye van a napodban.";
 "Main navigation" = "Fő navigáció";
 "Make a little time%1$@for %2$@yourself.%3$@" = "Szánj egy kis időt%1$@%2$@magadra.%3$@";
 "Make a start. No sign-in needed." = "Vágj bele. Bejelentkezés nélkül.";
@@ -372,6 +373,10 @@
 "Planning at 20:04 in the installed Mac app’s Single view, with visible controls and the Yosemite photo background." = "A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel.";
 "Planning at 20:04 over a mountain photograph in Minimal view" = "„Planning” 20:04-es értékkel, hegyi fotó előtt, „Minimal” nézetben";
 "Planning paused at 20:04, visible right in the Mac menu bar beside system status icons" = "A „Planning” 20:04-nél szüneteltetve, közvetlenül a Mac menüsávjában, a rendszer állapotikonjai mellett";
+"Press kit" = "Sajtóanyagok";
+"Press kit in English" = "Angol nyelvű sajtóanyagok";
+"Preview only · No public download" = "Csak előzetes · Nyilvánosan nem tölthető le";
+"Preview screenshots show development builds; the public Mac app may differ." = "Az előzetes képernyőképei fejlesztés alatt álló verziókat mutatnak; a nyilvánosan elérhető Mac-alkalmazás eltérhet tőlük.";
 "Privacy" = "Adatvédelem";
 "Privacy Choices" = "Adatvédelmi beállítások";
 "Privacy Policy" = "Adatvédelmi irányelvek";
@@ -379,6 +384,8 @@
 "Provide customer support and investigate reported problems." = "Ügyfélszolgálat biztosítása és a bejelentett problémák kivizsgálása.";
 "Put your day in context." = "Lásd a napodat összefüggéseiben.";
 "Questions" = "Kérdések";
+"Recovery help" = "Adat-helyreállítási segítség";
+"Recovery help in English" = "Angol nyelvű adat-helyreállítási segítség";
 "Reminders go to your own eligible, verified number with separate SMS or call consent. Availability depends on your account, region and the service. A scheduled call needs server confirmation; Call Me uses English and does not automatically redial." = "Az emlékeztetők a saját, támogatott, ellenőrzött számodra érkeznek, külön SMS- vagy hívási hozzájárulással. Az elérhetőség a fióktól, régiótól és szolgáltatástól függ. Az ütemezett híváshoz szerveres megerősítés kell; a „Call Me” angol nyelvű, és nem tárcsáz újra automatikusan.";
 "Reply HELP for help. You can also contact XTimers support at %1$@xintechllc.com/XTimers/support.html%2$@." = "Válaszoljon HELP-val segítségért. Az XTimers ügyfélszolgálatát is felveheti a %1$@xintechllc.com/XTimers/support.html%2$@ címen.";
 "Reply STOP to opt out of SMS messages from XTimers. After you send STOP,\n      XTimers will stop sending SMS messages to that phone number\n      unless you opt in again." = "Válaszoljon STOP-ra, hogy leiratkozzon a SMS üzeneteiről a XTimers-tól. Miután elküldte a STOP-t,\n      a XTimers abbahagyja a SMS üzenetek küldését arra a telefonszámra,\n      hacsak nem iratkozik fel újra.";
@@ -509,7 +516,6 @@
 "Users may submit feedback anonymously or choose to attach it to their\n      signed-in account. XTimers stores the feedback text and operational\n      metadata needed to review the request, prevent abuse, and respond or fix\n      problems. Anonymous feedback is not attached to an account identifier,\n      although ordinary network request metadata may still be recorded." = "A felhasználók névtelenül küldhetnek visszajelzést, vagy azt a bejelentkezett\n      fiókjukhoz csatolhatják. Az XTimers tárolja a visszajelzés szövegét és a\n      kérés áttekintéséhez, a visszaélések megelőzéséhez, valamint a válaszadáshoz\n      vagy a problémák kijavításához szükséges működési metaadatokat. A névtelen\n      visszajelzés nincs fiókazonosítóhoz kapcsolva, bár a hálózati kérés szokásos\n      metaadatait a rendszer továbbra is rögzítheti.";
 "Users opt in inside the XTimers app by entering their phone number and affirmatively checking a box that is not pre-selected. The checkbox says: \"I agree to receive SMS verification codes and reminder messages from XTimers by Xintech LLC that I schedule for myself at this phone number.\" The opt-in screen also displays these SMS Terms, the Privacy Policy, standard message and data rate disclosure, STOP and HELP instructions, message frequency information, and no-marketing language. Consent is not a condition of purchase. See the opt-in evidence page at %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@." = "A felhasználók a XTimers alkalmazásban a telefonszámuk megadásával és egy előre nem kijelölt négyzet aktív jelölésével iratkoznak fel. A jelölőnégyzet szövege: \"Hozzájárulok, hogy a SMS ellenőrző kódokat és emlékeztető üzeneteket küldjön számomra a XTimers által, a Xintech LLC ütemezésével ezen a telefonszámon.\" A feliratkozási képernyő ezeken kívül megjeleníti a SMS feltételeket, az Adatvédelmi irányelveket, a szokásos üzenet- és adatdíj-tájékoztatást, STOP és HELP utasításokat, az üzenetküldési gyakoriságra vonatkozó információkat, valamint a nem marketing jellegű szövegeket. A hozzájárulás nem feltétele a vásárlásnak. A feliratkozási bizonyíték oldalát lásd a %1$@xintechllc.com/FlexibleTimers/sms-opt-in.html%2$@ oldalon.";
 "Verification delivery can use a provider- or region-specific template.\n      A representative verification message format is:" = "A megerősítő kézbesítés szolgáltató- vagy régió-specifikus sablont használhat.\n      Egy tipikus megerősítő üzenet formátum a következő:";
-"View on the Mac App Store" = "Megtekintés a Mac App Store áruházban";
 "View the XHelpers Pro offer" = "Az XHelpers Pro ajánlat megtekintése";
 "Visit support" = "Támogatás felkeresése";
 "Website Analytics" = "Webhelyanalitika";
@@ -536,6 +542,7 @@
 "World clocks images" = "Képek – Világórák";
 "XHelpers Pro benefit images" = "Képek – XHelpers Pro kedvezmény";
 "XTimers" = "XTimers";
+"XTimers 3.4 is available for Mac. Explore timers and countdowns, plus a preview of Mac 3.5 and iPhone/iPad features." = "Az XTimers 3.4 elérhető Mac gépre. Ismerd meg a stopperórákat és visszaszámlálókat, valamint a Mac 3.5 és az iPhone/iPad-alkalmazás funkcióinak előzetesét.";
 "XTimers Activity Extension Privacy Policy" = "XTimers Tevékenységbővítmény Adatvédelmi szabályzat";
 "XTimers Messaging Help" = "Segítség az XTimers-üzenetekhez";
 "XTimers Privacy Choices" = "XTimers adatvédelmi beállítások";
@@ -556,6 +563,7 @@
 "XTimers for Mac" = "XTimers a következőhöz: Mac";
 "XTimers for iPhone & iPad" = "XTimers iPhone és iPad készülékre";
 "XTimers home" = "XTimers kezdőlap";
+"XTimers icon with an English preview of the Mac 3.5 workspace and a compact timer." = "XTimers-ikon a Mac 3.5 munkaterületének angol nyelvű előzetesével és egy kompakt stopperórával.";
 "XTimers is not designed for emergency, medical, safety-critical, or\n      life-critical timing. Use a dedicated system for those needs." = "Az XTimers nem készült vészhelyzeti, orvosi, biztonságkritikus vagy életkritikus időzítésre. Ezekhez az igényekhez használjon dedikált rendszert.";
 "XTimers is operated by Xintech LLC and uses Xin Account for shared\n      sign-in. This policy explains the information processed for Xin Account\n      identity services and for XTimers timers, alarms, countdowns, activity\n      tracking, calendar features, synchronization, reports, custom sounds,\n      reminders, support, and messaging features." = "XTimers kezelője Xintech LLC, és Xin Account-t használ a megosztott bejelentkezéshez. Ez a szabályzat magyarázza az Xin Account identitásszolgáltatásokhoz, valamint az XTimers időzítőkhöz, riasztásokhoz, visszaszámlálásokhoz, tevékenységkövetéshez, naptárfunkciókhoz, szinkronizációhoz, jelentésekhez, egyéni hangokhoz, emlékeztetőkhöz, támogatáshoz és üzenetküldési funkciókhoz feldolgozott adatokat.";
 "XTimers is operated by Xintech LLC. After a signed-in user gives explicit\n      consent, XTimers may attempt to send a setup verification code to the\n      user-entered proposed account phone number. After successful verification\n      and opt-in, XTimers may attempt user-created timer/reminder SMS only to\n      that same phone number and only when the user schedules them for\n      themselves. XTimers does not send\n      marketing SMS and does not allow users to send SMS to arbitrary\n      third-party recipients. XTimers SMS is not a two-way chat or\n      conversation service; inbound keywords are used only for STOP, HELP, START,\n      and YES compliance handling." = "XTimers működtetője Xintech LLC. A bejelentkezett felhasználó kifejezett hozzájárulása után az XTimers megkísérelhet ellenőrző beállítási kódot küldeni a felhasználó által megadott javasolt fiók telefonszámára. Sikeres ellenőrzés és az önkéntes részvétel után az XTimers megkísérelheti a felhasználó által létrehozott időzítő/figyelmeztetés SMS elküldését csak ugyanarra a telefonszámra, és csak akkor, amikor a felhasználó maga ütemezi azokat. XTimers nem küld marketing SMS, és nem engedi a felhasználóknak, hogy SMS küldjenek tetszőleges harmadik fél címzettjeinek. XTimers SMS nem kétirányú csevegés vagy beszélgetési szolgáltatás; a bejövő kulcsszavakat csak STOP, HELP, START és YES megfelelőségi kezelése céljából használják.";
@@ -566,7 +574,7 @@
 "XTimers uses Xin Account for shared sign-in. You are responsible for the\n      identity information you provide, protecting your sign-in methods and\n      devices, maintaining access to your account email, and promptly reporting\n      suspected unauthorized access. You may not misuse identity, recovery,\n      linked-provider, session, or connected-product features or attempt to\n      access another person's account." = "A XTimers a Xin Account-t használja a megosztott bejelentkezéshez. Ön felelős az által megadott személyazonosító információkért, a bejelentkezési módszerek és eszközök védelméért, a fiók e-mail hozzáférésének fenntartásáért, valamint a gyanított jogosulatlan hozzáférés haladéktalan jelzéséért. Nem használhatja vissza a személyazonossági, helyreállítási, összekapcsolt szolgáltató, munkamenet vagy kapcsolódó termék funkciókat, és nem próbálhat meg hozzáférni más személy fiókjához.";
 "XTimers uses a Xin Account to identify and authenticate a user. A Xin\n      Account is the shared identity layer for XTimers and any other connected\n      products listed in the account controls; it is not an XTimers product\n      account and does not contain XTimers timers, reports, sounds, or SMS data." = "XTimers egy Xin Account-t használ a felhasználó azonosítására és hitelesítésére. A(z) Xin Account a megosztott azonosító réteg XTimers és az összes egyéb, a fiókvezérlőkben felsorolt kapcsolódó termék számára; ez nem XTimers termékfiók, és nem tartalmaz XTimers időzítőket, jelentéseket, hangokat vagy SMS adatokat.";
 "XTimers website tracking is off by default and opt-in. Turning tracking\n      off in XTimers stops the app from recording active-tab data and disables\n      its integration. Disable or remove the browser extension to stop its own\n      event listeners, periodic active-tab queries, and local delivery attempts.\n      Existing XTimers history remains until you use Reset tracked data." = "A(z) XTimers weboldal követése alapértelmezés szerint ki van kapcsolva, és csak önkéntes. A követés kikapcsolása a(z) XTimers-ban megakadályozza, hogy az alkalmazás rögzítse az aktív fül adatait, és letiltja annak integrációját. Kapcsolja ki vagy távolítsa el a böngészőbővítményt, hogy leállítsa a saját eseményfigyelőit, az időszakos aktív fül lekérdezéseket és a helyi kézbesítési próbálkozásokat.\n      A meglévő XTimers előzmények megmaradnak, amíg nem használja az Adatok nyomkövetésének visszaállítása funkciót.";
-"XTimers — Count up. Count down. World clocks. World Calendar." = "XTimers — Mérd az időt. Számolj vissza. Világórák. Világnaptár.";
+"XTimers — Timers and Countdowns for Mac" = "XTimers — Stopperórák és visszaszámlálók Mac gépre";
 "Xin Account Identity and Recovery" = "Xin Account-identitás és -helyreállítás";
 "Xin Account Identity and Security" = "Xin Account Identitás és biztonság";
 "Xin Account Identity and Sign-In" = "Xin Account-identitás és -bejelentkezés";
